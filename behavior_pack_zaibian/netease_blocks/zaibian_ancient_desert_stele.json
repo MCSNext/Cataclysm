@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": 99999,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:block_entity": {
+                "client_tick": false,
+                "movable": false,
+                "tick": true
+            },
+            "netease:fall": {
+                "adjust_percentage": 0.98,
+                "cancel_drop": true,
+                "fall_acceleration": 0.1,
+                "fall_damage_amount": 2.0,
+                "force_break_tick": 10,
+                "hurt_entity": true,
+                "max_fall_damage": 40,
+                "min_height_remove_tick": 10,
+                "send_python_event": true
+            }
+        },
+        "description": {
+            "base_block": "custom_heavy_block",
+            "category": "zaibian",
+            "identifier": "zaibian:ancient_desert_stele",
+            "register_to_creative_menu": false
+        }
+    }
+}

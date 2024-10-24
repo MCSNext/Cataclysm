@@ -1,0 +1,166 @@
+{
+    "groups":[
+        {
+            "group_name":"其他物品", 
+            "icon" : "zaibian:void_core", 
+            "list":[ 
+                "zaibian:void_core",
+                "zaibian:void_scatter_arrow",
+                "zaibian:void_jaw",
+                "zaibian:monstrous_horn",
+                "zaibian:witherite_ingot",
+                "zaibian:ignitium_ingot",
+                "zaibian:chain_of_soul_binding",
+                "zaibian:burning_ashes",
+                "zaibian:crystallized_coral_fragments",
+                "zaibian:crystallized_coral",
+                "zaibian:abyssal_sacrifice",
+                "zaibian:lionfish",
+                "zaibian:remnant_skull",
+                "zaibian:koboleton_bone",
+                "zaibian:necklace_of_the_desert",
+                "zaibian:amethyst_crab_meat",
+                "zaibian:amethyst_crab_meat1",
+                "zaibian:amethyst_crab_shell",
+                "zaibian:the_baby_leviathan_bucket",
+                "zaibian:enderite_ingot",
+                "zaibian:sticky_gloves",
+                "zaibian:sandstorm_in_a_bottle"
+
+
+         
+            ]
+        },
+        {
+            "group_name":"遗迹眼", 
+            "icon" : "zaibian:desert_eye", 
+            "list":[ 
+                "zaibian:desert_eye",
+                "zaibian:mech_eye",
+                "zaibian:void_eye",
+                "zaibian:monstrous_eye",
+                "zaibian:abyss_eye",
+                "zaibian:flame_eye"
+         
+            ]
+        },
+        {
+            "group_name":"方块", 
+            "icon" : "zaibian:void_stone", 
+            "list":[ 
+                "zaibian:void_stone",
+                "zaibian:void_lantern_block",
+                "zaibian:chorus_planks",
+                "zaibian:void_infused_end_stone_bricks",
+                "zaibian:end_stone_teleport_trap_bricks_off",
+                "zaibian:purpur_void_rune_trap_block_off",
+                "zaibian:obsidian_explosion_trap_bricks_off",
+                "zaibian:enderite_block",
+                "zaibian:witherite_block",
+                "zaibian:ignitium_block",
+                "zaibian:altar_of_fire",
+                "zaibian:emp",
+                "zaibian:mechanical_fusion_anvil",
+                "zaibian:altar_of_void",
+                "zaibian:altar_of_amethyst",
+                "zaibian:altar_of_abyss",
+                "zaibian:abyssal_egg",
+                "zaibian:stone_pillar",
+                "zaibian:chiseled_stone_brick_pillar",
+                "zaibian:stone_tiles",
+                "zaibian:dungeon_block",
+                "zaibian:chorus_fence",
+                "zaibian:chorus_slab_0",
+                "zaibian:chorus_stairs_0",
+                "zaibian:miss",
+                "zaibian:polished_sandstone",
+                "zaibian:sandstone_falling_trap",
+                "zaibian:sandstone_poison_dart_trap",
+                "zaibian:sandstone_ignite_trap",
+                "zaibian:chorus_stem"
+            ]
+        },
+        {
+            "group_name":"装备", 
+            "icon" : "zaibian:ignitium_chestplate", 
+            "list":[ 
+                "zaibian:ignitium_boots",
+                "zaibian:ignitium_chestplate",
+                "zaibian:ignitium_helmet",
+                "zaibian:ignitium_leggings",
+                "zaibian:bloom_stone_pauldrons",
+                "zaibian:ignitium_elytra_chestplate",
+                "zaibian:monstrous_helm"
+         
+            ]
+        },
+        {
+            "group_name":"武器", 
+            "icon" : "zaibian:the_incinerator", 
+            "list":[ 
+                "zaibian:shield",
+                "zaibian:gauntlet_of_guard",
+                // "zaibian:final_fractal",
+                // "zaibian:zweiender",
+                "zaibian:infernal_forge",
+                "zaibian:wither_assault_shoulder_weapon",
+                "zaibian:the_incinerator",
+                "zaibian:void_assault_shoulder_weapon",
+                "zaibian:void_forge",
+                "zaibian:gauntlet_of_bulwark",
+                "zaibian:coral_spear",
+                "zaibian:coral_bardiche",
+                "zaibian:athame",
+                "zaibian:tidal_claws",
+                "zaibian:khopesh",
+                "zaibian:meat_shredder",
+                "zaibian:laser_gatling",
+                "zaibian:bow"
+         
+            ]
+        },
+        {
+            "group_name":"生物蛋", 
+            "icon" : "zaibian:amethyst_crab_d", 
+            "list":[ 
+                "zaibian:amethyst_crab_d",
+                "zaibian:the_leviathan_d",
+                "zaibian:coralssus_d",
+                "zaibian:deepling_priest_d",
+                "zaibian:deepling_angler_d",
+                "zaibian:lionfish_d",
+                "zaibian:deepling_brute_d",
+                "zaibian:deepling_d",
+                "zaibian:the_baby_leviathan",
+                "zaibian:the_harbinger_d",
+                "zaibian:ignited_revenant",
+                "zaibian:netherite_monstrosity",
+                "zaibian:ignis",
+                "zaibian:ender_guardian",
+                "zaibian:ender_golem",
+                "zaibian:nameless_sorcerer",
+                "zaibian:the_watcher_d",
+                "zaibian:the_prowler_d",
+                "zaibian:modern_remnant_d",
+                "zaibian:ancient_remnant_d",
+                "zaibian:koboleton_d",
+                "zaibian:deepling_warlock_d",
+                "zaibian:endermaptera"
+            ]
+        },
+        {
+            "group_name":"唱片", 
+            "icon" : "zaibian:music_disc_ancient_remnant", 
+            "list":[ 
+                "zaibian:music_disc_ancient_remnant",
+                "zaibian:music_disc_the_leviathan",
+                "zaibian:music_disc_netherite_monstrosi",
+                "zaibian:music_disc_ender_guardian",
+                "zaibian:music_disc_ignis",
+                "zaibian:music_disc_the_harbinger"
+                
+            ]
+        }
+      
+    ]
+}

@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.displaystand_test.wea": {
+			"loop": true,
+			"bones": {
+				"root":{
+					"scale":"query.mod.scale"
+
+				},
+				"rightitem": {
+					// "rotation": [100, 2.25, -1.75],
+					// "scale":"query.mod.scale",
+					"rotation": ["query.mod.wea", 2.25, 0],
+					"position": [0, "query.mod.gao+math.mod(variable.ty,2)", 0]
+				}
+			}
+		},
+		"animation.displaystand_test.items": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"scale":"query.mod.scale",
+
+					"rotation": [-73.433, -10.122, -15.383],
+					"position": [-1, "-20+math.mod(variable.ty,2)", 3]
+				}
+			}
+		},
+		"animation.displaystand_test.blocks": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [-19.938, 45, 0],
+					"position": [4, "-15+math.mod(variable.ty,2)", 6]
+				}
+			}
+		},
+		"animation.displaystand_test.action": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "14.5 + (query.life_time * -40.0 + variable.time_offset_displaystand)", 0]
+			
+
+				}
+			}
+		}
+	}
+}

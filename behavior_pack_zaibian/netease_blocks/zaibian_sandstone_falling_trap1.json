@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:destroy_time": 1,
+            "netease:fall": {
+                "adjust_percentage": 0.98,
+                "cancel_drop": false,
+                "fall_acceleration": 0.04,
+                "fall_damage_amount": 2.0,
+                "force_break_tick": 600,
+                "hurt_entity": false,
+                "max_fall_damage": 40,
+                "min_height_remove_tick": 100,
+                "send_python_event": true
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "base_block": "custom_heavy_block",
+            "identifier": "zaibian:sandstone_falling_trap1",
+            "register_to_creative_menu": false
+        }
+    }
+}

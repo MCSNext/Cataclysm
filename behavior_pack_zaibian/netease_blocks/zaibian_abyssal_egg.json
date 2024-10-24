@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:block_light_emission": {
+                "emission": 0.8
+            },
+            "minecraft:destroy_time": 3,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "netease:block_entity": {
+                "movable": true,
+                "tick": true
+            },
+            "netease:custom_tips": {
+                "value": "§2会在深渊之卵被放置在世界中约10分钟后破壳孵化出来，在放置深渊之卵的原位出现。\n玩家可以通过喂食它热带鱼来驯服它。玩家可以通过喂它鱼（物品）来回血，每条回复5点血.\n§4微型深渊激光如果攻击模型的实体高度太低回导致违法攻击"
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:abyssal_egg",
+            "register_to_creative_menu": true
+        }
+    }
+}

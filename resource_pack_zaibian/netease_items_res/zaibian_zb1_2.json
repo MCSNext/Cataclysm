@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:zb1_2"
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:zb1_2",
+            "register_to_create_menu": true
+        }
+    }
+}

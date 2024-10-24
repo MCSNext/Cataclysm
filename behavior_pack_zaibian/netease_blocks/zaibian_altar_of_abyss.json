@@ -1,0 +1,34 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:block_light_emission": {
+                "emission": 0.8
+            },
+            "minecraft:destroy_time": 3,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "netease:block_entity": {
+                "movable": true,
+                "tick": true
+            },
+            "netease:custom_tips": {
+                "value": "§2对其使用深渊祭品，即可在片刻后召唤出利维坦。"
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:altar_of_abyss",
+            "register_to_creative_menu": true
+        }
+    }
+}

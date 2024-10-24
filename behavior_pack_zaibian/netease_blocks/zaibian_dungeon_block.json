@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:destroy_time": 999999.0,
+            "minecraft:explosion_resistance": {
+                "value": 999999.0
+            },
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:solid": {
+                "value": true
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:dungeon_block",
+            "register_to_creative_menu": true
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"format_version": "1.10","minecraft:item": {"components": {"minecraft:icon": "zaibian:void_jaw"},"description": {"category": "zaibian","identifier": "zaibian:void_jaw","register_to_create_menu": true}}}

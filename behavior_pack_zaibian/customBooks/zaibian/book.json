@@ -1,0 +1,16 @@
+{
+    "content": "灾变是一个增加了困难的地牢、具有挑战性的 Boss和强大装备的模组。\n目前，本模组添加了5个精细的Boss和5个精英怪，每个Boss都有自己的结构和独特技能，以及有特殊能力的掉落装备。探索多种结构，挑战并击败Boss以证明自己，获得强大的装备并继续向前进吧！",
+    "editor_identifier": "zaibian",
+    "item": "zaibian:book",
+    "title1": "灾变",
+    "title2": "说明书",
+    "titleArea": {
+        "offset": [
+            -10,
+            0
+        ],
+        "padding": 1,
+        "textSize1": 9,
+        "textSize2": 8
+    }
+}

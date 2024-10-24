@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "netease:shield": {
+                "defence_damage_source_list": [
+
+                ],
+                "is_consume_damage": false,
+                "undefence_damage_source_list": [
+
+                ]
+            }
+        },
+        "description": {
+            "category": "Construction",
+            "custom_item_type": "shield",
+            "identifier": "zaibian:bulwark_of_the_flame_boss",
+            "register_to_create_menu": false
+        }
+    }
+}

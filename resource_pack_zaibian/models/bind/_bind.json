@@ -1,0 +1,190 @@
+{
+    "description": {
+        "file_type": "bind",
+        "model": "",
+        "model_type": ""
+    },
+    "editor": {
+        "show": {
+            "default": true
+        }
+    },
+    "model": {
+        "": {
+            "animation": {},
+            "animation_speed": {},
+            "bind": {
+                "default": {
+                    "head": {
+                        "effect": {
+                            "": {
+                                "bind_effect": [
+                                    {
+                                        "path": "effects/ender_guardian_tx2.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ender_guardian_tx1.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ender_guardian.json",
+                                        "visible": true,
+                                        "type": "frame",
+                                        "delay": 0.0
+                                    },
+                                    {
+                                        "path": "effects/particle0.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/the_incinerator2.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/the_incinerator1.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/the_incinerator.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/syi.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/particle0.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ignis0.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ignis1.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/laser_beam.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/lightning.json",
+                                        "visible": true,
+                                        "type": "frame",
+                                        "delay": 0.0
+                                    },
+                                    {
+                                        "path": "effects/silie.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/infernal_forge.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/the_harbinger_psw.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/harbingerf.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/harbingerdie.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/lb11_5.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    }
+                                ],
+                                "bind_model": [],
+                                "bind_offset": [0, 0, 0],
+                                "bind_rotate": [0, 0, 0]
+                            }
+                        }
+                    },
+                    "body": {
+                        "effect": {
+                            "": {
+                                "bind_effect": [
+                                    {
+                                        "path": "effects/ignis_z3.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ignis_z2.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ignis_z1.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/ignis_z0.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    },
+                                    {
+                                        "path": "effects/tidal_claws.json",
+                                        "visible": true,
+                                        "type": "particle",
+                                        "delay": 0
+                                    }
+                                ],
+                                "bind_model": [],
+                                "bind_offset": [0, 0, 0],
+                                "bind_rotate": [0, 0, 0]
+                            }
+                        }
+                    }
+                }
+            },
+            "sounds": {}
+        }
+    },
+    "version": "1.2.0"
+}

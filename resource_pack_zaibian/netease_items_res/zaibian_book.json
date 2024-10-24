@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:book"
+        },
+        "description": {
+            "category": "Construction",
+            "identifier": "zaibian:book",
+            "register_to_create_menu": true
+        }
+    }
+}

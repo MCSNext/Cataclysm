@@ -1,0 +1,37 @@
+
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "close": "animation.altar_of_abyss.close",
+                "open": "animation.altar_of_abyss.open",
+                "altar_of_abyss": "controller.animation.altar_of_abyss"
+
+            },
+    
+            "geometry": {
+                "default": "geometry.altar_of_abyss"
+            },
+            "identifier": "zaibian:altar_of_abyss",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.item_sprite"
+            ],
+            "scripts": {
+                "initialize": [
+                    "variable.start = 0.0;"
+                  ],
+                "animate": [
+                    "altar_of_abyss"
+                ]
+            },
+            "textures": {
+                "default": "textures/blocks/altar_of_abyss"
+            }
+        }
+    }
+}
+          

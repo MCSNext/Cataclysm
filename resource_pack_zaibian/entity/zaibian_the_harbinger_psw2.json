@@ -1,0 +1,36 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "hou": "animation.jian.hou",
+                "move": "animation.jian.move"
+            },
+            "geometry": {
+                "default": "geometry.wither_homing_missile"
+            },
+            "identifier": "zaibian:the_harbinger_psw2",
+            "materials": {
+                "default": "fireball"
+            },
+            "particle_effects": {
+                "houjian": "houjian"
+            },
+            "render_controllers": [
+                "controller.render.fireball"
+            ],
+            "scripts": {
+                "animate": [
+                    "move"
+                ],
+                "pre_animation": [
+                    "variable.shake = query.shake_time - query.frame_alpha;",
+                    "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/harbinger/wither_homing_missile"
+            }
+        }
+    }
+}

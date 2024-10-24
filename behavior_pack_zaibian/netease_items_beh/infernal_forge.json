@@ -1,0 +1,34 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "minecraft:use_duration": 10.0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:cooldown": {
+                "category": "3",
+                "duration": 3
+            },
+            "netease:customtips": {
+                "value": "§2主手手持并潜行时长按屏幕可产生冲击波，\n对前方3格内的所有实体造成13点伤害，生命值在一半及以下时还可以使实体燃烧。"
+            },
+            "netease:fire_resistant": {
+                "value": true
+            },
+            "netease:weapon": {
+                "attack_damage": 13,
+                "enchantment": 10,
+                "level": 4,
+                "speed": 5,
+                "type": "pickaxe"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:infernal_forge",
+            "register_to_create_menu": true
+        }
+    }
+}

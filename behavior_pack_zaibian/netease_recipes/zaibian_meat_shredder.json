@@ -1,0 +1,35 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:meat_shredder"
+        },
+        "key": {
+            "B": {
+                "data": 0,
+                "item": "minecraft:iron_block"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:redstone"
+            },
+            "E": {
+                "data": 0,
+                "item": "zaibian:witherite_ingot"
+            }
+        },
+        "pattern": [
+            " DB",
+            " ED",
+            "E  "
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:meat_shredder"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

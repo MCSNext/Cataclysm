@@ -1,0 +1,1050 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.sit_controller": {
+        "states": {
+          "default": {
+          "transitions": [
+            {"sit2": "query.is_sitting"}
+          ]
+          },
+          "sit2": {
+            "animations": [ "sit2" ],
+            "transitions": [
+              { "default": "!query.is_sitting" }
+            ]
+            }
+          }
+        },
+        "controller.animation.wq_ack": {
+          "states": {
+            "default": {
+            "transitions": [
+              {"ack": "query.mod.the_incinerator_attack_time"}
+            ]
+            },
+            "ack": {
+              "animations": [ "first_ack" ],
+              "transitions": [
+                { "default": "!query.mod.the_incinerator_attack_time" }
+              ]
+              }
+            }
+          },
+      
+      
+      "controller.animation.ignitium_elytra_chestplate": {
+        "states": {
+          "default": {
+          "transitions": [
+            {"qianxing": "query.is_sneaking"},
+            {"fly_up": "query.mod.yelytraval1"}
+          ]
+          },
+          "qianxing": {
+          "animations": [ "qianxing" ],
+          "transitions": [
+            { "default": "!query.is_sneaking" }
+          ]
+          },
+          "fly_up": {
+          "animations": [ "fly_up" ],
+          "transitions": [
+            {"fly_down": "!query.is_sneaking && !query.mod.yelytraval1"}
+
+          ]
+          },
+          "fly_down": {
+          "animations": [ "fly_down" ],
+          "transitions": [
+            { "default": "!(!query.is_sneaking && !query.mod.yelytraval1)" }
+          ]
+          }
+        }
+        },
+      "controller.animation.deepling.attack": {
+        "states": {
+          "default": {
+          "transitions": [
+            { "attack": "query.is_delayed_attacking && query.mark_variant==0" }
+          ]
+          },
+          "attack": {
+          "animations": [ "attack" ],
+          "transitions": [
+            { "default": "!query.is_delayed_attacking" }
+          ]
+          }
+        }
+        },
+        "controller.animation.meat_shredder": {
+          "states": {
+            "default": {
+            "animations": [ "start2" ],
+
+            "transitions": [
+              { "attack": "query.mod.syzaibian" }
+            ]
+            },
+            "attack": {
+            "animations": [ "start" ],
+            "transitions": [
+              { "default": "!query.mod.syzaibian" }
+            ]
+            }
+          }
+          },
+        "controller.animation.deepling.attack1": {
+          "states": {
+            "default": {
+            "transitions": [
+              { "attack": "query.is_delayed_attacking  && query.mark_variant!=4" },
+              { "attack_1": "query.is_delayed_attacking  &&query.mark_variant==4" }
+
+            ]
+            },
+            "attack": {
+            "animations": [ "attack" ],
+            "transitions": [
+              { "default": "!query.is_delayed_attacking" }
+            ]
+            },
+            "attack_1": {
+            "animations": [ "attack_1" ],
+            "transitions": [
+              { "default": "!query.is_delayed_attacking" }
+            ]
+            }
+          }
+          },
+          "controller.animation.coralssus.attack": {
+            "states": {
+              "default": {
+              "transitions": [
+                { "attack": "query.is_delayed_attacking  && query.variant==0" },
+                { "attack_1": "query.is_delayed_attacking  &&query.variant==1" }
+  
+              ]
+              },
+              "attack": {
+              "animations": [ "attack" ],
+              "transitions": [
+                { "default": "!query.is_delayed_attacking" }
+              ]
+              },
+              "attack_1": {
+              "animations": [ "attack_1" ],
+              "transitions": [
+                { "default": "!query.is_delayed_attacking" }
+              ]
+              }
+            }
+            },
+        "controller.animation.deepling.range_attack" : {
+            "initial_state" : "default",
+            "states" : {
+              "default" : {
+                "transitions" : [
+                
+                  {
+                    "range_attack" : "query.is_charged && query.mark_variant==0"
+                  }
+                
+                ]
+              },
+              "range_attack" : {
+                "animations" : [
+                  "range_attack"
+                ],
+                "transitions" : [
+                  {
+                    "default" : "query.all_animations_finished"
+                  }
+                ]
+              }
+            }
+          },
+      "controller.animation.altar_of_abyss": {
+			"initial_state" : "default",
+        
+        "states": {
+          "default": {
+            "animations": [ "open" ],
+
+            "transitions": [
+                {"open":"variable.start==1"}
+
+            ]
+          },
+          "open": {
+            "animations": [ "close" ],
+            "transitions": [
+                {"default":"variable.start==0"}
+            ]
+          }
+        }
+      },
+      "controller.animation.deepling_warlock": {
+        "initial_state" : "default",
+        
+        "states": {
+          "default": {
+            "transitions": [
+              {"skill1":"query.mark_variant==1 && query.mark_variant!=100"}
+
+            ]
+          },
+          "skill1": {
+            "animations": [ "attack1" ],
+            "transitions": [
+                {"default":"query.mark_variant!=1"}
+            ]
+          }
+        }
+
+      },
+      "controller.animation.ignis1": {
+        "initial_state" : "default",
+          "states": {
+            "default": {
+              "animations": [ "threshold1"],
+              "transitions": [
+                { 
+                  "threshold": "query.get_equipped_item_name('off_hand')== 'bulwark_of_the_flame_boss' && query.has_target && query.mark_variant==0 && query.variant!=2 && query.mark_variant!=100"
+              }
+              ]
+            },
+            
+            "threshold": {
+              "animations": [ "threshold" ],
+              "transitions": [
+                { "default": "!(query.get_equipped_item_name('off_hand')== 'bulwark_of_the_flame_boss' && query.has_target && query.mark_variant==0 && query.variant!=2 && query.mark_variant!=100)"}
+              ],
+              "blend_transition": 0.25
+            }
+
+            }
+          },
+          "controller.animation.ignis2": {
+            "initial_state" : "default",
+              "states": {
+                "default": {
+                  "animations": [ "initial2_0" ],
+                  "transitions": [
+                    { 
+                      "threshold": "query.get_equipped_item_name('off_hand')!= 'bulwark_of_the_flame_boss' && query.has_target && query.mark_variant==0  && query.mark_variant!=100"
+                  }
+                  ]
+                },
+                
+                "threshold": {
+                  "animations": [ "initial2" ],
+                  "transitions": [
+                    { "default": "!(query.get_equipped_item_name('off_hand')!= 'bulwark_of_the_flame_boss' && query.has_target && query.mark_variant==0 && query.mark_variant!=100)"}
+                  ],
+                  "blend_transition": 0.25
+                }
+          
+                }
+              },
+      "controller.animation.ignis": {
+        "initial_state" : "default",
+          "states": {
+            "default": {
+              "transitions": [
+                {"death":"query.mark_variant==100"},
+             
+
+                  {"skill2":"query.mark_variant==2&& query.mark_variant!=100"},
+                  {"skill3":"query.mark_variant==3&& query.mark_variant!=100"},
+
+                  {"skill1":"query.mark_variant==1 && query.get_equipped_item_name('off_hand')== 'bulwark_of_the_flame_boss' && query.mark_variant!=100"},
+                  {"skill5":"query.mark_variant==4 "},
+                  {"skill6":"query.mark_variant==5 && query.mark_variant!=100"},
+                  {"skill7":"query.mark_variant==6 && query.mark_variant!=100"},
+                  {"skill8":"query.mark_variant==7 && query.mark_variant!=100"},
+
+                  {"skill9":"query.mark_variant==8 && query.mark_variant!=100 && query.variant==0"},
+                  {"skill9_0":"query.mark_variant==8 && query.mark_variant!=100 && query.variant!=0"},
+
+                  {"skill10":"query.mark_variant==9 && query.mark_variant!=100"},
+                  {"skill11":"query.mark_variant==10 && query.mark_variant!=100"},
+                  {"skill12":"query.mark_variant==11 && query.get_equipped_item_name('off_hand')== 'bulwark_of_the_flame_boss' && query.mark_variant!=100"},
+                  {"skill12_1":"query.mark_variant==11 && query.get_equipped_item_name('off_hand')!= 'bulwark_of_the_flame_boss' && query.mark_variant!=100"},
+
+                  {"skill13":"query.mark_variant==12 && query.mark_variant!=100"},
+                  {"skill14":"query.mark_variant==13 && query.mark_variant!=100"},
+
+                  {"skill15":"query.mark_variant==14 && query.mark_variant!=100"},
+                  {"skill16":"query.mark_variant==15 && query.mark_variant!=100"},
+                  {"skill17":"query.mark_variant==16 && query.mark_variant!=100"},
+
+
+                  
+
+                { "attack": "query.mark_variant==200 && query.mark_variant!=100 && query.variant==0" },
+                { "attack_0": "query.mark_variant==200 &&  query.mark_variant!=100 &&query.variant!=0" }
+
+
+              ],
+              "blend_transition": 0.5
+            },
+  
+            "attack_0": {
+              "animations": [ "attack_0" ],
+              "transitions": [
+                { "default": "query.mark_variant!=200" }
+              ]
+            },
+            "attack": {
+              "animations": [ "attack" ],
+              "transitions": [
+                { "default": "query.mark_variant!=200" }
+              ]
+            },
+            "death": {
+              "animations": [ "death" ],
+              "transitions": [
+                { "default": "query.mark_variant==0" }
+              ]
+            },
+            "skill15": {
+              "animations": [ {"attack15":"query.variant!=0"}, {"attack15_1":"query.variant==0"}],
+              "transitions": [
+                  {"default":"query.mark_variant!=14"}
+              ],
+              "blend_transition": 0.5
+            },
+            "skill16": {
+              "animations": [{"attack16_1":"query.variant!=0"}, {"attack16":"query.variant==0"}],
+              "transitions": [
+                  {"default":"query.mark_variant!=15"}
+              ]
+            },
+            "skill17": {
+              "animations": [ "attack17" ],
+              "transitions": [
+                  {"skill17_1":"(query.all_animations_finished && query.is_on_ground) || query.mark_variant!=16" }
+              ],
+              "blend_transition": 0.3
+            },
+            "skill17_1": {
+              "animations": [ "attack17_1" ],
+              "transitions": [
+                  {"default":"query.all_animations_finished || query.mark_variant!=16" }
+              ],
+              "blend_transition": 0.3
+            },
+
+            "skill14": {
+              "animations": [ "attack14" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=13"}
+              ],
+              "blend_transition": 0.5
+            },
+            "skill2": {
+              "animations": [ "attack2" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=2"}
+              ]
+            },
+            "skill3": {
+              "animations": [ "attack3_1" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=3"}
+              ]
+            },
+            "skill1": {
+              "animations": [ "attack3" ],
+              "blend_transition": 0.3,
+              "transitions": [
+                  {"default":"query.mark_variant!=1"}
+              ]
+            },
+            "skill13": {
+              "animations": [ "attack13" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=12"}
+              ]
+            },
+            "skill12_1": {
+              "animations": [ "attack12_1" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=11"}
+              ]
+            },
+            "skill10": {
+              "animations": [ "attack10" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=9"}
+              ],
+              "blend_transition": 0.3
+            },"skill11": {
+              "animations": [ "attack11" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=10"}
+              ]
+            },
+            "skill8": {
+              "animations": [ "attack8" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=7"}
+              ]
+            },
+            "skill9": {
+              "animations": [ "attack9" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=8"}
+              ]
+            },
+            "skill9_0": {
+              "animations": [ "attack9_0" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=8"}
+              ]
+            },
+            "skill5": {
+              "animations": [ "attack5" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=4"}
+              ]
+            },"skill6": {
+              "animations": [ "attack6" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=5"}
+              ]
+            },"skill7": {
+              "animations": [ "attack7" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=6"}
+              ],
+              "blend_transition": 1
+            },"skill12": {
+              "animations": [ "attack12" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=11"}
+              ],
+              "blend_transition": 0.3
+            }
+          }
+        },
+        "controller.animation.the_harbinger1": {
+          "initial_state" : "default",
+            "states": {
+              "default": {
+                "transitions": [
+                  {
+                    "idle2": "query.get_equipped_item_name== 'bow'  && query.mark_variant!=100"
+                  },
+                  {
+                      "idle3": "((query.get_equipped_item_name!= 'bow')   )&& query.mark_variant!=100"
+                  }
+                ]
+              },
+            
+              "idle2": {
+                "animations": [ "idle2" ],
+                "transitions": [
+                    {"default":"!(query.get_equipped_item_name== 'bow' && query.mark_variant!=100)"}
+                ]
+              },
+              "idle3": {
+                "animations": [ "idle3" ],
+                "transitions": [
+                    {"default":"!(((query.get_equipped_item_name!= 'bow')  )&& query.mark_variant!=100)"}
+                ]
+              }
+            }
+          },
+        "controller.animation.the_harbinger": {
+          "initial_state" : "default",
+            "states": {
+              "default": {
+                "transitions": [
+                  {"death":"query.mark_variant==100"},
+                    {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                    {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                    {"skill3":"query.mark_variant==3 && query.mark_variant!=100"},
+                    {"skill4":"query.mark_variant==4 && query.mark_variant!=100"},
+                    {"skill5":"query.mark_variant==5 && query.mark_variant!=100"}
+                
+                  // { "attack": "query.is_delayed_attacking && query.mark_variant==0" }
+  
+                ]
+              },
+            
+              "death": {
+                "animations": [ "death" ],
+                "transitions": [
+                    {"default":"query.mark_variant==0"}
+                ]
+              },
+           
+              "skill1": {
+                "animations": [ "attack1" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=1"}
+                ]
+              },
+              "skill5": {
+                "animations": [ "attack5" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=5"}
+                ]
+              },
+              "skill3": {
+                "animations": [ "attack3" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=3"}
+                ]
+              },
+              "skill2": {
+                "animations": [ "attack2" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=2"}
+                ]
+              },
+              "skill4": {
+                "animations": [ "attack4" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              }
+            }
+          },
+        "controller.animation.ender_golem": {
+          "initial_state" : "default",
+            "states": {
+              "default": {
+                "transitions": [
+                  {"death":"query.mark_variant==100"},
+                    {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                    {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                    {"wake":"query.mark_variant==10 && query.mark_variant!=100"},
+
+                  
+                
+                  { "attack": "query.mark_variant==200 " }
+  
+                ]
+              },
+              "wake": {
+                "animations": [ "wake" ],
+                "transitions": [
+                  { "default":"query.mark_variant!=10" }
+                ]
+              },
+              "attack": {
+                "animations": [ "attack" ],
+                "transitions": [
+                  { "default": "query.mark_variant!=200" }
+                ]
+              },
+              "death": {
+                "animations": [ "death" ],
+                "transitions": [
+                    {"default":"query.mark_variant==0"}
+                ]
+              },
+              "skill1": {
+                "animations": [ "attack1" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=1"}
+                ]
+              },
+              "skill2": {
+                "animations": [ "attack2" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=2"}
+                ]
+              }
+            }
+          },
+          "controller.animation.the_prowler": {
+            "initial_state" : "default",
+              "states": {
+                "default": {
+                  "transitions": [
+                      // {"death":"query.mark_variant==100"},
+                      {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                      {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                      {"wake":"query.mark_variant==10 && query.mark_variant!=100"},
+                  
+                    { "attack": "query.mark_variant==200 " }
+                  ]
+                },
+                "wake": {
+                  "animations": [ "wake" ],
+                  "transitions": [
+                    { "default":"query.mark_variant!=10" }
+                  ]
+                },
+                "attack": {
+                  "animations": [ "attack" ],
+                  "transitions": [
+                    { "default": "query.mark_variant!=200" }
+                  ]
+                },
+                // "death": {
+                //   "animations": [ "death" ],
+                //   "transitions": [
+                //       {"default":"query.mark_variant==0"}
+                //   ]
+                // },
+                "skill1": {
+                  "animations": [ "attack1" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=1"}
+                  ]
+                },
+                "skill2": {
+                  "animations": [ "attack2" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=2"}
+                  ]
+                }
+              }
+            },
+        "controller.animation.ender_guardian": {
+          "initial_state" : "default",
+            "states": {
+              "default": {
+          
+                "transitions": [
+                  {"death":"query.mark_variant==100"},
+
+                    {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                    {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                    {"skill3":"query.mark_variant==3 && query.mark_variant!=100"},
+                    {"skill4":"query.mark_variant==4 && query.mark_variant!=100"},
+                  
+                    {"skill5":"query.mark_variant==5 && query.mark_variant!=100"},
+                    {"skill6":"query.mark_variant==6 && query.mark_variant!=100"},
+                    {"skill7":"query.mark_variant==7 && query.mark_variant!=100"},
+                    {"skill8":"query.mark_variant==8 && query.mark_variant!=100"},
+                    {"skill9":"query.mark_variant==9 && query.mark_variant!=100"},
+
+                    {"skill10":"query.mark_variant==10 && query.mark_variant!=100"},
+
+
+
+                
+                  { "attack": " math.random(0, 1)<=0.5 && query.mark_variant==200 && query.mark_variant!=100" },
+                  { "attack_1": " math.random(0, 1)>0.5 && query.mark_variant==200 && query.mark_variant!=100" }
+  
+                ]
+              },
+              "attack": {
+                
+                "animations": [
+                   "attack"],
+                "transitions": [
+                  { "default": "query.mark_variant!=200 " }
+                ]
+              },
+              "attack_1": {
+                
+                "animations": [
+                   "attack_1"],
+                "transitions": [
+                  { "default": "query.mark_variant!=200 " }
+                ]
+              },
+              "death": {
+                "animations": [ "death" ],
+                "transitions": [
+                    {"default":"query.mark_variant==0"}
+                ]
+              },
+              "skill1": {
+                "animations": [ "attack1" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=1"}
+                ]
+              },
+              "skill9": {
+                "animations": [ "attack9" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=9"}
+                ]
+              },
+              "skill10": {
+                "animations": [ "attack10" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=10"}
+                ]
+              },
+              "skill6": {
+                "animations": [ "attack6" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=6"}
+                ]
+              },
+              "skill7": {
+                "animations": [ "attack7" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=7"}
+                ]
+              },
+              "skill8": {
+                "animations": [ "attack8" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=8"}
+                ]
+              },
+              "skill2": {
+                "animations": [ "attack2" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=2"}
+                ]
+              },"skill3": {
+                "animations": [ "attack3" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=3"}
+                ]
+              },"skill4": {
+                "animations": [ "attack4" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              },
+              "skill5": {
+                "animations": [ "attack5" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=5"}
+
+                    
+                ],
+              "blend_transition": 0.3
+              }
+            }
+          },
+          "controller.animation.ancient_remnant": {
+            "initial_state" : "default",
+              "states": {
+                "default": {
+                  "on_entry": [
+                    "variable.random_interval = math.random(0, 1);"
+                  ],
+                  "transitions": [
+                    {"death":"query.mark_variant==100"},
+                      {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                      {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                      {"skill3":"query.mark_variant==3 && query.mark_variant!=100"},
+                      {"skill4":"query.mark_variant==4 && query.mark_variant!=100"},
+                      {"skill5":"query.mark_variant==5 && query.mark_variant!=100"},
+                      {"skill6":"query.mark_variant==6 && query.mark_variant!=100"},
+                      {"skill7":"query.mark_variant==7 && query.mark_variant!=100"},
+                      // {"skill8":"query.mark_variant==8 && query.mark_variant!=100"},
+                    { "attack": "query.mark_variant==200 && query.mark_variant!=100 " }
+
+    
+                  ]
+                },
+                "attack": {
+                  "animations": [ "attack" ],
+                  "transitions": [
+                    { "default": "query.mark_variant!=200 " }
+                  ]
+                },
+                "attack_0": {
+                  "animations": [ "attack_0" ],
+                  "transitions": [
+                    { "default": "query.mark_variant!=200 " }
+                  ]
+                },
+                "death": {
+                  "animations": [ "death" ],
+                  "transitions": [
+                      {"default":"query.mark_variant==0"}
+                  ]
+                },
+                "skill1": {
+                  "animations": [ "attack1" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=1"}
+                  ]
+                },
+                "skill6": {
+                  "animations": [ "attack6" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=6"}
+                  ]
+                },
+                "skill7": {
+                  "animations": [ "attack7" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=7"}
+                  ]
+                },
+                // "skill8": {
+                //   "animations": [ "attack8" ],
+                //   "transitions": [
+                //       {"default":"query.mark_variant!=8"}
+                //   ]
+                // },
+                "skill2": {
+                  "animations": [ "attack2" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=2"}
+                  ]
+                },"skill3": {
+                  "animations": [ "attack3" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=3"}
+                  ]
+                },"skill4": {
+                  "animations": [ "attack4" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=4"}
+                  ]
+                },
+                "skill5": {
+                  "animations": [ "attack5" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=5"}
+                  ]
+                }
+              }
+            },
+      "controller.animation.the_baby_leviathan": {
+        "initial_state" : "default",
+          "states": {
+            "default": {
+              "transitions": [
+                  {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+              
+
+                { "attack": "query.mark_variant==200" }
+
+              ]
+            },
+            "attack": {
+              "animations": [ "attack" ],
+              "transitions": [
+                { "default": "query.mark_variant!=200" }
+              ]
+            },
+            "skill1": {
+              "animations": [ "attack1" ],
+              "transitions": [
+                  {"default":"query.mark_variant!=1"}
+              ]
+            }
+
+          }
+        },
+        "controller.animation.the_leviathan": {
+          "initial_state" : "default",
+            "states": {
+              "default": {
+                "transitions": [
+                  {"die":" query.mark_variant==100"},
+                    {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                    {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                    {"skill3":"query.mark_variant==3 && query.mark_variant!=100"},
+                    {"skill4_0":"query.mark_variant==4 && query.mark_variant!=100 &&math.mod(variable.life_time/1, 4)==0"},
+                    {"skill4_1":"query.mark_variant==4 && query.mark_variant!=100 &&math.mod(variable.life_time/1, 4)==1"},
+                    {"skill4_2":"query.mark_variant==4 && query.mark_variant!=100 &&math.mod(variable.life_time/1, 4)==2"},
+                    {"skill4_3":"query.mark_variant==4 && query.mark_variant!=100 &&math.mod(variable.life_time/1, 4)==3"},
+  
+                    {"skill5":"query.mark_variant==5 && query.mark_variant!=100"},
+                    {"skill6":"query.mark_variant==6 && query.mark_variant!=100"},
+                    {"skill7":"query.mark_variant==7 && query.mark_variant!=100"},
+                    {"skill8":"query.mark_variant==8 && query.mark_variant!=100"},
+                    {"skill9":"query.mark_variant==9 && query.mark_variant!=100"},
+                    {"skill10":"query.mark_variant==10 && query.mark_variant!=100"},
+                    {"skill11":"query.mark_variant==11 && query.mark_variant!=100"},
+  
+  
+                  { "attack": "query.mark_variant==200" }
+  
+                ]
+              },
+              "attack": {
+                "animations": [ "attack" ],
+                "transitions": [
+                  { "default": " query.mark_variant!=200" }
+                ]
+              },
+              "die": {
+                "animations": [ "die" ],
+                "transitions": [
+                    {"default":"query.mark_variant==0"}
+                ]
+              },
+              "skill1": {
+                "animations": [ "attack1" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=1"}
+                ]
+              },
+              "skill2": {
+                "animations": [ "attack2" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=2"}
+                ]
+              },"skill3": {
+                "animations": [ "attack3" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=3"}
+                ]
+              },"skill4_0": {
+                "animations": [ "attack4_0" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              },"skill4_1": {
+                "animations": [ "attack4_2" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              },"skill4_2": {
+                "animations": [ "attack4_1" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              },"skill4_3": {
+                "animations": [ "attack4_3" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              },
+              "skill5": {
+                "animations": [ "attack5" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=5"}
+                ]
+              },"skill6": {
+                "animations": [ "attack6" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=6"}
+                ]
+              },"skill7": {
+                "animations": [ "attack7" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=7"}
+                ]
+              },"skill8": {
+                "animations": [ "attack8" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=8"}
+                ]
+              },"skill9": {
+                "animations": [ "attack9" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=9"}
+                ]
+              },"skill10": {
+                "animations": [ "attack10" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=10"}
+                ]
+              },"skill11": {
+                "animations": [ "attack11" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=11"}
+                ]
+              }
+  
+            }
+          },
+        "controller.animation.netherite_monstrosity": {
+          "initial_state" : "default",
+            "states": {
+              "default": {
+                "transitions": [
+                  {"death":"query.mark_variant==100"},
+  
+                    {"skill1":"query.mark_variant==1 "},
+                    {"skill2":"query.mark_variant==4 "},
+                    {"skill3":"query.mark_variant==3 "},
+
+  
+                  { "attack": "query.mark_variant==200 " }
+  
+                ]
+              },
+              "attack": {
+                "animations": [ "attack" ],
+                "transitions": [
+                  { "default": "query.mark_variant!=200"  }
+                ]
+              },
+              "death": {
+                "animations": [ "death" ],
+                "transitions": [
+                    {"default":"query.mark_variant==0"}
+                ]
+              },
+              "skill1": {
+                "animations": [ "attack1" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=1"}
+                ]
+              },
+              "skill2": {
+                "animations": [ "attack2" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=4"}
+                ]
+              },
+              "skill3": {
+                "animations": [ "attack" ],
+                "transitions": [
+                    {"default":"query.mark_variant!=3"}
+                ]
+              }
+  
+            }
+          },
+          "controller.animation.amethyst_crab": {
+            "initial_state" : "default",
+              "states": {
+                "default": {
+                  "transitions": [
+                    {"death":"query.mark_variant==100"},
+                      {"skill1":"query.mark_variant==1 && query.mark_variant!=100"},
+                      {"skill2":"query.mark_variant==2 && query.mark_variant!=100"},
+                      {"skill3":"query.mark_variant==3 && query.mark_variant!=100"},
+                      {"skill4":"query.mark_variant==4 && query.mark_variant!=100"}
+    
+                  ]
+                },
+                "death": {
+                  "animations": [ "death" ],
+                  "transitions": [
+                      {"default":"query.mark_variant==0"}
+                  ]
+                },
+                "skill1": {
+                  "animations": [ "attack1" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=1"}
+                  ]
+                },
+                "skill2": {
+                  "animations": [ "attack2" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=2"}
+                  ]
+                },
+                "skill3": {
+                  "animations": [ "attack3" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=3"}
+                  ]
+                },
+                "skill4": {
+                  "animations": [ "attack4" ],
+                  "transitions": [
+                      {"default":"query.mark_variant!=4"}
+                  ]
+                }
+    
+              }
+            }
+      
+    }
+  }

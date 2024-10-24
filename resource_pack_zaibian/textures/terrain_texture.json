@@ -1,0 +1,153 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "jRuHGElm": {
+            "textures": "textures/blocks/miss_"
+        },
+        "zaibian:abyssal_egg": {
+            "textures": "textures/blocks/abyssal_egg1"
+        },
+        "zaibian:altar_of_abyss": {
+            "textures": "textures/blocks/altar_of_abyss1"
+        },
+        "zaibian:altar_of_amethyst": {
+            "textures": "textures/blocks/altar_of_amethyst1"
+        },
+        "zaibian:altar_of_fire": {
+            "textures": "textures/blocks/altar_of_fire_"
+        },
+        "zaibian:altar_of_void": {
+            "textures": "textures/items/altar_of_void1"
+        },
+        "zaibian:altarfire1": {
+            "textures": "textures/blocks/altar_of_fire/altarfire1"
+        },
+        "zaibian:ancient_desert_stele": {
+            "textures": "textures/blocks/ancient_desert_stele"
+        },
+        "zaibian:chiseled_purpur_block": {
+            "textures": "textures/blocks/chiseled_purpur_block"
+        },
+        "zaibian:chiseled_stone_brick_pillar": {
+            "textures": "textures/blocks/chiseled_stone_brick_pillar"
+        },
+        "zaibian:chiseled_stone_brick_pillar_top": {
+            "textures": "textures/blocks/chiseled_stone_brick_pillar_top"
+        },
+        "zaibian:chorus_planks": {
+            "textures": "textures/blocks/chorus_planks"
+        },
+        "zaibian:chorus_slab": {
+            "textures": "textures/blocks/abyssal_egg1"
+        },
+        "zaibian:chorus_stem": {
+            "textures": "textures/blocks/chorus_stem"
+        },
+        "zaibian:custom_dirt": {
+            "textures": "textures/blocks/custom_dirt"
+        },
+        "zaibian:dungeon_block": {
+            "textures": "textures/blocks/dungeon_block"
+        },
+        "zaibian:emp": {
+            "textures": "textures/blocks/emp1"
+        },
+        "zaibian:end_stone_teleport_trap_bricks_off": {
+            "textures": "textures/blocks/end_stone_teleport_trap_bricks_off"
+        },
+        "zaibian:enderite_block": {
+            "textures": "textures/blocks/enderite_block"
+        },
+        "zaibian:ignis_tick": {
+            "textures": "textures/blocks/nether_brick"
+        },
+        "zaibian:ignitium_block": {
+            "textures": "textures/blocks/ignitium_block"
+        },
+        "zaibian:mechanical_fusion_anvil": {
+            "textures": "textures/items/mechanical_fusion_anvil"
+        },
+        "zaibian:melting_netherrack_0": {
+            "textures": "textures/blocks/melting_netherrack_0"
+        },
+        "zaibian:melting_netherrack_1": {
+            "textures": "textures/blocks/melting_netherrack_1"
+        },
+        "zaibian:melting_netherrack_2": {
+            "textures": "textures/blocks/melting_netherrack_2"
+        },
+        "zaibian:melting_netherrack_3": {
+            "textures": "textures/blocks/melting_netherrack_3"
+        },
+        "zaibian:miss": {
+            "textures": "textures/blocks/miss"
+        },
+        "zaibian:netherite_monstrosity_tick": {
+            "textures": "textures/blocks/enchanting_table_bottom"
+        },
+        "zaibian:obsidian_explosion_trap_bricks_off": {
+            "textures": "textures/blocks/obsidian_explosion_trap_bricks_off"
+        },
+        "zaibian:polished_end_stone": {
+            "textures": "textures/blocks/polished_end_stone"
+        },
+        "zaibian:polished_sandstone": {
+            "textures": "textures/blocks/polished_sandstone"
+        },
+        "zaibian:purpur_void_rune_trap_block_off": {
+            "textures": "textures/blocks/purpur_void_rune_trap_block_off"
+        },
+        "zaibian:sandstone_falling_trap": {
+            "textures": "textures/blocks/sandstone_falling_trap"
+        },
+        "zaibian:sandstone_ignite_trap_top_off": {
+            "textures": "textures/blocks/sandstone_ignite_trap_top_off"
+        },
+        "zaibian:sandstone_ignite_trap_top_on": {
+            "textures": "textures/blocks/sandstone_ignite_trap_top_on"
+        },
+        "zaibian:sandstone_poison_dart_trap_front_off": {
+            "textures": "textures/blocks/sandstone_poison_dart_trap_front_off"
+        },
+        "zaibian:sandstone_poison_dart_trap_front_on": {
+            "textures": "textures/blocks/sandstone_poison_dart_trap_front_on"
+        },
+        "zaibian:sandstone_poison_dart_trap_off_left": {
+            "textures": "textures/blocks/sandstone_poison_dart_trap_off_left"
+        },
+        "zaibian:sandstone_poison_dart_trap_off_right": {
+            "textures": "textures/blocks/sandstone_poison_dart_trap_off_right"
+        },
+        "zaibian:sandstone_poison_dart_trap_on_left": {
+            "textures": "textures/blocks/sandstone_poison_dart_trap_on_left"
+        },
+        "zaibian:sandstone_poison_dart_trap_on_right": {
+            "textures": "textures/blocks/sandstone_poison_dart_trap_on_right"
+        },
+        "zaibian:stone_pillar": {
+            "textures": "textures/blocks/stone_pillar"
+        },
+        "zaibian:stone_pillar_1": {
+            "textures": "textures/blocks/stone_pillar_1"
+        },
+        "zaibian:stone_pillar_top": {
+            "textures": "textures/blocks/stone_pillar_top"
+        },
+        "zaibian:stone_tiles": {
+            "textures": "textures/blocks/stone_tiles"
+        },
+        "zaibian:void_infused_end_stone_bricks": {
+            "textures": "textures/blocks/void_infused_end_stone_bricks"
+        },
+        "zaibian:void_lantern_block": {
+            "textures": "textures/blocks/void_lantern_block"
+        },
+        "zaibian:void_stone": {
+            "textures": "textures/blocks/void_stone"
+        },
+        "zaibian:witherite_block": {
+            "textures": "textures/blocks/witherite_block"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

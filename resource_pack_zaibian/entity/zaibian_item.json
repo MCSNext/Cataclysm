@@ -1,0 +1,60 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zaibian:item",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/displaystand/toum"
+			},
+			"geometry": {
+				"default": "geometry.displaystand_test"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.time_offset_displaystand = Math.random(0, 100000);",
+					"variable.add = -0.025;",
+					"variable.ty = Math.random(-1.5, 1.5);"
+
+
+				  ],
+				  "pre_animation": [
+					"variable.ty=variable.ty+variable.add;",
+					"variable.add=variable.ty<-1.5 ?  0.025:variable.add;",
+					"variable.add=variable.ty>1.5 ?  -0.025:variable.add;"
+
+
+
+            
+                ],
+				"animate": [
+					{
+						"action": "query.mark_variant == 1"
+					},
+					{
+						"wea": "query.skin_id == 1"
+					},
+					{
+						"items": "query.skin_id == 2"
+					},
+					{
+						"blocks": "query.skin_id == 3"
+					}
+				]
+			},
+			"animations": {
+				"wea": "animation.displaystand_test.wea",
+				"items": "animation.displaystand_test.items",
+				"blocks": "animation.displaystand_test.blocks",
+				"action": "animation.displaystand_test.action"
+			},
+			"render_controllers": [
+				"controller.render.cow"
+			],
+			"enable_attachables": true
+			
+		}
+	}
+}

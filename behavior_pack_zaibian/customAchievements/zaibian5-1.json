@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/items/remnant_skull",
+    "goal_details": {
+        "entity_identifier": "zaibian:ancient_remnant",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z6-1",
+    "node_description": "唤醒并击败远古遗魂",
+    "parent_node": "z6",
+    "title": "死亡自有来路",
+    "type": "sub_node",
+    "unfinished_icon": "textures/items/remnant_skull",
+    "window_background": ""
+}

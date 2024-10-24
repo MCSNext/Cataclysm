@@ -1,0 +1,56 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.deepling.attak_near",
+                "deepling.attack": "controller.animation.deepling.attack",
+                "deepling.range_attack": "controller.animation.deepling.range_attack",
+                "look_at_target": "animation.the_baby_leviathan.look_at_target",
+                "look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+                "look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0",
+                "look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0",
+                "move": "animation.humanoid.move.v1.0",
+                "range_attack": "animation.deepling.attack_far",
+                "swimming": "animation.deepling.swim",
+                "use_item_progress": "animation.humanoid.use_item_progress.v1.0"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.deepling",
+                "default1": "geometry.deepling_1"
+            },
+            "identifier": "zaibian:deepling",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.drowned",
+                "controller.render.deepling_1"
+            ],
+            "scripts": {
+                "animate": [
+                    "deepling.range_attack",
+                    "deepling.attack",
+                    "look_at_target",
+                    "move",
+                    {
+                        "swimming": "variable.swim_amount > 0.0"
+                    }
+                ],
+                "initialize": [
+                    "variable.mode = 1;"
+                ],
+                "pre_animation": [
+                    "variable.mode = 1;",
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/deepling/deepling_1",
+                "default1": "textures/entity/deepling/deepling_layer"
+            }
+        }
+    }
+}

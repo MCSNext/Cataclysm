@@ -1,0 +1,67 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.625,
+                "width": 0.625
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+                "has_collision": false
+            },
+            "minecraft:projectile": {
+                "anchor": 1,
+                "crit_particle_on_hurt": true,
+                "destroyOnHurt": true,
+                "gravity": 0.05,
+                "hit_sound": "bullet.hit",
+                "homing": true,
+                "offset": [
+                    0,
+                    -0.1,
+                    0
+                ],
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 4,
+                        "knockback": true,
+                        "should_bounce": true
+                    },
+                    "mob_effect": {
+                        "amplifier": 1,
+                        "durationeasy": 120,
+                        "durationhard": 120,
+                        "durationnormal": 120,
+                        "effect": "levitation"
+                    },
+                    "particle_on_hit": {
+                        "on_other_hit": true,
+                        "particle_type": "largeexplode"
+                    },
+                    "remove_on_hit": {
+
+                    }
+                },
+                "power": 1.6,
+                "uncertainty_base": 16,
+                "uncertainty_multiplier": 4
+            }
+        },
+        "description": {
+            "identifier": "zaibian:qianbei",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "runtime_identifier": "minecraft:shulker_bullet"
+        },
+        "events": {
+
+        }
+    }
+}

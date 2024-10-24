@@ -1,0 +1,116 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "zaibian:item",
+        "is_experimental": false,
+        "is_spawnable": false,
+        "is_summonable": true
+      },
+      "component_groups": {
+        "disp_wea": {
+          "minecraft:skin_id": {
+            "value": 1
+          }
+        },
+        "disp_items": {
+          "minecraft:skin_id": {
+            "value": 2
+          }
+        },
+        "disp_blocks": {
+          "minecraft:skin_id": {
+            "value": 3
+          }
+        },
+        "dips_action":{
+          "minecraft:mark_variant": {
+            "value": 1
+          }
+        },
+        "remove_dips_action":{
+          "minecraft:mark_variant": {
+            "value": 0
+          }
+        }
+      },
+  
+      "components": {
+        "minecraft:skin_id": {
+          "value": 1
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "all",
+            "deals_damage": false
+          }
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        // "minecraft:timer": { //用于重复计时
+        //   "time": [
+        //     1.0,
+        //     1.0
+        //   ],
+        //   "time_down_event": {
+        //     "event": "disp_remove"
+        //   }
+        // },
+   
+        "minecraft:physics": {
+
+        },
+        "minecraft:nameable": {
+          "allowNameTagRenaming": false
+        },
+        "minecraft:persistent": {},
+        "minecraft:collision_box": {
+          "width": 0.0,
+          "height": 0.0
+        }
+      },
+      "events": {
+        "disp_wea":{
+          "add":{
+            "component_groups":[
+              "disp_wea"
+            ]
+          }
+        },
+        "disp_items":{
+          "add":{
+            "component_groups":[
+              "disp_items"
+            ]
+          }
+        },
+        "disp_blocks":{
+          "add":{
+            "component_groups":[
+              "disp_blocks"
+            ]
+          }
+        },
+        "dips_action":{
+          "add":{
+            "component_groups":[
+              "dips_action"
+            ]
+          }
+        },
+        "remove_dips_action":{
+          "add":{
+            "component_groups":[
+              "remove_dips_action"
+            ]
+          }
+        },
+        "disp_remove":{}
+      }
+    }
+  }

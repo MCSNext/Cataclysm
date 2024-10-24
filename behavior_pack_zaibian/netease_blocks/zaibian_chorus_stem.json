@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": 2.0,
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "hatchet",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:chorus_stem",
+            "register_to_creative_menu": true
+        }
+    }
+}

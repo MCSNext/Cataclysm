@@ -1,0 +1,510 @@
+{
+  "format_version":"1.8.0",
+  "render_controllers": {
+    "controller.render.laser_gatling": {
+  
+      "geometry": "Geometry.laser_gatling",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.laser_gatling" ]
+    },
+  
+    "controller.render.zy_wq": {
+      "arrays": {
+        "geometries":{
+					"Array.geos":["Geometry.default", "Geometry.default3"]
+				}
+      },
+      "geometry": "c.item_slot == 'main_hand' ? Geometry.default : Geometry.default3",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "texture.default", "texture.enchanted" ]
+    },
+    "controller.render.bulwark_of_the_flame": {
+      "arrays": {
+        "geometries":{
+					"Array.geos":["Geometry.default", "Geometry.default1"]
+				}
+      },
+      "geometry": "Array.geos[variable.geo ]",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "texture.default", "texture.enchanted" ]
+    },
+    "controller.render.the_leviathan": {
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default1", "Texture.default2"]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Array.textures[query.variant]"]
+    },
+    "controller.render.the_leviathan1": {
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default1_1", "Texture.default2_1"]
+				}
+      },
+      "geometry": "Geometry.default1",
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier": "(query.variant? 1:(query.mark_variant!=0 && query.mark_variant!=2&& query.mark_variant!=4? (variable.life_time1<120 ? math.mod(variable.life_time1/1, 120)/120:1) : variable.end_time/60))",
+      "ignore_lighting": true,
+      "textures": ["Array.textures[query.variant]"]
+    },
+
+    "controller.render.ignis": {
+      "arrays": {
+        "textures":{
+					"Array.textures":[
+            "Texture.default0_0",
+           "Texture.default0_1", 
+           "Texture.default0_2",
+           "Texture.default0_3", 
+           "Texture.default0_4", 
+           "Texture.default0_5", 
+           "Texture.default0_6", 
+           "Texture.default0_7"
+          ]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": [  "Array.textures[query.anim_time * 10]"]
+    },
+    "controller.render.ignis1": {
+      "arrays": {
+        "textures":{
+					"Array.textures":[
+            "Texture.default1_0",
+           "Texture.default1_1", 
+           "Texture.default1_2",
+           "Texture.default1_3", 
+           "Texture.default1_4", 
+           "Texture.default1_5", 
+           "Texture.default1_6", 
+           "Texture.default1_7"
+          ]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Array.textures[query.anim_time * 10]"]
+    },
+    "controller.render.ignis2": {
+      "arrays": {
+        "textures":{
+					"Array.textures":[
+            "Texture.default2_0",
+           "Texture.default2_1", 
+           "Texture.default2_2"
+ 
+          ]
+				}
+      },
+      "geometry": "Geometry.default1",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Array.textures[query.mod.bfb]"]
+    },
+
+    "controller.render.ancient_remnant": {
+      "part_visibility": [
+        {
+          "xainglian1": "query.variant>=1"
+        },
+        {
+          "xainglian3": "query.variant>=1"
+        },
+        {
+          "xainglian2": "query.variant>=1"
+        }
+      ],
+
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1", "Texture.default1"]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.ancient_remnant1": {
+
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1", "Texture.default1"]
+				}
+      },
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier": 1,
+      "ignore_lighting": true,
+      "geometry": "Geometry.default1",
+      "textures": ["Texture.default1"]
+    },
+
+    "controller.render.the_harbinger": {
+      "part_visibility": [
+        {
+          "xiajie": "query.variant || query.mark_variant==10"
+        }
+      ],
+  
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1", "Texture.default1"]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.the_harbinger1": {
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1", "Texture.default1"]
+				}
+      },
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "uv_anim": {
+        "offset": [
+          "(1) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.01 : 0.0",
+          "(1) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.01 : 0.0"
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "light_color_multiplier": 1.1,
+      "ignore_lighting": true,
+
+      "textures": ["Texture.default1"]
+    },
+    
+    "controller.render.the_harbinger2": {
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier": 1.5,
+      "ignore_lighting": true,
+      "textures": ["Texture.default2"]
+    },
+    "controller.render.deepling_1": {
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier": " math.mod(query.life_time/1, 4)<1.5 ? math.mod(query.life_time/1, 4):3-math.mod(query.life_time/1, 4) ",
+      "ignore_lighting": true,
+      "textures": ["Texture.default1"]
+    },
+    "controller.render.tidal_claws": {
+      "geometry": "Geometry.default1",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default1"]
+    },
+    "controller.render.coral_spear": {
+      "geometry": "variable.mode ? Geometry.default1 : Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.soulian": {
+      "geometry": "Geometry.default1",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default1"]
+    },
+    
+    "controller.render.netherite_monstrosity": {
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier":"query.mod.ling==0 ? 0:1.5",
+      "ignore_lighting": true,
+      "textures": ["Texture.default1"]
+    },
+    "controller.render.netherite_monstrosity1": {
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier":"variable.ling>1.5 ? 1.5:variable.ling",
+      "ignore_lighting": true,
+      "textures": ["Texture.default1"]
+    },
+    "controller.render.laser_beam": {
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier": 1.5,
+      "ignore_lighting": true,
+      "textures": ["Texture.default"]
+    },
+    "controller.render.abyssal_egg1": {
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+  
+      ],
+      // "overlay_color": {
+      //   "r": 1.0,
+      //   "g": 1.0,
+      //   "b": 1.0,
+      //   "a": 1.0
+      // },
+      // "light_color_multiplier": 0.9,
+      // "ignore_lighting": false,
+      "textures": ["Texture.default2"]
+    },
+    "controller.render.abyssal_egg": {
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default1"
+        }
+  
+      ],
+      // "overlay_color": {
+      //   "r": 1.0,
+      //   "g": 1.0,
+      //   "b": 1.0,
+      //   "a": 1.0
+      // },
+      // "light_color_multiplier": 0.9,
+      // "ignore_lighting": false,
+      "textures": ["Texture.default1"]
+    },
+    "controller.render.endermaptera": {
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.ender_guardian1": {
+      "part_visibility": [
+        {
+          "pio": "!query.variant"
+        }
+      ],
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1", "Texture.default1"]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.ignited_revenant": {
+      "part_visibility": [
+        {
+          "bone1_1": "query.mod.revenantq",
+          "bone1_2": "query.mod.revenantq",
+          "bone1_3": "query.mod.revenantq"
+
+        },
+        {
+          "bone2_1": "query.mod.revenantz",
+          "bone2_2": "query.mod.revenantz",
+          "bone2_3": "query.mod.revenantz"
+        },
+        {
+          "bone3_1": "query.mod.revenanth",
+          "bone3_2": "query.mod.revenanth",
+          "bone3_3": "query.mod.revenanth"
+        },
+        {
+          "bone4_1": "query.mod.revenanty",
+          "bone4_2": "query.mod.revenanty",
+          "bone4_3": "query.mod.revenanty"
+        }
+      ],
+      "arrays": {
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1", "Texture.default1"]
+				}
+      },
+      "geometry": "Geometry.default",
+      "materials": [{"*":"Material.default"}],
+      "textures": ["Array.textures[query.variant]"]
+    },
+    "controller.render.ignited_revenant1": {
+      "geometry": "Geometry.default1",
+      "part_visibility": [
+        {
+          "bone1_1": "query.mod.revenantq",
+          "bone1_2": "query.mod.revenantq",
+          "bone1_3": "query.mod.revenantq"
+
+        },
+        {
+          "bone2_1": "query.mod.revenantz",
+          "bone2_2": "query.mod.revenantz",
+          "bone2_3": "query.mod.revenantz"
+        },
+        {
+          "bone3_1": "query.mod.revenanth",
+          "bone3_2": "query.mod.revenanth",
+          "bone3_3": "query.mod.revenanth"
+        },
+        {
+          "bone4_1": "query.mod.revenanty",
+          "bone4_2": "query.mod.revenanty",
+          "bone4_3": "query.mod.revenanty"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier": 1,
+      "ignore_lighting": true,
+      "textures": ["Texture.default1"]
+    },
+    "controller.render.ignis_dun": {
+      "arrays": {
+        "geometries":{
+					"Array.geos":["Geometry.default", "Geometry.default", "Geometry.default1"]
+				},
+        "textures":{
+					"Array.textures":["Texture.default", "Texture.default1"]
+				}
+      },
+      "geometry": "Array.geos[query.variant ]",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "Array.textures[query.variant]", "texture.enchanted" ]
+    }
+  }
+}

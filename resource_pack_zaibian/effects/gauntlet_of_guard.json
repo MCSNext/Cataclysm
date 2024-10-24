@@ -1,0 +1,48 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "1.0"
+        },
+        "direction": {
+            "max": "1.0 1.0 1.0",
+            "min": "-1.0 -1.0 -1.0",
+            "value": "Inwards"
+        },
+        "emissionrate": {
+            "max": "5.0",
+            "min": "2.0"
+        },
+        "emitterScaleCurve": [
+
+        ],
+        "emitterscale": [
+
+        ],
+        "emittersize": {
+            "value": "3.0 3.0 3.0"
+        },
+        "emittertype": {
+            "value": "Sphere"
+        },
+        "enablecolor": {
+            "enable": "false"
+        },
+        "numparticles": {
+            "value": "40"
+        },
+        "relative": {
+            "enable": "false"
+        },
+        "texture": {
+            "ani": {
+                "fps": "10",
+                "name": "textures/sfxs/xy_starry_armor_jblgh",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/xy_starry_armor_jblgh"
+        },
+        "thickness": {
+            "value": "0.0"
+        }
+    }
+}

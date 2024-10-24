@@ -1,0 +1,77 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.the_prowler.attack",
+
+                "attack1": "animation.the_prowler.jineng",
+                "attack2": "animation.the_prowler.fire",
+
+                "controller.attack": "controller.animation.the_prowler",
+
+                "sleep": "animation.the_prowler.sleep",
+                "wake": "animation.the_prowler.qdong",
+
+                "idle": "animation.the_prowler.idle",
+
+
+                "injure0": "animation.the_prowler.injure",
+
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+                "move": "animation.the_prowler.walk"
+            },
+            "sound_effects": {
+                "prowler_idle": "prowler_idle",
+                "prowler_saw_spin_attack": "prowler_saw_spin_attack",
+                "rocket_launch": "rocket_launch",
+
+                "prowler_saw_attack": "prowler_saw_attack"
+
+            },
+            "geometry": {
+                "default": "geometry.the_prowler",
+                "default1": "geometry.the_prowler1"
+            },
+            "identifier": "zaibian:the_prowler",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.the_harbinger",
+                "controller.render.the_prowler"
+            ],
+            "scripts": {
+                "initialize": [
+                    "variable.ling = query.variant==1 ? 1  : 0;"
+                ],
+                "pre_animation": [
+                    "variable.ling = query.mark_variant==10 ? variable.ling+ 0.03  : variable.ling;"
+
+                ],
+                "animate": [
+                    {
+                        "look_at_target1": "query.mark_variant!=100"
+                    },
+                    {
+                        "move": "query.modified_move_speed>0.1 && query.variant==1&& query.mark_variant!=100&& query.mark_variant!=10"
+                    },
+                    {
+                    "idle":"query.variant==1"
+                    },
+                    {
+                        "sleep": " query.variant==0&& query.mark_variant!=100&& query.mark_variant!=10"
+                    },
+                
+                    
+                    "controller.attack"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/factory/the_prowler",
+                "default1": "textures/entity/factory/the_prowler_layer"
+            }
+        }
+    }
+}

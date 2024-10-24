@@ -1,0 +1,85 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.ancient_remnant.konglongsiyao",
+                "attack1": "animation.ancient_remnant.liedizhongta",
+                "attack2": "animation.ancient_remnant.zhendangchouji",
+                "attack3": "animation.ancient_remnant.shabaonuhou",
+                "attack4": "animation.ancient_remnant.fushiluozhen",
+                "attack5": "animation.ancient_remnant.xunmengchongfeng",
+                "attack6": "animation.ancient_remnant.shuaiweihengsao",
+                "attack7": "animation.ancient_remnant.liedizhongta2",
+                "attack_0": "animation.ancient_remnant.konglongsiyao2",
+                "controller.attack": "controller.animation.ancient_remnant",
+                "death": "animation.ancient_remnant.die",
+                "erjieduan": "animation.ancient_remnant.erjieduan",
+                "idle": "animation.ancient_remnant.idle",
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+                "move": "animation.ancient_remnant.walk",
+                "qidong": "animation.ancient_remnant.qidong",
+                "sleep": "animation.ancient_remnant.sleep"
+            },
+            "geometry": {
+                "default": "geometry.ancient_remnant",
+                "default1": "geometry.ancient_remnant1"
+            },
+            "identifier": "zaibian:ancient_remnant",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "particle_effects": {
+                "chuidi": "zaibian:chuidi"
+            },
+            "render_controllers": [
+                "controller.render.ancient_remnant",
+                {
+                    "controller.render.ancient_remnant1": "query.variant==2  "
+                }
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "look_at_target1": " query.mark_variant!=100&& query.mark_variant==0  && query.variant!=0"
+                    },
+                    {
+                        "move": "query.modified_move_speed>0.1 && query.mark_variant!=100 && query.mark_variant==0  && query.variant!=0"
+                    },
+                    {
+                        "idle": "query.modified_move_speed<0.1 && query.mark_variant!=100  && query.mark_variant==0  && query.variant!=0"
+                    },
+                    {
+                        "sleep": " query.mark_variant!=100 && query.variant==0"
+                    },
+                    {
+                        "qidong": " query.mark_variant==300"
+                    },
+                    {
+                        "erjieduan": " query.mark_variant!=100 && query.mark_variant==1000"
+                    },
+                    "controller.attack"
+                ],
+                "pre_animation": [
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "sound_effects": {
+                "remnant_bite": "remnant_bite",
+                "remnant_breathing": "remnant_breathing",
+                "remnant_charge_roar": "remnant_charge_roar",
+                "remnant_death": "remnant_death",
+                "remnant_roar": "remnant_roar",
+                "remnant_shockwave": "remnant_shockwave",
+                "remnant_stomp": "remnant_stomp",
+                "remnant_tail_slam": "remnant_tail_slam",
+                "remnant_tail_swing": "remnant_tail_swing"
+            },
+            "textures": {
+                "default": "textures/entity/ancient_remnant/ancient_remnant",
+                "default1": "textures/entity/ancient_remnant/ancient_remnant_layer"
+            }
+        }
+    }
+}

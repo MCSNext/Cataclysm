@@ -1,0 +1,1 @@
+{"pools": [{"rolls": 1, "entries": [{"functions": [{"count": {"max": 1, "min": 1}, "function": "set_count"}, {"function": "set_data", "data": 0}], "type": "item", "name": "zaibian:chorus_stairs_0", "weight": 1}]}]}

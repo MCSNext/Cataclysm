@@ -1,0 +1,445 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "init":{
+                "minecraft:on_target_acquired": {
+                    "event": "skill_use10",
+                    "target": "self"
+                }
+            },
+            "minecraft:melee_mode": {
+                "minecraft:attack": {
+                    "damage": 0
+                },
+                "minecraft:behavior.delayed_attack": {
+                    "attack_duration": 1.5,
+                    "hit_delay_pct": 0,
+                    "priority": 0,
+                    "reach_multiplier": 1.8,
+                    "speed_multiplier": 1.2,
+                    "track_target": true
+                }
+            },
+            "minecraft:ranged_mode": {
+                "minecraft:attack": {
+                    "damage": 0
+                },
+                "minecraft:behavior.delayed_attack": {
+                    "attack_duration":1,
+                    "hit_delay_pct": 0,
+                    "priority": 0,
+                    "reach_multiplier": 15,
+                    "speed_multiplier": 0,
+                    "track_target": true
+                }
+            },
+            "romve_skill": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "skill_use1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "skill_use10": {
+                "minecraft:mark_variant": {
+                    "value": 10
+                },
+                "minecraft:timer": {
+                    "looping": false,
+                    "randomInterval": true,
+                    "time": [
+                        0.625,
+                        0.625
+                    ],
+                    "time_down_event": {
+                        "event": "start"
+                    }
+                }
+            },
+            "skill_use2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "skill_use3": {
+                "minecraft:mark_variant": {
+                    "value": 3
+                }
+            },
+            "start": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "max_dist": 15
+                        }
+                    ],
+                    "must_reach": true,
+                    "must_see": true,
+                    "priority": 0,
+                    "within_radius": 15
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/zb_10.json",
+                    "slot_drop_chance": [
+                        {
+                          "slot": "slot.armor.chest",
+                          "drop_chance": 0.0
+                        },
+                        {
+                            "slot": "slot.armor.legs",
+                            "drop_chance": 0.0
+                          },
+                          {
+                            "slot": "slot.armor.feet",
+                            "drop_chance": 0.0
+                          },
+                          {
+                            "slot": "slot.armor.head",
+                            "drop_chance": 0.0
+                          }
+                      ]
+                },
+                "minecraft:target_nearby_sensor": {
+                    "inside_range": 4.0,
+                    "on_inside_range": {
+                        "event": "minecraft:switch_to_melee",
+                        "target": "self"
+                    },
+                    "on_outside_range": {
+                        "event": "minecraft:switch_to_ranged",
+                        "target": "self"
+                    },
+                    "outside_range": 6.0
+                },
+                "minecraft:damage_sensor": {
+                    "triggers": {
+                        "cause": "fall",
+                        "deals_damage": false
+                    }
+                },
+                
+                // "minecraft:attack": {
+                //     "damage": 0
+                // },
+                // "minecraft:behavior.delayed_attack": {
+                //     "attack_duration": 1.25,
+                //     "hit_delay_pct": 0,
+                //     "priority": 0,
+                //     "reach_multiplier": 3,
+                //     "speed_multiplier": 1,
+                //     "track_target": true
+                // },
+                "minecraft:behavior.look_at_player": {
+                    "look_distance": 6.0,
+                    "priority": 7,
+                    "probability": 0.02
+                },
+                "minecraft:behavior.move_towards_target": {
+                    "priority": 2,
+                    "speed_multiplier": 1,
+                    "within_radius": 32
+                },
+                "minecraft:behavior.random_look_around": {
+                    "priority": 8
+                },
+                "minecraft:behavior.random_stroll": {
+                    "priority": 6,
+                    "speed_multiplier": 1,
+                    "xz_dist": 16
+                },
+                "minecraft:mark_variant": {
+                    "value": 0
+                },
+                "minecraft:movement": {
+                    "value": 0.21
+                },
+                "minecraft:movement.basic": {
+
+                },
+                "minecraft:navigation.walk": {
+                    "avoid_damage_blocks": true,
+                    "avoid_water": true,
+                    "can_path_over_water": false
+                },
+                "minecraft:pushable": {
+                    "is_pushable": true,
+                    "is_pushable_by_piston": true
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        2.0,
+                        2.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                },
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "start_death": {
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            }
+        },
+        "components": {
+            "minecraft:balloonable": {
+
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "entity_types": {
+                    "filters": {
+                        "operator": "!=",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "creeper"
+                    }
+                },
+                "priority":0
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 15
+                    }
+                ],
+                "must_see": true,
+                "priority": 0,
+                "within_radius": 15
+            },
+            "minecraft:behavior.target_when_pushed": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "monster"
+                                },
+                                {
+                                    "operator": "!=",
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "creeper"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "percent_chance": 5.0,
+                "priority": 1
+            },
+            "minecraft:collision_box": {
+                "height":1,
+                "width": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? Math.Random(15,16) : 0"
+            },
+            "minecraft:fire_immune": {
+
+            },
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:health": {
+                "max": 150,
+                "value": 150
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {
+
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/the_prowler.json"
+            },
+            "minecraft:nameable": {
+
+            },
+            
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "zaibian",
+                    "zaibian_the_harbinger",
+
+                    "mob"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:the_prowler",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "skill_use":{
+                "add": {
+       
+                }
+            },
+            "romve_skill": {
+                "add": {
+                    "component_groups": [
+                        "romve_skill"
+                    ]
+                }
+            },
+            
+            "skill_use1": {
+                "add": {
+                    "component_groups": [
+                        "skill_use1"
+                    ]
+                }
+            },
+            "skill_use10": {
+                "add": {
+                    "component_groups": [
+                        "skill_use10"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "init"
+                    ]
+                }
+
+            },
+            "skill_use2": {
+                "add": {
+                    "component_groups": [
+                        "skill_use2"
+                    ]
+                }
+            },
+            "skill_use3": {
+                "add": {
+                    "component_groups": [
+                        "skill_use3"
+                    ]
+                }
+            },
+            "minecraft:switch_to_melee": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:melee_mode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minecraft:ranged_mode"
+                    ]
+                }
+            },
+            "minecraft:switch_to_ranged": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:ranged_mode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minecraft:melee_mode"
+                    ]
+                }
+            },
+            "start": {
+                "add": {
+                    "component_groups": [
+                        "start"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "skill_use10"
+                    ]
+                }
+            },
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "init"
+                    ]
+                }
+            },
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            }
+        }
+    }
+}

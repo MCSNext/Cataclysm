@@ -1,0 +1,31 @@
+
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "basic": "animation.altar_of_fire.default"
+            },
+            "geometry": {
+                "default": "geometry.emp"
+            },
+            "identifier": "zaibian:emp",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.item_sprite"
+            ],
+            "scripts": {
+                "animate": [
+                  "basic"
+                ]
+              }, 
+            "textures": {
+                "default": "textures/blocks/emp"
+        
+            }
+        }
+    }
+}
+          

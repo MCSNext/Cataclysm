@@ -1,0 +1,376 @@
+﻿{
+    "parent": "pages",
+    "icon":  "textures/items/recycle_book",
+    "title": "部分物品介绍",
+    "pages":[
+        {
+            "type": "textPage",
+            "content": ""
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "遗迹眼",
+            "content": "在空中飘浮2-3秒后，就会掉落变成可拾取的物品，或者在空中有1/6的几率碎掉。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:flame_eye",
+                    "data": 0
+                },
+                {
+                    "item": "zaibian:mech_eye",
+                    "data": 0
+                },
+                {
+                    "item": "zaibian:monstrous_eye",
+                    "data": 0
+                },
+                {
+                    "item": "zaibian:desert_eye",
+                    "data": 0
+                },
+                {
+                    "item": "zaibian:abyss_eye",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "珊瑚刀",
+            "content": "类似于三叉戟，可近战或远程投掷，远投投掷伤害也为10点",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:coral_bardiche",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "珊瑚矛",
+            "content": "类似于三叉戟，可近战或远程投掷，远投投掷伤害也为10点",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:coral_spear",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "沙暴瓶",
+            "content": "§6栏位：§e腰带§f\n可以变形为沙龙卷,将装备者变为沙龙卷并使其可以飞行一段时间",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:sandstorm_in_a_bottle",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "粘手套",
+            "content": "§6栏位：§e手套§f\n阻止骷髅狗头人的掠夺",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:sticky_gloves",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "沙漠项链",
+            "content": "手持该物品右击沉睡状态下的远古遗魂，可将其唤醒。获取方式破坏沙子有几率掉落",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:necklace_of_the_desert",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "遗魂头骨",
+            "content": "手持该物品右击可召唤一只未驯服的现世遗魂。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:remnant_skull",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "轮锯",
+            "content": "长按使用物品可以伤害前方的生物",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:meat_shredder",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "激光加特林",
+            "content": "手持时按住右键，以很快的速度持续向前发射激光并发出先驱者使用激光攻击的音效，激光会对被击中的生物造成4点,如果击中方块，会在被击中的面上留下火焰。发射激光会消耗1点耐久度。耐久度最低消耗至1点，之后可以使用背包中的红石粉重新恢复耐久度。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:laser_gatling",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "火焰壁垒",
+            "content": "通过合成获得,格挡时会使攻击者燃烧大约 5 秒。副手持有此盾牌时，\n按住 潜行+点击屏幕松开可以向前冲刺一段距离并伤害路径上的实体。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:shield",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "守卫者护手",
+            "content": "击败末影守卫之后的掉落物,主手手持时长按右键可以把周围的生物强制牵引过来，此时会降低玩家的移动速度。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:gauntlet_of_guard",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "炼狱锻锤",
+            "content": "强力的大锤，是下界合金巨兽的掉落物, 主手手持并潜行时长按屏幕可产生冲击波，对前方3格内的所有实体造成13点伤害，生命值在一半及以下时还可以使实体燃烧。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:infernal_forge",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "虚空核心",
+            "content": "由末影傀儡掉落，右击脚下的方块会在周围生成一圈虚空符文，右击其他方块会朝着对应的方向直线生成多个虚空符文。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:void_core",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "炎葬",
+            "content": "焰魔的巨剑，通过合成获得,长按屏幕3秒以充能，然后松开，一行火焰法阵将出现在你看向的地方，法阵先持续造成魔法伤害火焰魔法，片刻后爆炸并造成高额伤害。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:the_incinerator",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "壁垒护手",
+            "content": "机械融合砧合成，主手手持时长按右键几秒后完成蓄力，之后可以把周围的生物强制推开几格",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:gauntlet_of_bulwark",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "凋灵突击肩炮",
+            "content": "由先驱者掉落，手持时长按右键，经过短暂蓄力后松开即可向所朝方向发射一颗不受重力影响的凋灵飞弹",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:wither_assault_shoulder_weapon",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "虚空突击肩炮",
+            "content": "机械融合砧合成，手持时长按右键，经过短暂蓄力后松开即可向所朝方向发射一颗虚空榴弹",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:void_assault_shoulder_weapon",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "虚空锻锤",
+            "content": "机械融合砧合成，主手手持时对方块右击可向所朝方向召唤一片分五排出现的虚空符文。并且，它可以用作一把挖掘等级相当于下界合金镐的镐",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:void_forge",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "潮汐利爪",
+            "content": "可怕的利爪，是利维坦的掉落物，手持点击屏幕会发射自动追踪生物并攻击的潮汐触手，可攻击多个实体，手持长按右键会发射潮汐抓钩以作为抓钩使用，抓钩可以钩住方块或实体并将使用者迅速拉过去，松开右键后抓钩消失，潜行手持时发射的潮汐抓钩如果钩住实体，那么会把钩住的实体迅速拉向使用者",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:tidal_claws",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "深渊之卵",
+            "content": "由利维坦与幼年利维坦掉落，放置在世界约十分钟后会破裂并孵出幼年利维坦。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:abyssal_egg",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "紫水晶祭坛",
+            "content": "自然生成于沉没之城，手持物品右击可将物品放上去展示,玩家将紫水晶巨蟹的掉落物紫水晶蟹肉放入其中，祭坛会发出类似信标的光束，一段时间后放入的紫水晶蟹肉会转化为受祝福的紫水晶蟹肉，右键祭坛可将其取下。如果吃下就可以获得紫水晶祝福buff，有利于玩家与利维坦的战斗。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:altar_of_amethyst",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "电磁脉冲发射器",
+            "content": "生成、放置时是充能的状态，此时可通过给其施加红石信号来激活它，激活后会向周围发出红色圆环粒子，在圆环范围内的生物会受到特殊类型的伤害,使用后变为未充能的状态，可通过给它持续施加红石信号一段时间或让先驱者的死亡激光射接触到它来再次充能",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:emp",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "腾炎靴子",
+            "content": "可以让周围岩浆变成岩石，不在周围后会还原，岩浆状态为饱满时才会变成岩石",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:ignitium_boots",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "腾炎护腿",
+            "content": "穿戴者受到攻击将会让攻击者着火5秒",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:ignitium_leggings",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "腾炎头盔",
+            "content": "",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:ignitium_helmet",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "腾炎鞘翅胸甲",
+            "content": "机械融合砧合成，用途同鞘翅，但不会采用披风的图案。",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:ignitium_elytra_chestplate",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "花岩肩甲",
+            "content": "使用紫水晶巨蟹的掉落物紫水晶蟹壳制作而成。穿戴时潜行可以让穿戴者躲进地面（行进速度等同于潜行），躲在地里时并弹反来袭的箭矢。松开潜行键后花岩肩甲将会向周围射出8枚水晶尖刺",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:bloom_stone_pauldrons",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "恶兽头盔",
+            "content": "如果在穿戴着它的时候生命值下降至一半或以下，便会触发其技能：产生一次中型爆炸，将附近的生物推开并对其造成伤害，同时给予穿戴者 10 秒的骇人之恶效果",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:monstrous_helm",
+                    "data": 0
+                }
+            ]
+        },
+        {
+            "type": "highlightPage",
+            "subtitle": "紫珀唱片机",
+            "content": "目前只支持播放灾变唱片，唱片机为循环播放",
+            "info": "物品说明",
+            "itemData": [
+                {
+                    "item": "zaibian:miss",
+                    "data": 0
+                }
+            ]
+        }
+        
+    ]    
+}

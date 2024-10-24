@@ -1,0 +1,123 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+
+		"animation.fireball_i.init": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": ["query.life_time*250", 0, "query.life_time*200"]
+				}
+			}
+		},
+
+		"animation.humanoid.yins": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"bone5": {
+					"scale": 0
+				},
+				"body": {
+					"scale": 0
+				},
+				"waist": {
+					"scale": 0
+				},
+				"head": {
+					"scale": 0
+				},
+				"hat": {
+					"scale": 0
+				},
+				"rightArm": {
+					"scale": 0
+				},
+				"leftArm": {
+					"scale": 0
+				},
+				"rightLeg": {
+					"scale": 0
+				},
+				"leftLeg": {
+					"scale": 0
+				},
+				"helmet": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.jian.move": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": ["variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "harbinger_laser"
+				}
+			}
+		},
+		"animation.jian.hou": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "houjian"
+				}
+			}
+		},
+		"animation.jian.move3": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": ["variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.jian.move1": {
+			"loop": true,
+			"bones": {
+				"coral_spear": {
+					"rotation": ["90+variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.jian.move2": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"rotation": ["90+variable.target_x_rotation", "-variable.target_y_rotation", 0],
+					"scale": [1, "variable.time_z", 1]
+				},
+				"tidal_hook2": {
+					"rotation": ["90+variable.target_x_rotation", "-variable.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.the_baby_leviathan.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.jian.yanhua": {
+			"animation_length": 2,
+			"sound_effects": {
+				"0.0": {
+					"effect": "shoot"
+				},
+				"1.9583": {
+					"effect": "large_blast"
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "yanhua"
+				}
+			}
+		}
+	}
+}

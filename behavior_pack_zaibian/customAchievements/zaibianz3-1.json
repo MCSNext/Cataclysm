@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/ui/zaibian/ui_1",
+    "goal_details": {
+        "entity_identifier": "zaibian:ignis",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z4-1",
+    "node_description": "击败焰魔",
+    "parent_node": "z4",
+    "title": "燃尽之焰",
+    "type": "sub_node",
+    "unfinished_icon": "textures/ui/zaibian/ui_1",
+    "window_background": ""
+}

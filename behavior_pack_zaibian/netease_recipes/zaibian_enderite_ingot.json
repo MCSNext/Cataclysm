@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:enderite_ingot"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "zaibian:enderite_block"
+            }
+        },
+        "pattern": [
+            "A"
+        ],
+        "result": {
+            "count": 9,
+            "data": 0,
+            "item": "zaibian:enderite_ingot"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

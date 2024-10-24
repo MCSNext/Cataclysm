@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:coral_bardiche"
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:coral_bardiche",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:bulwark_of_the_flame_boss"
+        },
+        "description": {
+            "category": "Construction",
+            "identifier": "zaibian:bulwark_of_the_flame_boss",
+            "register_to_create_menu": true
+        }
+    }
+}

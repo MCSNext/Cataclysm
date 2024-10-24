@@ -1,0 +1,41 @@
+{
+    "particleeffect": {
+        "colorfade": [
+            {
+                "color": "0.6667 0.0000 1.0000 1.0000",
+                "time": "0.0%"
+            },
+            {
+                "color": "0.6667 0.0000 1.0000 1.0000",
+                "time": "100.0%"
+            }
+        ],
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "20.0",
+            "min": "20.0"
+        },
+        "numparticles": {
+            "value": "100000"
+        },
+        "particlesize": {
+            "max": "0.2 0.2",
+            "min": "0.2 0.2"
+        },
+        "pointFiltering": true,
+        "relative": {
+            "enable": "false"
+        },
+        "texture": {
+            "name": "textures/sfxs/custom_sun"
+        },
+        "timetolive": {
+            "max": "10.0",
+            "min": "10.0"
+        }
+    }
+}

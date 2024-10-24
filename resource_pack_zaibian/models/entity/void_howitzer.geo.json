@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.void_howitzer",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "void_howitzer",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-3, 5, -3], "size": [6, 6, 6], "uv": [32, 16]},
+						{"origin": [-8, 0, 0], "size": [16, 16, 0], "uv": [0, 32]},
+						{"origin": [0, 0, -8], "size": [0, 16, 16], "uv": [0, 0]},
+						{"origin": [-8, 8, -8], "size": [16, 0, 16], "uv": [-16, 0]}
+					],
+					"locators": {
+						"locator": [0, 8, 0]
+					}
+				}
+			]
+		}
+	]
+}

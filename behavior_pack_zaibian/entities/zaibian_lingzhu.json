@@ -1,0 +1,125 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.25,
+                "width": 0.25
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "fall",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_explosion",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "block_explosion",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_attack",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lightning",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "fire_tick",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lava",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "suffocation",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "override",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "contact",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "drowning",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "wither",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "projectile",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "fire",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lava",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "magma",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:projectile": {
+                "anchor": 2,
+                "gravity": 0.0,
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "angle_offset": 0.0,
+                "filter": "the_leviathan",
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 7,
+                        "filter": "the_leviathan",
+                        "knockback": true
+                    },
+                    "particle_on_hit": {
+                        "num_particles": 6,
+                        "on_entity_hit": true,
+                        "on_other_hit": true
+                    },
+                    "remove_on_hit": {
+
+                    }
+                },
+                "power": 1.5
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            }
+        },
+        "description": {
+            "identifier": "zaibian:lingzhu",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+
+        }
+    }
+}

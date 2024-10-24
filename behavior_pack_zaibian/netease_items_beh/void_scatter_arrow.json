@@ -1,0 +1,1 @@
+{"format_version": "1.10","minecraft:item": {"components":{"netease:projectile":"zaibian:void_scatter_arrow" },"description": {"custom_item_type": "projectile_item","category": "zaibian","identifier": "zaibian:void_scatter_arrow","register_to_create_menu": true}}}

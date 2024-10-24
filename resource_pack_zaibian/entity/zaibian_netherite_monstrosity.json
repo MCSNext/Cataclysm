@@ -1,0 +1,81 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "absorb": "animation.netherite_monstrosity.absorb",
+                "attack": "animation.netherite_monstrosity.attack",
+                "attack1": "animation.netherite_monstrosity.akt1",
+                "attack2": "animation.netherite_monstrosity.init1",
+                "controller.attack": "controller.animation.superior_slime.attack",
+                "death": "animation.netherite_monstrosity.death",
+                "idle": "animation.netherite_monstrosity.idle",
+                "init": "animation.netherite_monstrosity.init",
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+                "move": "animation.netherite_monstrosity.move",
+                "erjieduan": "animation.netherite_monstrosity.erjieduan",
+
+                "netherite_monstrosity": "controller.animation.netherite_monstrosity",
+                "wake": "animation.netherite_monstrosity.wake"
+            },
+            "geometry": {
+                "default": "geometry.netherite_monstrosity",
+                "default1": "geometry.netherite_monstrosity1"
+            },
+            "identifier": "zaibian:netherite_monstrosity",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "particle_effects": {
+                "close_di": "zaibian:close_di"
+            },
+            "render_controllers": [
+                "controller.render.endermaptera",
+                {
+                    "controller.render.netherite_monstrosity": "query.variant==1"
+                },
+                {
+                    "controller.render.netherite_monstrosity1": "query.mark_variant==10"
+                }
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "look_at_target1": "query.mark_variant!=100"
+                    },
+                    "netherite_monstrosity",
+                    {
+                        "move": "query.modified_move_speed>0.1 &&query.variant==1 && query.mark_variant!=100"
+                    },
+                    {
+                        "wake": "query.mark_variant==10 && query.variant==0&& query.mark_variant!=100"
+                    },
+                    {
+                        "init": "query.mark_variant!=10 && query.variant==0 && query.mark_variant!=100"
+                    },
+                    {
+                        "erjieduan": " query.variant==1 && query.mark_variant==1000"
+                    }
+                ],
+                "initialize": [
+                    "variable.ling = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.ling= (query.mark_variant==10? variable.ling+0.01:(query.variant==1?1.5:0) ) ;",
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "sound_effects": {
+                "monstrosityawaken": "monstrosityawaken",
+                "monstrositygrowl": "monstrositygrowl",
+
+                "monstrosityland": "random.explode"
+            },
+            "textures": {
+                "default": "textures/entity/netherite_monstrosity",
+                "default1": "textures/entity/netherite_monstrosity_layer"
+            }
+        }
+    }
+}

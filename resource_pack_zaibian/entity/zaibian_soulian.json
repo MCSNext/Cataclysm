@@ -1,0 +1,61 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.jian.move2"
+            },
+            "geometry": {
+                "default": "geometry.tidal_hook_chain",
+                "default1": "geometry.tidal_hook"
+
+            },
+            "identifier": "zaibian:soulian",
+            "materials": {
+                "default": "fireball"
+            },
+            "render_controllers": [
+                "controller.render.fireball",
+                "controller.render.soulian"
+
+            ],
+            "scripts": {
+                "initialize": [
+                    "variable.time_s = 0.0;",
+                    "variable.time_q = 0.0;",
+                    "variable.time_z = 0.0;",
+                    "variable.sd = 0.0;",
+                    "variable.target_y_rotation=0;",
+                    "variable.target_x_rotation=0;"
+                    
+
+                    
+                  
+                  ],
+                "animate": [
+                        "move"
+
+                ],
+                "pre_animation": [
+                    
+
+                    "variable.sd =  (query.mark_variant!=2 && variable.sd==0 ) || query.mark_variant==2  ? query.ground_speed : variable.sd ;",
+                    "variable.time_s = query.ground_speed>0 && (query.mark_variant==0 || query.mark_variant==1)  ? query.ground_speed/63 : -variable.sd/63;",
+                    "variable.time_z = variable.time_s+variable.time_q >0 ? variable.time_s+variable.time_q : 0;",
+                    "variable.time_q = variable.time_z ;",
+
+                    "variable.shake = query.shake_time - query.frame_alpha;",
+                    "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;",
+
+                    "variable.target_y_rotation=query.mark_variant==0 ? query.target_y_rotation :variable.target_y_rotation;",
+                    "variable.target_x_rotation= query.mark_variant==0 ?variable.shake_power - query.target_x_rotation : variable.target_x_rotation;"
+                ]
+            },
+            "textures": {
+                "default": "textures/items/tidal_hook_chain",
+                "default1": "textures/items/tidal_hook"
+
+            }
+        }
+    }
+}

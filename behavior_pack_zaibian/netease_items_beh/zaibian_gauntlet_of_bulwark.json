@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10.0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:cooldown": {
+                "category": "zaibian:gauntlet_of_bulwark",
+                "duration": 10
+            },
+            "netease:customtips": {
+                "value": "§2手持时长按右键几秒后可以把周围的生物强制推开几格并给予它们1秒的炽热烙印I效果"
+            },
+            "netease:weapon": {
+                "attack_damage": 11,
+                "enchantment": 20,
+                "level": 2,
+                "speed": 2,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:gauntlet_of_bulwark",
+            "register_to_create_menu": true
+        }
+    }
+}

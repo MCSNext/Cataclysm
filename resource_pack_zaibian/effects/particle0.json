@@ -1,0 +1,45 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "5.0"
+        },
+        "colorfade": [
+            {
+                "color": "1.0000 0.0000 0.0000 1.0000",
+                "time": "0.0%"
+            },
+            {
+                "color": "1.0000 0.0000 0.0000 1.0000",
+                "time": "100.0%"
+            }
+        ],
+        "constantforce": {
+            "value": "-20.0 0.0 0.0"
+        },
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "faceCameraMode": {
+            "value": "Direction"
+        },
+        "numparticles": {
+            "value": "1000"
+        },
+        "particlesize": {
+            "max": "1.0 3.0",
+            "min": "1.0 3.0"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "name": "textures/sfxs/custom_sun"
+        },
+        "timetolive": {
+            "max": "2.0",
+            "min": "2.0"
+        }
+    }
+}

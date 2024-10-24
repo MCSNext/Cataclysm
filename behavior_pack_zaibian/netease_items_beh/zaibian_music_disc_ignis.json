@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "魔界Symphony - God of Blaze"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:music_disc_ignis",
+            "register_to_create_menu": true
+        }
+    }
+}

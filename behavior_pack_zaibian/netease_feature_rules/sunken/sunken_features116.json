@@ -1,0 +1,45 @@
+
+                {
+                "format_version": "1.14.0",
+                "minecraft:feature_rules": {
+                    "conditions": {
+                        "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "==",
+                        "value": "overworld"
+                    }
+                    ]
+                }
+                ],
+                        "placement_pass": "after_sky_pass"
+                    },
+                    "description": {
+                        "identifier": "sunken_features116",
+                        "places_feature": "sunken_rules116"
+                    },
+                    "distribution": {
+                        "coordinate_eval_order": "xzy",
+                        "iterations": " (variable.originx+-176!=0 && variable.originz+-80!=640) &&math.mod(variable.originx+-176,640)==0&&math.mod(variable.originz+-80,640)==0&&query.is_biome(variable.originx+-176 , variable.originz+-80 , 24,41,43,45,47)?1:0",
+                        "scatter_chance": 100,
+                        "x": {
+                            "distribution": "uniform",
+                            "extent": [
+                                0,
+                                0
+                            ]
+                        },
+                        "y": 30,
+                        "z": {
+                            "distribution": "uniform",
+                            "extent": [
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                }
+            }
+            

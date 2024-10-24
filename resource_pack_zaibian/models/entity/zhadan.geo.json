@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zhadan",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Lavabombs",
+					"pivot": [0, 52, -13.8],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [118, 88], "uv_size": [16, 16]},
+								"east": {"uv": [118, 88], "uv_size": [16, 16]},
+								"south": {"uv": [118, 88], "uv_size": [16, 16]},
+								"west": {"uv": [118, 88], "uv_size": [16, 16]},
+								"up": {"uv": [118, 88], "uv_size": [16, 16]},
+								"down": {"uv": [118, 104], "uv_size": [16, -16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

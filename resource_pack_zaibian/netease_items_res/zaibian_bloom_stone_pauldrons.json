@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:bloom_stone_pauldrons"
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:bloom_stone_pauldrons",
+            "register_to_create_menu": true
+        }
+    }
+}

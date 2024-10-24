@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 160,
+            "minecraft:use_duration": 10000,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:customtips": {
+                "value": "§9+10 攻击伤害"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "custom_item_type": "ranged_weapon",
+            "identifier": "zaibian:coral_bardiche",
+            "register_to_create_menu": true
+        }
+    }
+}

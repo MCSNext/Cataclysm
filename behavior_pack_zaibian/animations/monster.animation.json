@@ -1,0 +1,8 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+      "animation.monster.random_interval": {
+        "animation_length": 100
+      }
+    }
+  }

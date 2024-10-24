@@ -1,0 +1,78 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ignitium_elytra_chestplate",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 24.4824, 0],
+					"cubes": [
+						{"origin": [-4.5, 12, -2.5], "size": [9, 12, 5], "inflate": 0.55, "uv": [30, 47]},
+						{"origin": [-4, 10, -2], "size": [8, 9, 4], "inflate": 0.55, "uv": [0, 51]}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "body",
+					"pivot": [5.1005, 22.4422, 0],
+					"cubes": [
+						{"origin": [10, 22, 0], "size": [2, 4, 0], "pivot": [10, 22.25, 0], "rotation": [0, 0, 85], "uv": [30, 47]},
+						{"origin": [6.25, 22.25, 0], "size": [4, 7, 0], "pivot": [10, 22.5, 0], "rotation": [0, 0, 35], "uv": [21, 43]},
+						{"origin": [4.5, 17.75, -3], "size": [5, 7.25, 6], "inflate": 0.5, "uv": [30, 33]},
+						{"origin": [4.25, 11.75, -2], "size": [4, 12, 4], "inflate": 0.55, "uv": [40, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftarm",
+					"pivot": [6.25, 9.75, 0]
+				},
+				{
+					"name": "rightarm",
+					"parent": "body",
+					"pivot": [-5.1005, 22.4422, 0],
+					"cubes": [
+						{"origin": [-12, 22, 0], "size": [2, 4, 0], "pivot": [-10, 22.25, 0], "rotation": [0, 0, -85], "uv": [30, 47], "mirror": true},
+						{"origin": [-10.25, 22.25, 0], "size": [4, 7, 0], "pivot": [-10, 22.5, 0], "rotation": [0, 0, -35], "uv": [21, 43], "mirror": true},
+						{"origin": [-9.5, 17.75, -3], "size": [5, 7.25, 6], "inflate": 0.5, "uv": [30, 33], "mirror": true},
+						{"origin": [-8.25, 11.75, -2], "size": [4, 12, 4], "inflate": 0.55, "uv": [40, 16]}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightarm",
+					"pivot": [-6.25, 9.75, 0]
+				},
+				{
+					"name": "fly",
+					"parent": "body",
+					"pivot": [0, 23, -4]
+				},
+				{
+					"name": "leftwing",
+					"parent": "fly",
+					"pivot": [5, 25, 4],
+					"cubes": [
+						{"origin": [-6.25, 2, 2], "size": [11, 23, 2], "inflate": 0.05, "pivot": [5, 25, 4], "rotation": [10, -1, -15], "uv": [0, 65], "mirror": true}
+					]
+				},
+				{
+					"name": "rightwing",
+					"parent": "fly",
+					"pivot": [-5, 25, 4],
+					"cubes": [
+						{"origin": [-5, 2, 2], "size": [11, 23, 2], "inflate": 0.05, "pivot": [-5, 25, 4], "rotation": [10, 1, 15], "uv": [0, 65]}
+					]
+				}
+			]
+		}
+	]
+}

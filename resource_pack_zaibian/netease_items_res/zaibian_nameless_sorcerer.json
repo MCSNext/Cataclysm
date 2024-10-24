@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:nameless_sorcerer"
+        },
+        "description": {
+            "category": "Nature",
+            "identifier": "zaibian:nameless_sorcerer",
+            "register_to_create_menu": true
+        }
+    }
+}

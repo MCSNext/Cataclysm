@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "netease:armor": {
+                "armor_slot": 0,
+                "defense": 7,
+                "enchantment": 0,
+                "knockback_resistance": 0,
+                "toughness": 4
+            }
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:entity_zb1_1"
+        }
+    }
+}

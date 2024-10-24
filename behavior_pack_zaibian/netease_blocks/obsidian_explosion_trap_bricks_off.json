@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:destroy_time": 2.0,
+            "netease:on_stand_on": {
+                "send_python_event": true
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:obsidian_explosion_trap_bricks_off",
+            "register_to_creative_menu": true
+        }
+    }
+}

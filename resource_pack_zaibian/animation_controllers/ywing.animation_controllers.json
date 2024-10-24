@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ywing.fly0": {
+            "initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"yfly2": "query.mod.yflytwoval0||query.mod.yelytraval1"
+						}
+					]
+				},
+				"yfly2": {
+					"animations": [
+						"yfly2"
+					],
+					"transitions": [
+						{
+							"yfly3": "!(query.mod.yflytwoval0||query.mod.yelytraval1)"
+						}
+					]
+				},
+				"yfly3": {
+					"animations": [
+						"yfly3"
+					],
+					"transitions": [
+						{
+							"yfly2": "query.mod.yflytwoval0||query.mod.yelytraval1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ywing.fly1": {
+            "initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"yfly1": "1"
+						}
+					]
+				},
+				"yfly1": {
+					"animations": [
+						"yfly1"
+					],
+					"transitions": [
+						{
+							"default": "0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ywing.elytra1": {
+            "initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"yelytra1": "1"
+						}
+					]
+				},
+				"yelytra1": {
+					"animations": [
+						"yelytra1"
+					],
+					"transitions": [
+						{
+							"default": "0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

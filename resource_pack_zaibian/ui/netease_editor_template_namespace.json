@@ -1,0 +1,160 @@
+{
+  "namespace": "netease_editor_template_namespace",
+
+  "netease_editor_template_image": {
+    "type": "image",
+    "size": [ "50%", "50%" ],
+    "texture": "textures/netease/common/image/default",
+    "uv_size": [ 107, 107 ]
+  },
+
+  "panel": {
+    "type": "panel",
+    "size": [ 100, 100 ]
+  },
+
+  "netease_editor_root_panel": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ "100%", "100%" ],
+    "layer": 1
+  },
+
+  "default": {
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$default_texture",
+    "alpha": "$control_alpha",
+    "type": "image"
+  },
+
+  "hover": {
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$hover_texture",
+    "alpha": "$control_alpha",
+    "type": "image"
+  },
+
+  "pressed": {
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$pressed_texture",
+    "alpha": "$control_alpha",
+    "type": "image"
+  },
+
+  "button_label": {
+    "color": "$label_color",
+    "font_scale_factor": "$label_font_scale_factor",
+    "font_size": "$label_font_size",
+    "font_type": "default",
+    "layer": "$label_layer",
+    "max_size": [ "100%", "100%" ],
+    "offset": "$label_offset",
+    "text": "$label_text",
+    "text_alignment": "center",
+    "alpha": "$control_alpha",
+    "type": "label"
+  },
+
+  "scroll_box_image": {
+    "is_new_nine_slice": "$is_box_nine_slice",
+    "nine_slice_buttom": "$box_nine_slice_buttom",
+    "nine_slice_left": "$box_nine_slice_left",
+    "nine_slice_right": "$box_nine_slice_right",
+    "nine_slice_top": "$box_nine_slice_top",
+    "nineslice_size": "$box_nineslice_size",
+    "texture": "$scroll_box_texture",
+    "type": "image"
+  },
+
+  "scroll_track_image": {
+    "is_new_nine_slice": "$is_track_nine_slice",
+    "layer": 3,
+    "nine_slice_buttom": "$track_nine_slice_buttom",
+    "nine_slice_left": "$track_nine_slice_left",
+    "nine_slice_right": "$track_nine_slice_right",
+    "nine_slice_top": "$track_nine_slice_top",
+    "nineslice_size": "$track_nineslice_size",
+    "size": [ 3, "100%" ],
+    "texture": "$scroll_track_texture",
+    "type": "image"
+  },
+
+  "scroll_background_image": {
+    "is_new_nine_slice": "$is_background_nine_slice",
+    "nine_slice_buttom": "$background_nine_slice_buttom",
+    "nine_slice_left": "$background_nine_slice_left",
+    "nine_slice_right": "$background_nine_slice_right",
+    "nine_slice_top": "$background_nine_slice_top",
+    "nineslice_size": "$background_nineslice_size",
+    "texture": "$scroll_background_texture",
+    "type": "image"
+  },
+
+  "edit_box_background_default": {
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$edit_box_default_texture",
+    "type": "image"
+  },
+
+  "edit_box_background_hover": {
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$edit_box_hover_texture",
+    "type": "image"
+  },
+
+  "empty_progress_bar": {
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": 1,
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$progress_bar_empty_texture",
+    "type": "image"
+  },
+
+  "filled_progress_bar": {
+    "clip_direction": "$clip_direction",
+    "clip_pixelperfect": false,
+    "clip_ratio": "$clip_ratio",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": 2,
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$progress_bar_filled_texture",
+    "type": "image"
+  }
+}

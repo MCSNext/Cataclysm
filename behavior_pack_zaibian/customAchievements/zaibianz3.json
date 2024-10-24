@@ -1,0 +1,11 @@
+{
+    "finished_icon": "textures/blocks/altar_of_fire_",
+    "goal_number": 1,
+    "node_ID": "z4",
+    "node_description": "找到烈焰竞技场",
+    "parent_node": "zaibian",
+    "title": "烈焰竞技场",
+    "type": "sub_node",
+    "unfinished_icon": "textures/blocks/altar_of_fire_",
+    "window_background": ""
+}

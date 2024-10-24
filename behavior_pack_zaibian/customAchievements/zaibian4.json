@@ -1,0 +1,11 @@
+{
+    "finished_icon": "textures/ui/zaibian/709020",
+    "goal_number": 1,
+    "node_ID": "z5",
+    "node_description": "找到沉没之城",
+    "parent_node": "zaibian",
+    "title": "沉没之城",
+    "type": "sub_node",
+    "unfinished_icon": "textures/ui/zaibian/709020",
+    "window_background": ""
+}

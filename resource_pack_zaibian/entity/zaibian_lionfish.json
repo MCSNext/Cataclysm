@@ -1,0 +1,53 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.lionfish.attack",
+                "deepling.attack": "controller.animation.deepling.attack",
+                "die": "animation.lionfish.die",
+                "idle": "animation.lionfish.idle",
+                "injure2": "animation.lionfish.injure2",
+                "swimming": "animation.lionfish.swim"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.lionfish",
+                "default1": "geometry.lionfish_1"
+            },
+            "identifier": "zaibian:lionfish",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.drowned",
+                "controller.render.deepling_1"
+            ],
+            "scripts": {
+                "animate": [
+                    "deepling.attack",
+                    {
+                        "swimming": "variable.swim_amount > 0.0&& query.is_in_water && query.mark_variant!=100"
+                    },
+                    {
+                        "swimming": "variable.swim_amount <= 0.0 && query.is_in_water && query.mark_variant!=100"
+                    },
+                    {
+                        "injure2": "!query.is_in_water && query.mark_variant!=100"
+                    },
+                    {
+                        "die": " query.mark_variant==100"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/deepling/lionfish",
+                "default1": "textures/entity/deepling/lionfish_layer"
+            }
+        }
+    }
+}

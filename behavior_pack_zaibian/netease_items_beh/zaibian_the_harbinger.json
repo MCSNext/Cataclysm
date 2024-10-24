@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "netease:customtips": {
+                "value": "§2通过用下界之星右击来唤醒 "
+            },
+            "netease:egg": {
+                "entity": "zaibian:the_harbinger"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:the_harbinger_d",
+            "register_to_create_menu": true
+        }
+    }
+}

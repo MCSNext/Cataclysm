@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "fire": "animation.laser_gatling.fire",
+                "idle": "animation.laser_gatling.idle",
+                "first_hold": "animation.laser_gatling.first_hold",
+                "first_hold1": "animation.laser_gatling.first_hold1"
+            },
+            "geometry": {
+                "default": "geometry.laser_gatling",
+                "default3": "geometry.laser_gatling1"
+            },
+            "identifier": "zaibian:laser_gatling",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.zy_wq"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "fire": " query.mod.syzaibian"
+                    },
+                    "idle",
+                    {
+                        "first_hold1": "c.is_first_person && query.mod.syzaibian"
+                    },
+                    {
+                        "first_hold": "c.is_first_person&& !(query.mod.syzaibian)"
+                    }
+                ],
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "textures": {
+                "default": "textures/items/laser_gatling",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

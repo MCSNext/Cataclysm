@@ -1,0 +1,1071 @@
+{
+    "dy_load_list": [
+
+    ],
+    "format_version": "1.14.0",
+    "sound_definitions": {
+
+      "monstrositygrowl": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/monstrositygrowl"
+          }
+        ]
+      },
+
+      "modern_remnant_bite": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/modern_remnant_bite"
+          }
+        ]
+      },
+      "modern_remnant_death": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/modern_remnant_death"
+          }
+        ]
+      },
+      
+
+      "prowler_idle": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/prowler_idle"
+          }
+        ]
+      },
+      "remnant_idle": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_idle1"
+          },
+          {
+            "name": "sounds/entity/remnant_idle2"
+          },
+          {
+            "name": "sounds/entity/remnant_idle3"
+          }
+        ]
+      },
+      "remnant_hurt": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_hurt1"
+          },
+          {
+            "name": "sounds/entity/remnant_hurt2"
+          },
+          {
+            "name": "sounds/entity/remnant_hurt3"
+          }
+        ]
+      },
+      "remnant_death": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_death"
+          }
+        ]
+      },
+      "remnant_breathing": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_breathing"
+          }
+        ]
+      },
+      "remnant_charge_prepare": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_charge_prepare"
+          }
+        ]
+      },
+      "remnant_charge_roar": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_charge_roar"
+          }
+        ]
+      },
+      "remnant_charge_step": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_charge_step"
+          }
+        ]
+      },
+      "remnant_stomp": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_stomp"
+          }
+        ]
+      },
+      "remnant_roar": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_roar"
+          }
+        ]
+      },
+      "remnant_shockwave": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_shockwave"
+          }
+        ]
+      },
+      "remnant_tail_slam": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_tail_slam"
+          }
+        ]
+      },
+      "remnant_tail_swing": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_tail_swing"
+          }
+        ]
+      },
+      "remnant_bite": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/remnant_bite"
+          }
+        ]
+      },
+
+
+      "prowler_saw_spin_attack": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/prowler_saw_spin_attack"
+          }
+        ]
+      },
+      "prowler_saw_attack": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/prowler_saw_attack"
+          }
+        ]
+      },
+      "rocket_launch": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/rocket_launch1"
+          },
+          {
+            "name": "sounds/entity/rocket_launch2"
+          }
+        ]
+      },
+      "prowler_death": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/robot_death"
+          }
+        ]
+      },
+      "prowler_hurt": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/robot_hurt"
+          }
+        ]
+      },
+
+      "koboleton_ambient": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/koboleton_idle1"
+          },
+          {
+            "name": "sounds/entity/koboleton_idle2"
+          },
+          {
+            "name": "sounds/entity/koboleton_idle3"
+          }
+        ]
+      },
+      "koboleton_hurt": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/koboleton_hurt1"
+          },
+          {
+            "name": "sounds/entity/koboleton_hurt2"
+          },
+          {
+            "name": "sounds/entity/koboleton_hurt3"
+          }
+        ]
+      },
+      "koboleton_death": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+          {
+            "name": "sounds/entity/koboleton_death"
+          }
+        ]
+      },
+
+      "watcher_death": {
+        "category": "music",
+
+        "sounds": [
+          {
+            "name":"sounds/entity/robot_death",
+            "load_on_low_memory": true,
+            "stream": true,
+            "max_distance": 30.0
+          }
+        ]
+      },
+      "shredder_end": {
+        "category": "music",
+
+        "sounds": [
+          {
+            "name":"sounds/entity/shredder_end",
+            "load_on_low_memory": true,
+            "stream": true,
+            "max_distance": 30.0
+          }
+        ]
+      },
+      "shredder_loop": {
+        "category": "music",
+
+        "sounds": [
+          {
+            "name":"sounds/entity/shredder_loop",
+            "load_on_low_memory": true,
+            "stream": true,
+            "max_distance": 30.0
+          }
+        ]
+      },
+      "shredder_start": {
+        "category": "music",
+
+        "sounds": [
+          {
+            "name":"sounds/entity/shredder_start",
+            "load_on_low_memory": true,
+            "stream": true,
+            "max_distance": 30.0
+          }
+        ]
+      },
+
+      "watcher_hurt": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/robot_hurt",
+            "load_on_low_memory": true,
+            "stream": true,
+            "max_distance": 30.0,
+            "min_distance": 0.0
+          }
+        ]
+      },
+
+    
+      "start_ack": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/crab_bite",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 0,
+            "volume": 0
+          }
+        ]
+      },
+      
+      "harbinger_mode_change": {
+        "category": "monster",
+        "max_distance": 30.0,
+        "min_distance": 0.0,
+        "sounds": [
+            {
+                "name": "sounds/entity/harbinger_mode_change"
+            }
+        ]
+    },
+ 
+    "harbinger_prepare": {
+      "category": "monster",
+      "max_distance": 30.0,
+      "min_distance": 0.0,
+      "sounds": [
+          {
+              "name": "sounds/entity/harbinger_prepare"
+          }
+      ]
+  },
+      "crab_bite": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/crab_bite",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "crab_death": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/crab_death",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "leviathan_theme": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/music_disc/leviathan_theme",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "remnant_theme": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/music_disc/remnant_theme",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "tidal_hook_hit": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/tidal_hook_hit",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "tidal_hook_loop": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/tidal_hook_loop",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "tidal_tentacle": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/tidal_tentacle",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "abyss_blast_only_shoot": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/abyss_blast_only_shoot",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "leviathan_roar": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/leviathan_roar",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "leviathan_tentacle_strike": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/leviathan_tentacle_strike",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "leviathan_stun_roar": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/leviathan_stun_roar",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "leviathan_idle": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/leviathan_idle",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+      "leviathan_defeat": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/leviathan_defeat",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+
+      "abyss_blast": {
+        "category": "music",
+        "sounds": [
+          {
+            "name": "sounds/entity/abyss_blast",
+            "load_on_low_memory": true,
+            "stream": true,
+            "pitch": 1,
+            "volume": 1
+          }
+        ]
+      },
+        "sword_stomp": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/sword_stomp",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "sword_stomp_a": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/sword_stomp",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+        "deepling_swing": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/deepling_swing",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "deepling_light": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/deepling_light",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+        "strongattack_swing": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/strongattack_swing",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+        "deepling_hurt3": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/deepling_hurt3",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "deepling_death": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/deepling_death",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "deepling_idle2": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/deepling_idle2",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+        "abyss_blast_only_charge": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/abyss_blast_only_charge",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1.3
+              }
+            ]
+          },
+          "leviathan_hurt": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/leviathan_hurt",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "leviathan_bite_x": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/leviathan_bite",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 0.7
+              }
+            ]
+          },
+        "leviathan_bite": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/leviathan_bite",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 0.7
+              }
+            ]
+          },
+        "monstrosityawaken": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/monstrosityawaken",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "void_rune_rising": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/entity/void_rune_rising",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+        "monstrosity_theme": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/music_disc/monstrosity_theme",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          
+          "enderguardian_theme": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/music_disc/enderguardian_theme",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "harbinger_theme": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/music_disc/harbinger_theme",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+          "ignis_theme": {
+            "category": "music",
+            "sounds": [
+              {
+                "name": "sounds/music_disc/ignis_theme",
+                "load_on_low_memory": true,
+                "stream": true,
+                "pitch": 1,
+                "volume": 1
+              }
+            ]
+          },
+        "harbinger_charge_prepare": {
+            "category": "monster",
+            "max_distance": 40.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/harbinger_charge_prepare"
+                }
+            ]
+        },
+        "harbinger_stun": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/harbinger_stun"
+                }
+            ]
+        },
+        "harbinger_laser": {
+            "category": "monster",
+            "max_distance": 20.0,
+            "min_distance": 0.0,
+          "volume": 0.1,
+            "sounds": [
+                {
+                    "name": "sounds/entity/harbinger_laser"
+                }
+            ]
+        },
+        "portal_abyss_blast": {
+          "category": "monster",
+          "max_distance": 120.0,
+          "min_distance": 0.0,
+          "pitch": 3,
+          "volume": 3,
+          "sounds": [
+              {
+                  "name": "sounds/entity/portal_abyss_blast"
+              }
+          ]
+      },
+        "harbinger_deathlaser_prepare": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/harbinger_deathlaser_prepare"
+                }
+            ]
+        },
+        "harbinger_hurt": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/harbinger_hurt1"
+                },
+                {
+                    "name": "sounds/entity/harbinger_hurt2"
+                },
+                {
+                    "name": "sounds/entity/harbinger_hurt3"
+                },
+                {
+                    "name": "sounds/entity/harbinger_hurt4"
+                }
+            ]
+        },
+        "harbinger_idle": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/harbinger_idle1"
+                },
+                {
+                    "name": "sounds/entity/harbinger_idle3"
+                },
+                {
+                    "name": "sounds/entity/harbinger_idle2"
+                },
+                {
+                    "name": "sounds/entity/harbinger_idle4"
+                }
+            ]
+        },
+        "ender_guardian_fist_attack": {
+            "category": "monster",
+            "max_distance": 15.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/ender_guardian_fist_attack"
+                }
+            ]
+        },
+        "revenant_death": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/revenant_death"
+                }
+            ]
+        },
+        "revenant_breath": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/revenant_breath"
+                }
+            ]
+        },
+        "revenant_hurt": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/revenant_hurt1"
+                },
+                {
+                    "name": "sounds/entity/revenant_hurt2"
+                },
+                {
+                    "name": "sounds/entity/revenant_hurt3"
+                }
+            ]
+        },
+        "golemattack": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/golemattack"
+                }
+            ]
+        },
+        
+        "golemdeath": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/golemdeath"
+                }
+            ]
+        },
+        "golemhurt": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/golemhurt"
+                }
+            ]
+        },
+        "ignis_ambient": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/ignis_ambient"
+                }
+            ]
+        },
+        "ignis_death": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/ignis_death"
+                }
+            ]
+        },
+        "ignis_hurt": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/ignis_hurt"
+                }
+            ]
+        },
+        "ignis_shield01": {
+            "category": "monster",
+            "max_distance": 30.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/ignis_shield01"
+                }
+            ]
+        },
+        "flame_burst": {
+          "category": "monster",
+          "max_distance": 30.0,
+          "min_distance": 0.0,
+          "sounds": [
+              {
+                  "name": "sounds/entity/flame_burst"
+              }
+          ]
+      },
+        "ignis_shield02": {
+          "category": "monster",
+          "max_distance": 30.0,
+          "min_distance": 0.0,
+          "sounds": [
+              {
+                  "name": "sounds/entity/ignis_shield02"
+              }
+          ]
+      },
+        "monstrositydeath": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/monstrositydeath"
+                }
+            ]
+        },
+        "monstrosityland": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/monstrosityland"
+                }
+            ]
+        },
+        "monstrosityhurt": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/monstrosityhurt1"
+                },
+                {
+                    "name": "sounds/entity/monstrosityhurt2"
+                }
+            ]
+        },
+        "monstrosityshoot": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/monstrosityshoot"
+                }
+            ]
+        },
+        "monstrositystep": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                    "name": "sounds/entity/monstrositystep"
+                }
+            ]
+        },
+        "monstrositystep1": {
+            "category": "monster",
+            "max_distance": 120.0,
+            "min_distance": 0.0,
+            "sounds": [
+                {
+                  "pitch": 1,
+                  "volume": 1,
+                    "name": "sounds/entity/monstrositystep"
+                }
+            ]
+        }
+       
+       
+    }
+}

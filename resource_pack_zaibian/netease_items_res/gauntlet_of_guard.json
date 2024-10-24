@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:gauntlet_of_guard"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:gauntlet_of_guard",
+            "register_to_create_menu": true
+        }
+    }
+}

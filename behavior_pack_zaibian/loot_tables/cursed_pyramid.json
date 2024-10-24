@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "item",
+          "name": "zaibian:necklace_of_the_desert"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

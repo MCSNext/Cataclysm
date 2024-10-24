@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:ignis"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ignis",
+            "register_to_create_menu": true
+        }
+    }
+}

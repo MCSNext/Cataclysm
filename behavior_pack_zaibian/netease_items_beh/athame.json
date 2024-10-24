@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 250,
+   
+            "netease:weapon": {
+                "attack_damage": 5,
+                "enchantment": 10,
+                "level": 3,
+                "speed": 10,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:athame",
+            "register_to_create_menu": true
+        }
+    }
+}

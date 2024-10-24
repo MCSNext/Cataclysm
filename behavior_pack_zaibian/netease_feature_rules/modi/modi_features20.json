@@ -1,0 +1,45 @@
+
+                {
+                "format_version": "1.14.0",
+                "minecraft:feature_rules": {
+                    "conditions": {
+                        "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "==",
+                        "value": "the_end"
+                    }
+                    ]
+                }
+                ],
+                        "placement_pass": "after_sky_pass"
+                    },
+                    "description": {
+                        "identifier": "modi_features20",
+                        "places_feature": "modi_rules20"
+                    },
+                    "distribution": {
+                        "coordinate_eval_order": "xzy",
+                        "iterations": " (query.noise(variable.originx +-48, variable.originz +-16) <0 && variable.originx+-48!=0 && variable.originz+-16!=0) &&math.mod(variable.originx+-48,720)==0&&math.mod(variable.originz+-16,720)==0&&query.is_biome(variable.originx+-48 , variable.originz+-16 , 9)?1:0",
+                        "scatter_chance": 100,
+                        "x": {
+                            "distribution": "uniform",
+                            "extent": [
+                                0,
+                                0
+                            ]
+                        },
+                        "y": 10,
+                        "z": {
+                            "distribution": "uniform",
+                            "extent": [
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                }
+            }
+            

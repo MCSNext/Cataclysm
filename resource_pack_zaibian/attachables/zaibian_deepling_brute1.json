@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "geometry": {
+                "default": "geometry.coral_bardiche1"
+            },
+            "identifier": "zaibian:deepling_brute1",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ],
+            "scripts": {
+                "animate": [
+                    "wield"
+                ],
+                "pre_animation": [
+                    "variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/coral_bardiche",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

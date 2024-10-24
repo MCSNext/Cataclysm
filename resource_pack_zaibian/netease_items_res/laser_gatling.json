@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:laser_gatling"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:laser_gatling",
+            "register_to_create_menu": true
+        }
+    }
+}

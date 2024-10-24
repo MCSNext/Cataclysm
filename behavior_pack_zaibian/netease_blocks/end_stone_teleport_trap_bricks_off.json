@@ -1,0 +1,5 @@
+{"format_version": "1.10.0","minecraft:block": {"components": {
+    "netease:on_stand_on":{
+        "send_python_event":true
+    }
+},"description": {"category": "zaibian","identifier": "zaibian:end_stone_teleport_trap_bricks_off","register_to_creative_menu": true}}}

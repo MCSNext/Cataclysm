@@ -1,0 +1,55 @@
+{
+    "particleeffect": {
+        "blend": {
+            "name": "add"
+        },
+        "colorfade": [
+            {
+                "color": "0.6667 0.0000 0.0000 1.0000",
+                "time": "0.0%"
+            },
+            {
+                "color": "0.6667 0.0000 0.0000 1.0000",
+                "time": "100.0%"
+            }
+        ],
+        "direction": {
+            "max": "1.0 1.0 1.0",
+            "min": "-1.0 -1.0 -1.0",
+            "value": "Outwards"
+        },
+        "emissionrate": {
+            "max": "70.0",
+            "min": "70.0"
+        },
+        "emitterScaleCurve": [
+
+        ],
+        "emitterscale": [
+
+        ],
+        "emittersize": {
+            "value": "1.0 1.0 1.0"
+        },
+        "emittertype": {
+            "value": "Sphere"
+        },
+        "numparticles": {
+            "value": "1000"
+        },
+        "relative": {
+            "enable": "false"
+        },
+        "texture": {
+            "ani": {
+                "fps": "5",
+                "name": "textures/sfxs/cs_spacehorse_m_mc_liuguang_29",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/cs_spacehorse_m_mc_liuguang_29"
+        },
+        "thickness": {
+            "value": "1.0"
+        }
+    }
+}

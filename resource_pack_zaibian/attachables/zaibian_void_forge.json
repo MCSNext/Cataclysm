@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "first_hold": "animation.void_forge.first_hold",
+                "scale": "animation.void_forge.scale",
+                "first_scale1": "animation.void_forge.scale1"
+
+            },
+            "geometry": {
+                "default": "geometry.void_forge",
+                "default3": "geometry.void_forge1"
+            },
+            "identifier": "zaibian:void_forge",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.zy_wq"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "first_hold": "c.is_first_person"
+                    },
+                    {
+                        "scale": "!c.is_first_person"
+                    },
+                    {
+                        "first_scale1": "c.is_first_person"
+                    }
+                ],
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "textures": {
+                "default": "textures/items/void_forge",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "face_player": "animation.fireball_i.init"
+            },
+            "geometry": {
+                "default": "geometry.fireball_i"
+            },
+            "identifier": "zaibian:ignis_psw",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.fireball_z"
+            ],
+            "scripts": {
+                "animate": [
+                    "face_player"
+                ]
+                // "scale": "2.0"
+            },
+            "textures": {
+                "default1": "textures/entity/ignis_fireball",
+                "default2": "textures/entity/ignis_fireball_abyss",
+                "default3": "textures/entity/ignis_fireball_soul"
+
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.shulker_bullet.move"
+            },
+            "geometry": {
+                "default": "geometry.shulker_bullet"
+            },
+            "identifier": "zaibian:qianbei",
+            "materials": {
+                "default": "shulker_bullet"
+            },
+            "render_controllers": [
+                "controller.render.shulker_bullet"
+            ],
+            "scripts": {
+                "animate": [
+                    "move"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/shulker/spark"
+            }
+        }
+    }
+}

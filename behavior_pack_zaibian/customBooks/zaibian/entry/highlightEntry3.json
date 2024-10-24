@@ -1,0 +1,31 @@
+﻿{
+    "parent": "pages",
+    "icon":  "textures/items/recycle_book",
+    "title": "机械融合砧可合成的物品",
+    "pages":[
+        {
+            "type": "textPage"
+        },
+        {
+            "type": "textPage",
+            "subtitle": "壁垒护手合成",
+            "content": "守卫者护手 + 火焰壁垒"
+        },
+        {
+            "type": "textPage",
+            "subtitle": "虚空突击肩炮合成",
+            "content": "凋灵突击肩炮 + 虚空核心"
+        },
+        {
+            "type": "textPage",
+            "subtitle": "虚空锻锤合成",
+            "content": "炼狱锻锤 + 虚空核心"
+        },
+        {
+            "type": "textPage",
+            "subtitle": "腾炎鞘翅胸甲合成",
+            "content": "腾炎胸甲 + 鞘翅"
+        }
+      
+    ]    
+}

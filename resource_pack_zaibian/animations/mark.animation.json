@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mark.init": {
+			"loop": true,
+			"animation_length": 0.68,
+			"override_previous_animation": true,
+			"bones": {
+				"bone2": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.12": {"pre": [0, 0, 0], "post": [1, 1, 1]},
+						"0.2": {"pre": [1, 1, 1], "post": [0, 0, 0]}
+					}
+				},
+				"bone3": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.12": {"pre": [1, 1, 1], "post": [0, 0, 0]},
+						"0.2": {"pre": [0, 0, 0], "post": [1, 1, 1]}
+					}
+				}
+			}
+		}
+	}
+}

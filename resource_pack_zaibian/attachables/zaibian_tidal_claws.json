@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "first_hold": "animation.tidal_claws.first_hold",
+                "first_hold_z": "animation.tidal_claws.first_hold_z",
+
+                "first_hold1": "animation.tidal_claws1.first_hold",
+                "move": "animation.jian.move2"
+            },
+            "geometry": {
+                "default": "geometry.tidal_claws",
+                "default3": "geometry.tidal_claws1",
+
+                "default1": "geometry.tidal_hook_chain"
+            },
+            "identifier": "zaibian:tidal_claws",
+            "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+            },
+            "render_controllers": [
+                "controller.render.zy_wq"
+            ],
+            "scripts": {
+                "pre_animation": [
+                    "variable.geo=c.item_slot == 'main_hand' ? 0 : 1;"
+                ],
+                "animate": [
+                    {
+                        "first_hold": "c.is_first_person"
+                    },
+                    {
+                        "first_hold_z": "c.is_first_person"
+                    },
+                    {
+                        "first_hold1": "c.is_first_person &&query.main_hand_item_use_duration > 0.0f"
+                    }
+                ],
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "textures": {
+                "default": "textures/items/tidal_claws",
+                "default1": "textures/items/tidal_hook_chain",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

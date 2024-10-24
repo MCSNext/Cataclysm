@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10000.0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:cooldown": {
+                "category": "zaibian:wither_assault_shoulder_weapon",
+                "duration": 5
+            },
+            "netease:customtips": {
+                "value": "§2手持时长按右键，经过短暂蓄力后松开即可向所朝方向发射一颗不受重力影响的凋灵飞.\n手持时潜行并长按右键，经过短暂蓄力后松开即可向所朝方向发射一颗凋灵榴弹.\n可以与虚空核心在机械融合砧上融合成虚空突击肩炮。"
+            },
+            "netease:render_offsets": {
+                "controller_position_adjust": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "controller_rotation_adjust": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "controller_scale": 1
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "custom_item_type": "ranged_weapon",
+            "identifier": "zaibian:wither_assault_shoulder_weapon",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:foil": true,
+            "minecraft:food": {
+                "can_always_eat": true,
+                "cooldown_time": 20,
+                "effects": [
+                    {
+                        "amplifier": 0,
+                        "chance": 1.0,
+                        "duration": 90,
+                        "name": "blessing_of_amethyst"
+                    },
+                    {
+                        "amplifier": 0,
+                        "chance": 1.0,
+                        "duration": 5,
+                        "name": "regeneration"
+                    }
+                ],
+                "nutrition": 6,
+                "saturation_modifier": "good"
+            },
+            "minecraft:max_stack_size": 64,
+            "minecraft:use_duration": 20.0,
+            "netease:customtips": {
+                "value": "§2紫水晶祝福buff能帮助玩家免疫黑暗，深渊恐惧和深渊烧灼，有利于玩家与利维坦的战斗。\n可以把紫水晶蟹肉放置在紫水晶祭坛上，一段时间后就可以被转化，取下即可获得。"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:amethyst_crab_meat1",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "causes_fire": false,
+                    "destroy_affected_by_griefing": false,
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 1,
+                    "breaks_blocks":false
+                }
+            }
+        },
+        "description": {
+            "identifier": "withered:withered_block",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "random"
+                ]
+            },
+            "animations": {
+                "random": "animation.random"
+            }
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:timer": {
+                "randomInterval": true,
+                "time": [
+                    3,
+                    3
+                ],
+                "time_down_event": {
+                    "event": "minecraft:explode"
+                }
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "test": "has_damage",
+                                "value": "all"
+                            }
+                        },
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:nameable": {},
+            "minecraft:type_family": {
+                "family": [
+                    "inanimate",
+                    "witherstorm",
+                    "tractor0",
+                    "tractor",
+                    "withered_storm",
+                    "mob"
+                ]
+            },
+            "minecraft:health": {
+                "value": 13,
+                "max": 13
+            },
+            "minecraft:knockback_resistance": {
+                "value": 2147483647
+            },
+            "minecraft:fire_immune": {
+            },
+            // "minecraft:attack": {
+            //     "damage": 3
+            // },
+            // "minecraft:collision_box": {
+            //     "width": 0.4,
+            //     "height": 0.8
+            // },
+            // "minecraft:jump.static": {},
+            // "minecraft:can_climb": {},
+            // "minecraft:fire_immune": true,
+            // "minecraft:behavior.float": {
+            //     "priority": 0
+            // },
+            // "minecraft:behavior.hurt_by_target": {
+            //     "priority": 1
+            // },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            }
+        }
+    }
+}

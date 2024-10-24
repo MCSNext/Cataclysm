@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.void_howitzer.init": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "void_assault_shoulder",
+					"locator": "locator"
+				}
+			}
+		}
+	}
+}

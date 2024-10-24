@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:block_light_emission": {
+                "emission": 1.0
+            },
+            "minecraft:destroy_time": 2,
+            "netease:block_entity": {
+                "movable": false,
+                "tick": false
+            },
+            "netease:custom_tips": {
+                "value": "§2对其使用燃烧的灰烬，即可在片刻后召唤出焰魔。"
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:altar_of_fire",
+            "register_to_creative_menu": true
+        }
+    }
+}

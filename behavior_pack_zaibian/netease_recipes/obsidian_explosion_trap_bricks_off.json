@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:obsidian_explosion_trap_bricks_off"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:obsidian"
+            },
+            "C": {
+                "data": 0,
+                "item": "zaibian:void_stone"
+            }
+        },
+        "pattern": [
+            "AAA",
+            "ACA",
+            "AAA"
+        ],
+        "result": {
+            "count": 8,
+            "data": 0,
+            "item": "zaibian:obsidian_explosion_trap_bricks_off"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": 99999,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "netease:block_entity": {
+                "movable": true,
+                "tick": true
+            },
+            "netease:redstone": {
+                "strength": 15,
+                "type": "consumer"
+            },
+            "netease:redstone_property": {
+                "value": "break_on_push"
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:emp",
+            "register_to_creative_menu": true
+        }
+    }
+}

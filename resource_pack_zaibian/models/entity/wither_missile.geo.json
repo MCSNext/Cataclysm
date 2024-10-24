@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wither_missile",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-7, 5, -8], "size": [8, 6, 8], "uv": [0, 0]},
+						{"origin": [-7, 3, -8], "size": [8, 6, 8], "inflate": 0.1, "uv": [0, 50]},
+						{"origin": [-7, 3, -8], "size": [8, 2, 8], "pivot": [-3, 5, 0], "rotation": [20, 0, 0], "uv": [0, 14]},
+						{"origin": [-6, 4, 0], "size": [6, 6, 2], "uv": [24, 0]},
+						{"origin": [-7, 3, 5], "size": [8, 8, 3], "uv": [0, 24]},
+						{"origin": [-6, 4, 2], "size": [6, 6, 3], "inflate": 0.5, "uv": [22, 24]},
+						{"origin": [-3, 7, -12], "size": [0, 6, 13], "uv": [37, 35]}
+					],
+					"locators": {
+						"locator": [-3, 7, 8]
+					}
+				}
+			]
+		}
+	]
+}

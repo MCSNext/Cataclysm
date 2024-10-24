@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.abyss_mine.idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [0, 180, 180],
+						"4.0": [0, 360, 360]
+					}
+				},
+				"bone2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [180, 180, 0],
+						"4.0": [360, 360, 0]
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [180, 0, 180],
+						"4.0": [360, 0, 360]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "abss_mine",
+					"locator": "locator"
+				}
+			}
+		},
+		"animation.abyss_mine.del": {
+			"animation_length": 0.5,
+			"bones": {
+				"bone": {
+					"scale": 0
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "dragon_destroy_block"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,477 @@
+{
+    "editor_identifier": "zaibian",
+    "icon": "textures/items/recycle_book",
+    "pages": [
+        {
+            "subtitle": "诅咒金字塔生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "在诅咒金字塔中随结构生成，经过漫长的时间，它们的身躯早已变成了骨架（所以属于亡灵生物）。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:koboleton",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "骷髅狗头人",
+            "type": "entityPage"
+        },
+        {
+            "content": "一只小小的远古遗魂幼体，玩家可以通过骷髅狗头人之骨方法驯服，来让它为你战斗。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:modern_remnant",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "现世遗魂",
+            "type": "entityPage"
+        },
+        {
+            "content": "通过用沙漠项链右击诅咒金字塔深处沉睡的远古遗魂来唤醒。（消耗沙漠项链）",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:ancient_remnant",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "boss",
+            "subtitle": "远古遗魂",
+            "type": "entityPage"
+        },
+
+        {
+            "subtitle": "废弃堡垒生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "末影甲虫是一种奇怪的节肢生物，同时也是虚空之颚的重要来源。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:endermaptera",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "末影甲虫",
+            "type": "entityPage"
+        },
+        {
+            "content": "作为一只可怖的守卫者，末影傀儡沉睡在废弃堡垒的第一、二层，一旦入侵者出现它们便会苏醒并与之战斗。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:ender_golem",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "精英怪",
+            "subtitle": "末影傀儡",
+            "type": "entityPage"
+        },
+        {
+            "content": "末影守卫，强大的末地守卫者，盘踞在废弃堡垒的最深处，用末影与虚空之力惩罚着入侵者。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:ender_guardian",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "boss",
+            "subtitle": "末影守卫",
+            "type": "entityPage"
+        },
+        {
+            "subtitle": "沉没之城生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "似乎和末影人和诸位末影灵有些许联系的生物，然而它们早已适应了水中的生活，成了沉没之城里最常见的生物。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:deepling",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "渊灵",
+            "type": "entityPage"
+        },
+        {
+            "content": "吸收了深渊之力的渊灵，由此得到强化后可怕的各项属性使冒险家必须谨慎地与之战斗。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:deepling_brute",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "渊灵蛮兵",
+            "type": "entityPage"
+        },
+        {
+            "content": "强大的渊灵，掌握着其他渊灵难以掌握的深渊魔法。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:deepling_warlock",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "渊灵术士",
+            "type": "entityPage"
+        },
+        {
+            "content": "即使已经适应了水中的生活，渊灵垂钓者依然喜欢钓鱼并给其他渊灵炫耀自己的钓鱼成果。小心它们身上的毒刺！",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:deepling_angler",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "渊灵垂钓者",
+            "type": "entityPage"
+        },
+        {
+            "content": "穿着用海洋生物制成的“长袍”，渊灵祭司俨然是沉没之城中的魔法尊者。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:deepling_priest",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "渊灵祭司",
+            "type": "entityPage"
+        },
+        {
+            "content": "与那些浅海中的近亲不同，这些蓑鲉在渊灵的驯化和深渊之力的影响下成为了沉没之城水道中可怕的带毒怪鱼。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:lionfish",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "小怪",
+            "subtitle": "蓑鲉",
+            "type": "entityPage"
+        },
+        {
+            "content": "由石料和海洋相关材料制造出来的魔法巨像，与可能是其制造者的渊灵们守卫着沉没之城。尽管其掉落物是合成利维坦召唤物的关键材料",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:coralssus",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "珊瑚巨像",
+            "subtitle": "精英怪",
+            "type": "entityPage"
+        },
+        {
+            "content": "利维坦，掌握深渊之力，甚至能撕裂时空的恐怖掠食者。生成：通过在沉没之城中心的水底用深渊祭品右击中心的深渊祭坛召唤。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:the_leviathan",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "利维坦",
+            "subtitle": "boss",
+            "type": "entityPage"
+        },
+        {
+            "content": "生成：幼年利维坦不会自然生成，会在深渊之卵被放置在世界中约10分钟后破壳孵化出来，在放置深渊之卵的原位出现。刚孵化出来的幼年利维坦是中立的，会主动攻击鱼和鱿鱼，玩家可以通过喂食它热带鱼来驯服它。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:the_baby_leviathan",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "幼年利维坦",
+            "subtitle": "小怪",
+            "type": "entityPage"
+        },
+        {
+            "subtitle": "灵魂锻造厂生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "下界合金巨兽，就像它的“亲戚”红石巨兽一样镇守着一座锻造厂，然而这座锻造厂比烈焰锻造厂小得多，但它依然强大。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:netherite_monstrosity",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "下界合金巨兽",
+            "subtitle": "boss",
+            "type": "entityPage"
+        },
+        {
+            "subtitle": "烈焰竞技场生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "作为焰魔的守卫，两只燃魂盘踞在烈焰竞技场的第二层，一旦有人接近，便会与之展开战斗。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:ignited_revenant",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "燃魂",
+            "subtitle": "精英怪",
+            "type": "entityPage"
+        },
+        {
+            "content": "焰魔，烈焰的主宰，极强的战士。生成：通过用燃烧的灰烬右键点击烈焰竞技场顶层中心的烈焰祭坛召唤。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:ignis",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "焰魔",
+            "subtitle": "boss",
+            "type": "entityPage"
+        },
+        {
+            "subtitle": "远古文明生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "远古文明留下的机械造物，拥有导弹发射器和圆形电锯，是远古文明中心的强力守卫。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:the_prowler",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "徘徊者",
+            "subtitle": "精英怪",
+            "type": "entityPage"
+        },
+        {
+            "content": "远古文明遗留下来的机械之一，是远古文明的守卫士兵。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:the_watcher",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "观测者",
+            "subtitle": "小怪",
+            "type": "entityPage"
+        },
+        {
+            "content": "先驱者，古人制造的机械凋灵，拥有强大的破坏力。生成：通过用下界之星右击远古文明深处“沉睡”的先驱者来唤醒。（消耗下界之星）",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:the_harbinger",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "先驱者",
+            "subtitle": "boss",
+            "type": "entityPage"
+        },
+        {
+            "subtitle": "繁茂洞穴生成实体",
+            "type": "textPage"
+        },
+        {
+            "content": "一只长满苔藓和紫水晶的巨型螃蟹，在繁茂洞穴罕见地生成。",
+            "entity": {
+                "molang_dict": {
+
+                },
+                "name": "zaibian:amethyst_crab",
+                "offset": [
+                    0,
+                    -10
+                ]
+            },
+            "entitySize": [
+                50.0,
+                50.0
+            ],
+            "info": "紫水晶巨蟹",
+            "subtitle": "精英怪",
+            "type": "entityPage"
+        }
+    ],
+    "parent": "pages",
+    "title": "实体介绍"
+}

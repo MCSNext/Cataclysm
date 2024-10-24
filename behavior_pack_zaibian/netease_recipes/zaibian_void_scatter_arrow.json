@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:void_scatter_arrow"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "zaibian:void_jaw"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:arrow"
+            }
+        },
+        "pattern": [
+            "A",
+            "B"
+        ],
+        "result": {
+            "count": 2,
+            "data": 0,
+            "item": "zaibian:void_scatter_arrow"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

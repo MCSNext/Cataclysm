@@ -1,0 +1,17 @@
+{
+            "format_version": "1.10",
+            "minecraft:item": {
+                "components": {
+                    "minecraft:icon": "zaibian:bow",
+                    "netease:frame_animation": {
+                        "animate_in_toolbar": true,
+                        "frame_count": 3,
+                        "texture_name": "zaibian:bow_b"
+                    }
+                },
+                "description": {
+                    "category": "zaibian",
+                    "identifier": "zaibian:bow"
+                }
+            }
+        }

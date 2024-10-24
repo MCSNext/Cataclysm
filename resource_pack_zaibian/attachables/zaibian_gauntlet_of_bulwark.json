@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "first_hold": "animation.gauntlet_of_bulwark.first_hold",
+                "first_hold1": "animation.gauntlet_of_bulwark.first_hold1",
+                "first_scale": "animation.infernal_forge.first_scale"
+            },
+            "geometry": {
+                "default": "geometry.gauntlet_of_bulwark",
+                "default3": "geometry.gauntlet_of_bulwark1"
+
+            },
+            "identifier": "zaibian:gauntlet_of_bulwark",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.zy_wq"
+            ],
+            "scripts": {
+                "pre_animation": [
+                    "variable.geo=c.item_slot == 'main_hand' ? 0 : 1;"
+                ],
+                "animate": [
+                    {
+                        "first_scale": "c.is_first_person"
+                    },
+                    {
+                        "first_hold1": "c.is_first_person  && query.mod.syzaibian"
+                    },
+                    {
+                        "first_hold": "c.is_first_person  && !query.mod.syzaibian"
+                    }
+                ],
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "textures": {
+                "default": "textures/items/gauntlet_of_bulwark",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

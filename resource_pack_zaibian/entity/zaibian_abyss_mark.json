@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.mark.init"
+            },
+            "geometry": {
+                "default": "geometry.mark"
+            },
+            "identifier": "zaibian:abyss_mark",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ],
+            "scripts": {
+                "animate": [
+                    "move"
+                ],
+                "pre_animation": [
+                    "variable.hurt = query.hurt_time - query.frame_alpha;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/deepling/deepling_warlock_mark1"
+            }
+        }
+    }
+}

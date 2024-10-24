@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:necklace_of_the_desert"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:necklace_of_the_desert",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:the_leviathan_d"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:the_leviathan_d",
+            "register_to_create_menu": true
+        }
+    }
+}

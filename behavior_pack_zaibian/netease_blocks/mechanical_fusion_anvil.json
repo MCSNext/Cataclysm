@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:block_light_emission": {
+                "emission": 1.0
+            },
+            "minecraft:destroy_time": 2.0,
+            "netease:block_entity": {
+                "movable": false,
+                "tick": true
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:mechanical_fusion_anvil",
+            "register_to_creative_menu": true
+        }
+    }
+}

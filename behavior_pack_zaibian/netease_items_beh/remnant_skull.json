@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "§2手持该物品右击可召唤一只未驯服的现世遗魂。通过骷髅狗头人之骨"
+            },
+            "netease:egg": {
+                "entity": "zaibian:modern_remnant"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:remnant_skull",
+            "register_to_create_menu": true
+        }
+    }
+}

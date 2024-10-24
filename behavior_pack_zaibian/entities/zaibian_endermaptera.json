@@ -1,0 +1,314 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "start_death": {
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            },
+            "minecraft:spider_angry": {
+                "minecraft:angry": {
+                    "calm_event": {
+                        "event": "minecraft:become_calm",
+                        "target": "self"
+                    },
+                    "duration": 10,
+                    "duration_delta": 3
+                },
+                "minecraft:behavior.leap_at_target": {
+                    "must_be_on_ground": false,
+                    "priority": 4,
+                    "yd": 0.4
+                }
+            },
+            "minecraft:spider_hostile": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "attack_interval": 5,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "snowgolem"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "irongolem"
+                                    }
+                                ]
+                            },
+                            "max_dist": 16
+                        }
+                    ],
+                    "within_radius": 60,
+                    "must_see": true,
+                    "priority":0
+                },
+                "minecraft:environment_sensor": {
+                    "triggers": {
+                        "event": "minecraft:become_neutral",
+                        "filters": {
+                            "operator": ">",
+                            "test": "is_brightness",
+                            "value": 0.49
+                        }
+                    }
+                },
+                "minecraft:on_target_acquired": {
+                    "event": "minecraft:become_angry"
+                }
+            },
+            "minecraft:spider_jockey": {
+                "minecraft:addrider": {
+                    "entity_type": "minecraft:skeleton"
+                },
+                "minecraft:rideable": {
+                    "family_types": [
+                        "skeleton"
+                    ],
+                    "seat_count": 1,
+                    "seats": {
+                        "position": [
+                            0.0,
+                            0.54,
+                            0.0
+                        ]
+                    }
+                }
+            },
+            "minecraft:spider_neutral": {
+                "minecraft:environment_sensor": {
+                    "triggers": {
+                        "event": "minecraft:become_hostile",
+                        "filters": {
+                            "operator": "<",
+                            "test": "is_brightness",
+                            "value": 0.49
+                        }
+                    }
+                },
+                "minecraft:on_target_acquired": {
+                    "event": "minecraft:become_angry"
+                }
+            },
+            "minecraft:spider_stray_jockey": {
+                "minecraft:addrider": {
+                    "entity_type": "minecraft:skeleton.stray"
+                },
+                "minecraft:rideable": {
+                    "family_types": [
+                        "skeleton"
+                    ],
+                    "seat_count": 1,
+                    "seats": {
+                        "position": [
+                            0.0,
+                            0.54,
+                            0.0
+                        ]
+                    }
+                }
+            },
+            "minecraft:spider_wither_jockey": {
+                "minecraft:addrider": {
+                    "entity_type": "minecraft:skeleton.wither"
+                },
+                "minecraft:rideable": {
+                    "family_types": [
+                        "skeleton"
+                    ],
+                    "seat_count": 1,
+                    "seats": {
+                        "position": [
+                            0.0,
+                            0.54,
+                            0.0
+                        ]
+                    }
+                }
+            }
+        },
+        "components": {
+            
+            "minecraft:behavior.delayed_attack": {//延迟攻击行为，来自Ravager劫掠兽,使用该行为可以配合动画播放到一个阶段时，打出一次伤害
+                "priority": 0,
+                "speed_multiplier": 1.2,//进入攻击状态时，速度加成，这里是乘以1.5倍
+                "attack_duration": 0.5,//攻击动画时间，与动画资源的时长匹配
+                "hit_delay_pct": 0.45,//在时间的多少百分比打出伤害，将动画资源导入BB可以看到在0.24秒时打出攻击动作，动画总时长0.72秒，因此0.24/0.72约等于0.3333
+                "track_target": true,//持续跟踪目标
+                "reach_multiplier":2.2 //攻击范围
+              },
+            "minecraft:attack": {
+                "damage": 5
+            },
+            "minecraft:behavior.float": {
+                "priority": 1
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 0
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 6.0,
+                "priority": 7,
+                "probability": 0.02
+            },
+            "minecraft:behavior.mount_pathing": {
+                "priority": 5,
+                "speed_multiplier": 1.25,
+                "target_dist": 0.0,
+                "track_target": true
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 20
+                    }
+                ],
+                "must_reach": true,
+                "must_see": true,
+                "within_radius": 60,
+                "priority": 0
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 0.8
+            },
+            "minecraft:breathable": {
+                "suffocate_time": 0,
+                "total_supply": 15
+            },
+            "minecraft:can_climb": {
+
+            },
+            "minecraft:collision_box": {
+                "height": 0.4,
+                "width": 0.8
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 : 0"
+            },
+            "minecraft:health": {
+                "max": 16,
+                "value": 16
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {
+
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/endermaptera.json"
+            },
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:movement.basic": {
+
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/zb_6.json",
+                "slot_drop_chance": [
+                    {
+                      "slot": "slot.armor.chest",
+                      "drop_chance": 0.0
+                    },
+                    {
+                        "slot": "slot.armor.legs",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.feet",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.head",
+                        "drop_chance": 0.0
+                      }
+                  ]
+            },
+            "minecraft:nameable": {
+
+            },
+            "minecraft:navigation.climb": {
+                "can_path_over_water": true
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+                "push_towards_closest_space":true
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "monster",
+                    "mob",
+                    "zaibian"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:endermaptera",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            }
+        }
+    }
+}

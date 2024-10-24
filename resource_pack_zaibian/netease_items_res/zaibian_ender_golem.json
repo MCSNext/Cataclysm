@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:ender_golem"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ender_golem",
+            "register_to_create_menu": true
+        }
+    }
+}

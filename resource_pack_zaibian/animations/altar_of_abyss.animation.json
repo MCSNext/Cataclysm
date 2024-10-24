@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.altar_of_abyss.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"small": {
+					"rotation": {
+						"0.0": [-30, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"big": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.altar_of_abyss.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.75,
+			"bones": {
+				"small": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.75": [-30, 0, 0]
+					}
+				},
+				"big": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.75": [30, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

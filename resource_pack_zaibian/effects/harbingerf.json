@@ -1,0 +1,30 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "1.0"
+        },
+        "direction": {
+            "max": "0.5 -1.0 0.5",
+            "min": "-0.5 -1.0 -0.5",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "30.0",
+            "min": "20.0"
+        },
+        "numparticles": {
+            "value": "150"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "ani": {
+                "fps": "5",
+                "name": "textures/sfxs/cs_carnival_weapon_fire",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/cs_carnival_weapon_fire"
+        }
+    }
+}

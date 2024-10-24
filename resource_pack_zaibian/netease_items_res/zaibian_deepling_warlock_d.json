@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:deepling_warlock_d"
+        },
+        "description": {
+            "category": "Nature",
+            "identifier": "zaibian:deepling_warlock_d",
+            "register_to_create_menu": true
+        }
+    }
+}

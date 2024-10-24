@@ -1,0 +1,36 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:abyss_eye"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:crying_obsidian"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:obsidian"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:ender_eye"
+            }
+        },
+        "pattern": [
+            "ABA",
+            "BCB",
+            "ABA"
+
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:abyss_eye"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

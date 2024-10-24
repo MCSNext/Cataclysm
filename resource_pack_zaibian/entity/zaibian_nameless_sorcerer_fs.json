@@ -1,0 +1,44 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animation_controllers": [
+                {
+                    "general": "controller.animation.evoker.general.v1.0"
+                },
+                {
+                    "move": "controller.animation.villager.move"
+                }
+            ],
+            "animations": {
+                "casting": "animation.evoker.casting.v1.0",
+                "general": "animation.evoker.general.v1.0",
+                "look_at_target": "animation.humanoid.look_at_target.default.v1.0",
+                "move": "animation.villager.move"
+            },
+            "geometry": {
+                "default": "geometry.evoker"
+            },
+            "identifier": "zaibian:nameless_sorcerer_fs",
+            "materials": {
+                "default": "evoker"
+            },
+            "particle_effects": {
+                "spell": "minecraft:evoker_spell"
+            },
+            "render_controllers": [
+                "controller.render.evoker"
+            ],
+            "scripts": {
+                "scale": "0.9375"
+            },
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 40
+            },
+            "textures": {
+                "default": "textures/entity/illager/evoker"
+            }
+        }
+    }
+}

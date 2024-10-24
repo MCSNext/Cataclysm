@@ -1,0 +1,302 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "start_death": {
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            },
+            "romve_skill": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "skill_use1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            }
+        },
+        "components": {
+            
+            "minecraft:timer": {
+                "looping": true,
+                "randomInterval": true,
+                "time": [
+                    15.0,
+                    20.0
+                ],
+                "time_down_event": {
+                    "event": "skill_use"
+                }
+            },
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 0
+            },
+            "minecraft:behavior.look_at_entity": {
+                "filters": {
+                    "subject": "other",
+                    "test": "is_family",
+                    "value": "mob"
+                },
+                "look_distance": 8.0,
+                "priority": 10
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 3.0,
+                "priority": 9,
+                "probability": 1.0
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 30
+                    }
+                ],
+                "must_see": true,
+                "within_radius": 60,
+                "priority": 0
+            },
+            "minecraft:behavior.send_event": {
+                "event_choices": [
+                    {
+                        "cast_duration": 3.0,
+                        "cooldown_time": 5.0,
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "sheep"
+                                },
+                                {
+                                    "subject": "other",
+                                    "test": "is_color",
+                                    "value": "blue"
+                                }
+                            ]
+                        },
+                        "max_activation_range": 16.0,
+                        "min_activation_range": 0.0,
+                        "particle_color": "#FFB38033",
+                        "sequence": [
+                            {
+                                "base_delay": 2.0,
+                                "event": "wololo",
+                                "sound_event": "prepare.wololo"
+                            }
+                        ],
+                        "start_sound_event": "cast.spell",
+                        "weight": 3
+                    }
+                ],
+                "priority": 3
+            },
+            "minecraft:behavior.summon_entity": {
+                "priority": 0,
+                "summon_choices": [
+                    {
+                        "cast_duration": 1.0,
+                        "cooldown_time": 1.0,
+                        "max_activation_range": 3.0,
+                        "min_activation_range": 0.0,
+                        "particle_color": "#FF664D59",
+                        "sequence": [
+                            {
+                                "base_delay": 0.0,
+                                "delay_per_summon": 0.0,
+                                "entity_lifespan": 1.1,
+                                "entity_type": "minecraft:evocation_fang",
+                                "num_entities_spawned": 5,
+                                "shape": "circle",
+                                "size": 1.5,
+                                "sound_event": "prepare.attack",
+                                "target": "self"
+                            },
+                            {
+                                "base_delay": 0.15,
+                                "delay_per_summon": 0.0,
+                                "entity_lifespan": 1.1,
+                                "entity_type": "minecraft:evocation_fang",
+                                "num_entities_spawned": 8,
+                                "shape": "circle",
+                                "size": 2.5,
+                                "target": "self"
+                            }
+                        ],
+                        "start_sound_event": "cast.spell",
+                        "weight": 10
+                    },
+                    {
+                        "cast_duration": 1.0,
+                        "cooldown_time": 1.0,
+                        "min_activation_range": 3.0,
+                        "particle_color": "#FF664D59",
+                        "sequence": [
+                            {
+                                "base_delay": 0.5,
+                                "delay_per_summon": 0.05,
+                                "entity_lifespan": 1.1,
+                                "entity_type": "minecraft:evocation_fang",
+                                "num_entities_spawned": 16,
+                                "shape": "line",
+                                "size": 20,
+                                "target": "self"
+                            }
+                        ],
+                        "start_sound_event": "cast.spell",
+                        "weight": 10
+                    },
+                    {
+                        "cast_duration": 1.0,
+                        "cooldown_time": 15.0,
+                        "particle_color": "#FFB3B3CC",
+                        "sequence": [
+                            {
+                                "base_delay": 2.0,
+                                "entity_type": "zaibian:nameless_sorcerer_fs",
+                                "num_entities_spawned": 2,
+                                "shape": "circle",
+                                "size": 1.0,
+                                "sound_event": "prepare.summon",
+                                "summon_cap": 8,
+                                "summon_cap_radius": 16.0,
+                                "target": "self"
+                            }
+                        ],
+                        "weight": 1
+                    }
+                ]
+            },
+            "minecraft:breathable": {
+                "suffocate_time": 0,
+                "total_supply": 15
+            },
+            "minecraft:can_climb": {
+
+            },
+            "minecraft:collision_box": {
+                "height": 1.9,
+                "width": 0.6
+            },
+            "minecraft:experience_reward": {
+                "on_death": "10"
+            },
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:health": {
+                "max": 124,
+                "value": 124
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {
+
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/nameless_sorcerer.json"
+            },
+            "minecraft:movement": {
+                "value": 0.5
+            },
+            "minecraft:movement.basic": {
+
+            },
+            "minecraft:nameable": {
+
+            },
+            "minecraft:navigation.walk": {
+                "avoid_water": true,
+                "can_open_doors": true,
+                "can_pass_doors": true,
+                "can_path_over_water": true
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "monster",
+                    "mob",
+                    "zaibian"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:nameless_sorcerer",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "romve_skill": {
+                "add": {
+                    "component_groups": [
+                        "romve_skill"
+                    ]
+                }
+            },
+            "skill_use": {
+
+            },
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            },
+            "skill_use1": {
+                "add": {
+                    "component_groups": [
+                        "skill_use1"
+                    ]
+                }
+            }
+        }
+    }
+}

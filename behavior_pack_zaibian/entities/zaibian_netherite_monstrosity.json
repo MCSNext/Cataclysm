@@ -1,0 +1,416 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "init":{
+                "minecraft:on_target_acquired": {
+                    "event": "start",
+                    "target": "self"
+                }
+            },
+
+            "romve_skill": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "skill_use1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "skill_use10": {
+                "minecraft:mark_variant": {
+                    "value": 10
+                },
+                "minecraft:timer": {
+                    "looping": false,
+                    "randomInterval": true,
+                    "time": [
+                        3,
+                        3
+                    ],
+                    "time_down_event": {
+                        "event": "init_move"
+                    }
+                }
+            },
+            "skill_use2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "skill_use3": {
+                "minecraft:mark_variant": {
+                    "value": 3
+                }
+            },
+            "skill_use4": {
+                "minecraft:mark_variant": {
+                    "value": 4
+                }
+            },
+            "star_use": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        6.0,
+                        10.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            },
+            "start": {
+                "minecraft:equip_item": {
+
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/zb_10.json",
+                    "slot_drop_chance": [
+                        {
+                          "slot": "slot.armor.chest",
+                          "drop_chance": 0.0
+                        },
+                        {
+                            "slot": "slot.armor.legs",
+                            "drop_chance": 0.0
+                          },
+                          {
+                            "slot": "slot.armor.feet",
+                            "drop_chance": 0.0
+                          },
+                          {
+                            "slot": "slot.armor.head",
+                            "drop_chance": 0.0
+                          }
+                      ]
+                },
+                "minecraft:attack": {
+                    "damage": 20
+                },
+                "minecraft:behavior.look_at_player": {
+                    "look_distance": 6.0,
+                    "priority": 7,
+                    "probability": 0.02
+                },
+                "minecraft:behavior.move_towards_target": {
+                    "priority": 2,
+                    "speed_multiplier": 0.9,
+                    "within_radius": 32
+                },
+                "minecraft:behavior.random_look_around": {
+                    "priority": 8
+                },
+                "minecraft:boss": {
+                    "hud_range": 60,
+                    "name": "下界合金巨兽"
+                },
+                "minecraft:break_blocks": {
+                    "breakable_blocks": [
+                        "minecraft:fire",
+                        "minecraft:soul_fire"
+                    ]
+                },
+                "minecraft:damage_sensor": {
+                    "triggers": [
+                        {
+                            "cause": "fall",
+                            "deals_damage": false
+                        },
+                        {
+                            "cause": "entity_explosion",
+                            "deals_damage": false
+                        },
+                        {
+                            "cause": "fire",
+                            "deals_damage": false
+                        },
+                        {
+                            "cause": "lava",
+                            "deals_damage": false
+                        },
+                        {
+                            "cause": "magma",
+                            "deals_damage": false
+                        }
+                    ]
+                },
+                "minecraft:lava_movement": {
+                    "value": 0.32
+                },
+                "minecraft:movement": {
+                    "value": 0.18
+                },
+                "minecraft:movement.amphibious": {
+
+                },
+                "minecraft:navigation.walk": {
+                    "avoid_damage_blocks": true,
+                    "avoid_water": false,
+                    "can_path_over_lava": true,
+                    "can_sink": false,
+                    "can_walk_in_lava": true
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        8.0,
+                        10.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                },
+                "minecraft:underwater_movement": {
+                    "value": 0.2
+                },
+                "minecraft:variant": {
+                    "value": 1
+                },
+                "minecraft:water_movement": {
+                    "drag_factor": 0.0
+                }
+            },
+            "start_death": {
+                "minecraft:boss": {
+                    "hud_range": 0
+                },
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            }
+        },
+        "components": {
+            "minecraft:balloonable": {
+
+            },
+            "minecraft:behavior.delayed_attack": {
+                "attack_duration": 0.3,
+                "hit_delay_pct": 0,
+                "priority": 1,
+                "reach_multiplier": 4,
+                "speed_multiplier": 1,
+                "track_target": true
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 0
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 50
+                    }
+                ],
+                "must_see": true,
+                "priority": 1
+            },
+            "minecraft:behavior.target_when_pushed": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "monster"
+                                },
+                                {
+                                    "operator": "!=",
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "creeper"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "percent_chance": 5.0,
+                "priority": 1
+            },
+            "minecraft:collision_box": {
+                "height": 3.5,
+                "width": 1.8
+            },
+         
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? Math.Random(299,300) : 0"
+            },
+            "minecraft:fire_immune": {
+
+            },
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:health": {
+                "max": 500,
+                "value": 500
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {
+
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/netherite_monstrosity.json"
+            },
+            "minecraft:nameable": {
+
+            },
+            
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "zaibian",
+                    "mob"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:netherite_monstrosity",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            
+            "init_move": {
+                "add": {
+                    "component_groups": [
+                        "start",
+                        "attackable_st"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "skill_use10"
+                    ]
+                }
+            },
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "attackable_st",
+                        "init"
+
+                    ]
+                }
+            },
+            "romve_skill": {
+                "add": {
+                    "component_groups": [
+                        "romve_skill",
+                        "attackable_st"
+                    ]
+                }
+            },
+            "skill_use": {
+
+            },
+            "skill_use1": {
+                "add": {
+                    "component_groups": [
+                        "skill_use1"
+                    ]
+                }
+            },
+            "skill_use2": {
+                "add": {
+                    "component_groups": [
+                        "skill_use2"
+                    ]
+                }
+            },
+            "skill_use3": {
+                "add": {
+                    "component_groups": [
+                        "skill_use3"
+                    ]
+                }
+            },
+            "skill_use4": {
+                "add": {
+                    "component_groups": [
+                        "skill_use4"
+                    ]
+                }
+            },
+            "star_use": {
+                "add": {
+                    "component_groups": [
+                        "star_use"
+                    ]
+                }
+            },
+            "start": {
+                "add": {
+                    "component_groups": [
+                        "skill_use10"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "init"
+                    ]
+                }
+            },
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            }
+        }
+    }
+}

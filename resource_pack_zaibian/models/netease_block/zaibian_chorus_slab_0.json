@@ -1,0 +1,106 @@
+{
+    "format_version": "1.13.0",
+    "netease:block_geometry": {
+        "bones": [
+            {
+                "pivot": [
+                    0,
+                    0,
+                    0
+                ],
+                "cubes": [
+                    {
+                        "origin": [
+                            -16,
+                            0,
+                            0
+                        ],
+                        "uv": {
+                            "north": {
+                                "uv_size": [
+                                    16,
+                                    8
+                                ],
+                                "uv": [
+                                    0,
+                                    8
+                                ]
+                            },
+                            "west": {
+                                "uv_size": [
+                                    16,
+                                    8
+                                ],
+                                "uv": [
+                                    0,
+                                    8
+                                ]
+                            },
+                            "up": {
+                                "uv_size": [
+                                    -16,
+                                    -16
+                                ],
+                                "uv": [
+                                    16,
+                                    16
+                                ]
+                            },
+                            "down": {
+                                "uv_size": [
+                                    -16,
+                                    -16
+                                ],
+                                "uv": [
+                                    16,
+                                    16
+                                ]
+                            },
+                            "east": {
+                                "uv_size": [
+                                    16,
+                                    8
+                                ],
+                                "uv": [
+                                    0,
+                                    8
+                                ]
+                            },
+                            "south": {
+                                "uv_size": [
+                                    16,
+                                    8
+                                ],
+                                "uv": [
+                                    0,
+                                    8
+                                ]
+                            }
+                        },
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                ],
+                "name": "bone"
+            }
+        ],
+        "description": {
+            "textures": [
+                "zaibian:chorus_planks"
+            ],
+            "texture_height": 16,
+            "visible_bounds_offset": [
+                0,
+                1.5,
+                0
+            ],
+            "texture_width": 16,
+            "visible_bounds_width": 17,
+            "identifier": "zaibian:chorus_slab_0_model",
+            "visible_bounds_height": 7
+        }
+    }
+}

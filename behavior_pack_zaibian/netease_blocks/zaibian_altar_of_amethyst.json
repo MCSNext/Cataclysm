@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:block_light_emission": {
+                "emission": 0.8
+            },
+            "minecraft:destroy_time": 999999.0,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:block_entity": {
+                "movable": true,
+                "tick": true
+            },
+            "netease:custom_tips": {
+                "value": "§2此祭坛可用于强化紫水晶巨蟹的掉落物紫水晶蟹肉，使其变为受祝福的紫水晶蟹肉"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:altar_of_amethyst",
+            "register_to_creative_menu": true
+        }
+    }
+}

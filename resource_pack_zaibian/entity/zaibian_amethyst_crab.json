@@ -1,0 +1,73 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack1": "animation.amethyst_crab.attack1",
+                "attack2": "animation.amethyst_crab.attack2",
+                "attack3": "animation.amethyst_crab.attack3",
+                "attack4": "animation.amethyst_crab.attack4",
+
+                "deepling.attack": "controller.animation.amethyst_crab",
+                "initial": "animation.amethyst_crab.idle",
+                "look_at_target": "animation.the_baby_leviathan.look_at_target",
+   
+                "move": "animation.amethyst_crab.walk",
+
+                "death": "animation.amethyst_crab.die"
+
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.amethyst_crab"
+            },
+            "identifier": "zaibian:amethyst_crab",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.drowned"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "move": "query.modified_move_speed>0.1 &&query.mark_variant==0  &&query.mark_variant!=100"
+                    },
+                    {
+                        "initial": "query.modified_move_speed<0.1  &&query.mark_variant==0 &&query.mark_variant!=100"
+                    },
+                    "deepling.attack",
+                    {
+                        "look_at_target": "query.mark_variant!=100"
+                    }
+
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "particle_effects":{
+                "close_di1":"zaibian:close_di1",
+                "close_di3":"zaibian:close_di3",
+                "close_di2":"zaibian:close_di2",
+
+                "close_di4":"zaibian:close_di4"
+
+
+       
+
+            },
+            "sound_effects": {
+                "monstrosityland": "random.explode",
+                "crab_death": "crab_death",
+                "grass": "dig.grass",
+
+                "crab_bite": "crab_bite"
+
+            },
+            "textures": {
+                "default": "textures/entity/amethyst_crab"
+            }
+        }
+    }
+}

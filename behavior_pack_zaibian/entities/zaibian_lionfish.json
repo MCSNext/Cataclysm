@@ -1,0 +1,170 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "start_death": {
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            }
+        },
+        "components": {
+            "minecraft:attack": {
+                "damage": 2
+            },
+            "minecraft:leashable": {
+                "soft_distance": 3.0,
+                "hard_distance": 4.0,
+                "max_distance": 5.0,
+                "can_be_stolen": true
+              },
+            "minecraft:behavior.delayed_attack": {
+                "attack_duration": 1,
+                "hit_delay_pct": 0.4,
+                "priority": 0,
+                "reach_multiplier": 2.6,
+                "speed_multiplier": 2,
+                "track_target": true
+            },
+
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 0
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 12
+                    }
+                ],
+                "must_reach": true,
+                "must_see": true,
+                "within_radius": 60,
+                "priority": 0
+            },
+            "minecraft:behavior.random_swim": {
+                "interval": 0,
+                "priority": 3,
+                "speed_multiplier": 1.0,
+                "xz_dist": 16,
+                "y_dist": 4
+            },
+            "minecraft:behavior.swim_idle": {
+                "priority": 5
+            },
+            "minecraft:behavior.swim_wander": {
+                "interval": 10,
+                "look_ahead": 2.0,
+                "priority": 4,
+                "speed_multiplier": 1.0
+            },
+            "minecraft:breathable": {
+                "breathes_air": false,
+                "breathes_water": true,
+                "suffocate_time": 0,
+                "total_supply": 15
+            },
+            "minecraft:collision_box": {
+                "height": 0.4,
+                "width": 0.5
+            },
+            "minecraft:experience_reward": {
+                "on_death": 5
+            },
+            "minecraft:health": {
+                "max": 12,
+                "value": 12
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/lionfish.json"
+            },
+            "minecraft:movement": {
+                "value": 0.12
+            },
+            "minecraft:movement.sway": {
+                "sway_amplitude": 0.0
+            },
+            "minecraft:nameable": {
+
+            },
+            "minecraft:navigation.generic": {
+                "can_breach": false,
+                "can_path_over_water": false,
+                "can_sink": false,
+                "can_swim": true,
+                "can_walk": false,
+                "is_amphibious": false
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "zaibian",
+                    "lionfish"
+                ]
+            },
+            "minecraft:underwater_movement": {
+                "value": 0.23
+            }
+        },
+        "description": {
+            "identifier": "zaibian:lionfish",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            }
+        }
+    }
+}

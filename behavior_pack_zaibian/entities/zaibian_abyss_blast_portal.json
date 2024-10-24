@@ -1,0 +1,175 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "stop":{
+                "minecraft:timer": {
+                    "looping": false,
+                    "randomInterval": true,
+                    "time": [
+                    2,
+                    2
+                    ],
+                    "time_down_event": {
+                        "event": "zaibian:abyss_blast_portal"
+                    }
+                }
+            },
+                "start":{
+                    
+            "minecraft:timer": {
+                "looping": false,
+                "randomInterval": true,
+                "time": [
+                4,
+                4
+                ],
+                "time_down_event": {
+                    "event": "zaibian:stop"
+                }
+            },
+            "minecraft:breathable": {
+                "breathes_air": true,
+                "breathes_water": true,
+                "suffocate_time": 0,
+                "total_supply": 60
+            }
+
+                }
+            
+        },
+        "components": {
+            "minecraft:physics": {
+                "has_gravity": false,
+                "push_towards_closest_space": true
+            },
+            "minecraft:collision_box": {
+                "height": 1,
+                "width": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "fall",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_explosion",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "block_explosion",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_attack",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lightning",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "fire_tick",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lava",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "suffocation",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "override",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "contact",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "drowning",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "wither",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "projectile",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "fire",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lava",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "magma",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "daojv",
+                    "zaibian"
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:timer": {
+                "looping": false,
+                "randomInterval": true,
+                "time": [
+                    2,
+                    2
+                ],
+                "time_down_event": {
+                    "event": "zaibian:start"
+                }
+            }
+        },
+        "description": {
+            "identifier": "zaibian:abyss_blast_portal",
+            "is_experimental": false,
+            "is_summonable": true
+        },
+        "events": {
+            "zaibian:abyss_blast_portal": {},
+
+            "zaibian:start": {
+                "add": {
+                    "component_groups": [
+                        "start"
+                    ]
+                }
+            },
+            "zaibian:stop": {
+                "add": {
+                    "component_groups": [
+                        "stop"
+                    ]
+                },"remove": {
+                    "component_groups": [
+                    "start"
+
+                    ]
+                }
+            }
+        }
+    }
+}

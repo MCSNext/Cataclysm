@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mechanical_fusion_anvil": {
+			"loop" : true,
+
+			"animation_length": 8,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 0, 180],
+						"8.0": [0, 0, 360]
+					}
+				}
+			}
+		}
+	}
+}

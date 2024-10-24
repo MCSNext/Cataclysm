@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": 1.0,
+            "minecraft:explosion_resistance": {
+                "value": 2.0
+            },
+            "netease:block_entity": {
+                "movable": false,
+                "tick": true
+            },
+            "netease:custom_tips": {
+                "value": "§2紫珀唱片机为循环播放，该方块只有正常播放及取消的功能"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:listen_block_remove": {
+                "value": true
+            },
+            "netease:render_layer": {
+                "value": "opaque"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:miss",
+            "register_to_creative_menu": true
+        }
+    }
+}

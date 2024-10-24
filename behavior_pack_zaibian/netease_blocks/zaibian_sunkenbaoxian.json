@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "netease:block_entity": {
+                "movable": false,
+                "tick": true
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            }
+        },
+        "description": {
+            "identifier": "zaibian:sunkenbaoxian",
+            "register_to_creative_menu": false
+        }
+    }
+}

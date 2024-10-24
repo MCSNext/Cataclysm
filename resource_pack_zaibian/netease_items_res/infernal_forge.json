@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:infernal_forge"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:infernal_forge",
+            "register_to_create_menu": true
+        }
+    }
+}

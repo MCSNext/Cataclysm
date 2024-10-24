@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:monstrous_horn"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:monstrous_horn",
+            "register_to_create_menu": true
+        }
+    }
+}

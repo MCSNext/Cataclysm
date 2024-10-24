@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:witherite_block"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "zaibian:witherite_ingot"
+            }
+        },
+        "pattern": [
+            "AAA",
+            "AAA",
+            "AAA"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:witherite_block"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

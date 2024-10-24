@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ignitium.qianxing": {
+			"loop": true,
+			"bones": {
+				"rightwing": {
+					"rotation": [0, 0, 15]
+				},
+				"leftwing": {
+					"rotation": [0, 0, -15]
+				}
+			}
+		},
+		"animation.ignitium.fly_up": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"rightwing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [2.5, 0, 70]
+					}
+				},
+				"leftwing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [2.5, 0, -70]
+					}
+				}
+			}
+		},
+		"animation.ignitium.fly_down": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"rightwing": {
+					"rotation": {
+						"0.0": [2.5, 0, 70],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"leftwing": {
+					"rotation": {
+						"0.0": [2.5, 0, -70],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

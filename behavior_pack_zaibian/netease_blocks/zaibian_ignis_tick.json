@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:block_entity": {
+                "movable": false,
+                "tick": true
+            }
+        },
+        "description": {
+            "identifier": "zaibian:ignis_tick"
+        }
+    }
+}

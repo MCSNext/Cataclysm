@@ -1,0 +1,294 @@
+{
+   "main" : {
+      "bindings" : [
+         {
+            "binding_condition" : "always",
+            "binding_name" : "#main.pinga"
+         }
+      ],
+      "controls" : [
+         {
+            "button@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/ui/f0fe618faecb4d078e075c3e5bd2f49d",
+               "$hover_texture" : "textures/ui/f0fe618faecb4d078e075c3e5bd2f49d",
+               "$is_new_nine_slice" : true,
+               "$label_color" : [ 1.0, 1.0, 1.0 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "normal",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "变形",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/ui/f0fe618faecb4d078e075c3e5bd2f49d",
+               "$texture_layer" : 2,
+               "alpha" : 0.540,
+               "anchor_from" : "bottom_middle",
+               "anchor_to" : "bottom_middle",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {
+                        "alpha" : 0.470
+                     }
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {
+                        "alpha" : 0.30,
+                        "color" : [ 1.0, 1.0, 1.0 ],
+                        "grayscale" : true
+                     }
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {
+                        "alpha" : 0.30,
+                        "color" : [ 1.0, 1.0, 1.0 ],
+                        "grayscale" : true
+                     }
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {
+                        "alpha" : 0.520
+                     }
+                  },
+                  {
+                     "image" : {
+                        "alpha" : 0.50,
+                        "clip_direction" : "left",
+                        "clip_ratio" : 0.0,
+                        "color" : [ 1.0, 0.6666666666666666, 0.0 ],
+                        "is_new_nine_slice" : true,
+                        "layer" : -1,
+                        "texture" : "textures/ui/f0fe618faecb4d078e075c3e5bd2f49d",
+                        "type" : "image"
+                     }
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "both",
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "offset" : [ 0.0, "-15.0%+0.0px" ],
+               "pressed_control" : "pressed",
+               "size" : [ "0.0%+33.0px", "0.0%x+18.0px" ],
+               "type" : "button"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "pinga",
+   "p12" : {
+      "anim_type" : "uv",
+      "duration" : 0.20,
+      "from" : [ 0, 0 ],
+      "next" : "@pinga.p22",
+      "to" : [ 0, 0 ]
+   },
+   "p13" : {
+      "anim_type" : "flip_book",
+      "fps" : 0,
+      "frame_count" : 0,
+      "initial_frame" : 2,
+      "next" : "",
+      "reversible" : false
+   },
+   "p22" : {
+      "anim_type" : "uv",
+      "duration" : 0.20,
+      "from" : [ 9.0, 0.0 ],
+      "next" : "@pinga.p23",
+      "to" : [ 9.0, 0.0 ]
+   },
+   "p23" : {
+      "anim_type" : "uv",
+      "duration" : 0.010,
+      "from" : [ 18.0, 0.0 ],
+      "next" : "",
+      "to" : [ 18.0, 0.0 ]
+   },
+   "sand" : {
+      "anchor_from" : "top_right",
+      "anchor_to" : "top_right",
+      "controls" : [
+         {
+            "9" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "controls" : [],
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "8" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "7" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "6" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "5" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "controls" : [],
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "4" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "3" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "2" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "1" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         },
+         {
+            "0" : {
+               "anchor_from" : "left_middle",
+               "anchor_to" : "left_middle",
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 1,
+               "offset" : [ 2.0, 0.0 ],
+               "rotate_pivot" : [ 0.0, 0.0 ],
+               "size" : [ "10.0%+0.0px", "default" ],
+               "texture" : "textures/ui/sandstorm_icons",
+               "type" : "image",
+               "uv" : "@pinga.p22",
+               "uv_size" : [ 9.0, 9.0 ]
+            }
+         }
+      ],
+      "layer" : 1,
+      "orientation" : "horizontal",
+      "size" : [ "0.0%+80.0px", 10.0 ],
+      "type" : "stack_panel"
+   }
+}

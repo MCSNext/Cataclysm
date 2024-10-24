@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0", 
+  "render_controllers": {
+    "controller.render.altar_of_fire": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default1", 
+            "Texture.default2", 
+            "Texture.default3", 
+            "Texture.default4"
+          ]
+        }
+      }, 
+      "geometry": "Geometry.default", 
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ], 
+      "textures": [
+        "Array.textures[query.anim_time * 5]"
+      ]
+    },
+    "controller.render.sandstorm": {
+
+      "geometry": "Geometry.sandstorm",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.sandstorm" ]
+    },
+    "controller.render.sandstorm_in_a_bottle": {
+
+ 
+      "geometry": "Geometry.sandstorm_in_a_bottle", 
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ], 
+      "textures": [
+        "Texture.sandstorm_in_a_bottle"
+      ]
+    },
+    "controller.render.sticky_gloves": {
+
+      "geometry": "Geometry.sticky_gloves", 
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ], 
+      "textures": [
+        "Texture.sticky_gloves"
+      ]
+    }
+  }
+}

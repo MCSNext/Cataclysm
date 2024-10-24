@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:music_disc_ignis"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:music_disc_ignis",
+            "register_to_create_menu": true
+        }
+    }
+}

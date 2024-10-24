@@ -1,0 +1,11 @@
+{
+    "finished_icon": "textures/ui/zaibian/537464",
+    "goal_number": 1,
+    "node_ID": "z1",
+    "node_description": "找到废弃堡垒",
+    "parent_node": "zaibian",
+    "title": "一座废弃堡垒",
+    "type": "sub_node",
+    "unfinished_icon": "textures/ui/zaibian/537464",
+    "window_background": ""
+}

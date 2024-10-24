@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "qianxing": "animation.ignitium.qianxing",
+                "fly_down": "animation.ignitium.fly_down",
+                "fly_up": "animation.ignitium.fly_up",
+                "ignitium_elytra_chestplate": "controller.animation.ignitium_elytra_chestplate"
+
+            },
+            "geometry": {
+                "default": "geometry.ignitium_elytra_chestplate"
+            },
+            "identifier": "zaibian:ignitium_elytra_chestplate",
+            "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+            },
+            "render_controllers": [
+                "controller.render.armor"
+            ],
+            "scripts": {
+                "animate": [
+                    
+                    "ignitium_elytra_chestplate"
+
+                ],
+                "parent_setup": "variable.chest_layer_visible = 0.0;"
+            },
+            "textures": {
+                "default": "textures/models/zaibian/ignitium_elytra_chestplate",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

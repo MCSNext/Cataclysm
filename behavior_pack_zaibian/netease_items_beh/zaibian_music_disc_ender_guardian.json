@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "Ean Grimm - Eternal"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:music_disc_ender_guardian",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "2.0"
+        },
+        "direction": {
+            "max": "1.0 1.0 1.0",
+            "min": "-1.0 -1.0 -1.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "100.0",
+            "min": "100.0"
+        },
+        "enableloop": {
+            "enable": "true"
+        },
+        "numparticles": {
+            "value": "100"
+        },
+        "particlesize": {
+            "max": "0.2 0.2",
+            "min": "0.2 0.2"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "ani": {
+                "fps": "5",
+                "name": "textures/particle/particle1",
+                "shuffle": false
+            },
+            "name": "textures/particle/2"
+        },
+        "timetolive": {
+            "max": "2.5",
+            "min": "2.5"
+        },
+        "velocity": {
+            "max": "3.0",
+            "min": "3.0"
+        }
+    }
+}

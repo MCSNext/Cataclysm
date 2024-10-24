@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:koboleton_bone"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:koboleton_bone",
+            "register_to_create_menu": true
+        }
+    }
+}

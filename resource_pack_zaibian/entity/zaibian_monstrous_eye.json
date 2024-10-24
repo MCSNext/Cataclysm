@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "flying": "animation.actor.billboard"
+            },
+            "geometry": {
+                "default": "geometry.item_sprite"
+            },
+            "identifier": "zaibian:monstrous_eye",
+            "materials": {
+                "default": "eye_of_ender_signal"
+            },
+            "render_controllers": [
+                "controller.render.item_sprite"
+            ],
+            "scripts": {
+                "animate": [
+                    "flying"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/monstrous_eye"
+            }
+        }
+    }
+}

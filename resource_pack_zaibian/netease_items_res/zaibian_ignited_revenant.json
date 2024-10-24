@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:ignited_revenant"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ignited_revenant",
+            "register_to_create_menu": true
+        }
+    }
+}

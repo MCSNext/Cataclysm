@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.watcher.attack",
+                "idle": "animation.watcher.idle",
+                
+                "deepling.attack": "controller.animation.deepling.attack",
+                "deepling.range_attack": "controller.animation.deepling.range_attack",
+               
+                "look_at_target": "animation.the_baby_leviathan.look_at_target",
+                "range_attack": "animation.watcher.zhuan"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.the_watcher",
+                "default1": "geometry.the_watcher1"
+            },
+            "identifier": "zaibian:the_watcher",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.drowned",
+                "controller.render.the_harbinger2"
+            ],
+            "sound_effects": {
+                "watcher_hurt": "watcher_hurt",
+                "watcher_death": "watcher_death"
+
+
+            },
+            "scripts": {
+                "animate": [
+                    "deepling.range_attack",
+                    "deepling.attack",
+                    "idle"
+                ],
+                "initialize": [
+                    "variable.mode = 1;"
+                ],
+                "pre_animation": [
+                    "variable.mode = 1;",
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/factory/the_watcher",
+                "default2": "textures/entity/factory/the_watcher_layer"
+            }
+        }
+    }
+}

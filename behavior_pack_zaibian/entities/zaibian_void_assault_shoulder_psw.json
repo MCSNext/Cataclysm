@@ -1,0 +1,89 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.2,
+                "width": 0.2
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:projectile": {
+                "anchor": 2,
+                "gravity": 0.015,
+                "hit_sound": "random.explode",
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "offset": [
+                    0,
+                    1.5,
+                    0
+                ],
+                "on_hit": {
+                    "arrow_effect": {
+
+                    },
+                    "impact_damage": {
+                        "damage": [
+                            5,
+                            6
+                        ],
+                        "destroy_on_hit": true,
+                        "knockback": true,
+                        "semi_random_diff_damage": false
+                    },
+                    "remove_on_hit": {
+
+                    },
+                    "stick_in_ground": {
+                        "shake_time": 0.35
+                    }
+                },
+                "power": 0.5,
+                "should_bounce": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "npc"
+                ]
+            },
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            }
+        },
+        "description": {
+            "identifier": "zaibian:void_assault_shoulder_psw",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+
+        }
+    }
+}

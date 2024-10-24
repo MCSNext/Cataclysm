@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+      "description": {
+        "identifier": "abyssal_curse"
+      },
+      "components": {
+        "minecraft:particle_color": [255, 255, 255],
+        "minecraft:icon": "abyssal_curse"
+      }
+    }
+}

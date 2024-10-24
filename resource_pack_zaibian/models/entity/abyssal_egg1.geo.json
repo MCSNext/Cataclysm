@@ -1,0 +1,67 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.abyssal_egg1",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [-8, 0, 8],
+					"cubes": [
+						{
+							"origin": [-15, 0, 1],
+							"size": [14, 17, 14],
+							"inflate": -0.25,
+							"uv": {
+								"north": {"uv": [14, 14], "uv_size": [14, 17]},
+								"east": {"uv": [0, 14], "uv_size": [14, 17]},
+								"south": {"uv": [42, 14], "uv_size": [14, 17]},
+								"west": {"uv": [28, 14], "uv_size": [14, 17]},
+								"up": {"uv": [14, 0], "uv_size": [14, 14]},
+								"down": {"uv": [30, 83], "uv_size": [14, -14]}
+							}
+						},
+						{
+							"origin": [-15, 0, 1],
+							"size": [14, 7, 14],
+							"uv": {
+								"north": {"uv": [14, 46], "uv_size": [14, 7]},
+								"east": {"uv": [0, 46], "uv_size": [14, 7]},
+								"south": {"uv": [42, 46], "uv_size": [14, 7]},
+								"west": {"uv": [28, 46], "uv_size": [14, 7]},
+								"up": {"uv": [14, 32], "uv_size": [14, 14]},
+								"down": {"uv": [28, 46], "uv_size": [14, -14]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone",
+					"pivot": [-8, 0, 8],
+					"cubes": [
+						{
+							"origin": [-14, 0, 8],
+							"size": [12, 12, 0],
+							"uv": {
+								"north": {"uv": [43, 0], "uv_size": [12, 12]},
+								"east": {"uv": [43, 0], "uv_size": [0, 12]},
+								"south": {"uv": [55, 0], "uv_size": [12, 12]},
+								"west": {"uv": [55, 0], "uv_size": [0, 12]},
+								"up": {"uv": [43, 0], "uv_size": [12, 0]},
+								"down": {"uv": [55, 0], "uv_size": [12, 0]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

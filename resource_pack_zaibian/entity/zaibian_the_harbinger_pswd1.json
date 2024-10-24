@@ -1,0 +1,36 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.jian.move"
+            },
+            "geometry": {
+                "default": "geometry.laser_beam"
+            },
+            "identifier": "zaibian:the_harbinger_pswd1",
+            "materials": {
+                "charged": "charged_creeper"
+            },
+            "sound_effects": {
+                "harbinger_laser": "harbinger_laser"
+
+            },
+            "render_controllers": [
+                "controller.render.laser_beam"
+            ],
+            "scripts": {
+                "animate": [
+                    "move"
+                ],
+                "pre_animation": [
+                    "variable.shake = query.shake_time - query.frame_alpha;",
+                    "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/harbinger/laser_beam"
+            }
+        }
+    }
+}

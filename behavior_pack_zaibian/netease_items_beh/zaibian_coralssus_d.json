@@ -1,0 +1,15 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "netease:egg": {
+                "entity": "zaibian:coralssus"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:coralssus_d",
+            "register_to_create_menu": true
+        }
+    }
+}

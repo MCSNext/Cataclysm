@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:shield"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:netherbrick"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:shield"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:blaze_rod"
+            },
+            "D": {
+                "data": 0,
+                "item": "zaibian:ignitium_ingot"
+            }
+        },
+        "pattern": [
+            "ADA",
+            "CBC",
+            "ADA"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:shield"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

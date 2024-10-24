@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:remnant_skull"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:remnant_skull",
+            "register_to_create_menu": true
+        }
+    }
+}

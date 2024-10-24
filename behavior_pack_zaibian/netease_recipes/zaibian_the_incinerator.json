@@ -1,0 +1,35 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:the_incinerator"
+        },
+        "key": {
+            "D": {
+                "data": 0,
+                "item": "zaibian:ignitium_ingot"
+            },
+            "F": {
+                "data": 0,
+                "item": "minecraft:netherite_sword"
+            },
+            "G": {
+                "data": 0,
+                "item": "minecraft:blaze_rod"
+            }
+        },
+        "pattern": [
+            " GD",
+            "GDG",
+            "FG "
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:the_incinerator"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

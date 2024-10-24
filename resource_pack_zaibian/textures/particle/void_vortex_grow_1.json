@@ -1,0 +1,120 @@
+{
+    "frames": [
+        {
+            "filename": "void_vortex_grow_0.png",
+            "frame": {
+                "h": 32,
+                "w": 32,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 32,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "void_vortex_grow_1.png",
+            "frame": {
+                "h": 32,
+                "w": 32,
+                "x": 32,
+                "y": 0
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 32,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "void_vortex_grow_2.png",
+            "frame": {
+                "h": 32,
+                "w": 32,
+                "x": 64,
+                "y": 0
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 32,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "void_vortex_grow_3.png",
+            "frame": {
+                "h": 32,
+                "w": 32,
+                "x": 96,
+                "y": 0
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 32,
+                "w": 32
+            },
+            "spriteSourceSize": {
+                "h": 32,
+                "w": 32,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    ],
+    "meta": {
+        "app": "https://www.codeandweb.com/texturepacker",
+        "format": "RGBA8888",
+        "image": "void_vortex_grow_1.png",
+        "scale": "1",
+        "size": {
+            "h": 32,
+            "w": 128
+        },
+        "smartupdate": "$TexturePacker:SmartUpdate:daee04e7f1a6d84c821f75046c78c4d1:98c3390dde1e41613a1d1b3854c5c301:d3628ad7c6ef5bc13825cd5879705eaa$",
+        "version": "1.0"
+    }
+}

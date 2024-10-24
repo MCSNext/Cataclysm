@@ -1,0 +1,51 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.leviathan_baby.attack",
+                "attack1": "animation.leviathan_baby.attack1",
+                "skill": "controller.animation.the_baby_leviathan",
+
+                "idle": "animation.leviathan_baby.idle",
+                "look_at_target": "animation.the_baby_leviathan.look_at_target",
+                "walk": "animation.leviathan_baby.walk"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.leviathan_baby"
+            },
+            "identifier": "zaibian:the_baby_leviathan",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "look_at_target": "query.mark_variant!=100"
+                    },
+                    "skill",
+                    {
+                        "walk": "query.modified_move_speed>0.1 &&query.mark_variant==0 && query.mark_variant!=100"
+                    },
+                    {
+                        "idle": "query.modified_move_speed<0.1 && query.mark_variant==0 && query.mark_variant!=100"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "sound_effects": {
+                "abyss_blast_only_charge": "abyss_blast_only_charge",
+                "leviathan_bite": "leviathan_bite_x"
+            },
+            "textures": {
+                "default": "textures/entity/leviathan/the_baby_leviathan"
+            }
+        }
+    }
+}

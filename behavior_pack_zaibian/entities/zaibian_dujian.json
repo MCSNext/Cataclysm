@@ -1,0 +1,92 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.25,
+                "width": 0.25
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            },
+            "minecraft:projectile": {
+                "anchor": 1,
+                "destroyOnHurt": true,
+                "gravity": 0.00,
+                "hit_sound": "bow.hit",
+                "offset": [
+                    0,
+                    0,
+                    0
+                ],
+                "on_hit": {
+                    "remove_on_hit": {
+
+                    },
+                    "mob_effect": {
+                        "effect": "poison",
+                        "durationeasy": 200,
+                        "durationnormal": 200,
+                        "durationhard": 200,
+                        "amplifier": 1
+                      },
+                    "arrow_effect": {
+
+                    },
+                    "impact_damage": {
+                        "damage": [
+                            1,
+                            4
+                        ],
+                        "destroy_on_hit": true,
+                        "knockback": true,
+                        "semi_random_diff_damage": false
+                    },
+                    "stick_in_ground": {
+                        "shake_time": 0.35
+                    }
+                },
+                "power": 3,
+                "should_bounce": true,
+                "uncertainty_base": 16,
+                "uncertainty_multiplier": 4
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+        "description": {
+            "identifier": "zaibian:dujian",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+        
+        }
+    }
+}

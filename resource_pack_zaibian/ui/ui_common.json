@@ -1,0 +1,37 @@
+{
+  "namespace": "common",
+  
+  "filled_progress_bar_for_collections1@filled_progress_bar_for_collections": {
+    "clip_pixelperfect": false,
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      }
+    ]
+  },
+  "progress_bar_for_collections@progress_bar": {
+    "controls": [
+      {
+        "empty_progress_bar@common.empty_progress_bar": {
+          "layer": 1
+        }
+      },
+      {
+        "filled_progress_bar_for_collections@common.filled_progress_bar_for_collections": {
+          "layer": 2
+        }
+      },
+      {
+        "filled_progress_bar_for_collections1@common.filled_progress_bar_for_collections1": {
+          "layer": 2,
+          "visible": false
+
+        }
+      }
+    ]
+  }
+
+}

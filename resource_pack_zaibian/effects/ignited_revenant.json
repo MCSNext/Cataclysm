@@ -1,0 +1,63 @@
+{
+    "particleeffect": {
+        "colorfade": [
+            {
+                "color": "0.0000 0.0000 0.0000 1.0000",
+                "time": "0.0%"
+            },
+            {
+                "color": "0.0000 0.0000 0.0000 1.0000",
+                "time": "100.0%"
+            }
+        ],
+        "constantforce": {
+            "value": "1.0 0.0 0.0"
+        },
+        "direction": {
+            "max": "1.0 -1.0 -0.1",
+            "min": "1.0 1.0 0.1",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "50.0",
+            "min": "50.0"
+        },
+        "emitterScaleCurve": [
+
+        ],
+        "emitterscale": [
+
+        ],
+        "emittersize": {
+            "value": "0.1 0 0.1"
+        },
+        "emittertype": {
+            "value": "Sphere"
+        },
+        "numparticles": {
+            "value": "1000"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "ani": {
+                "fps": "2",
+                "name": "textures/sfxs/xy_starry_armor_jblgh",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/xy_starry_armor_jblgh"
+        },
+        "thickness": {
+            "value": "0.0"
+        },
+        "timetolive": {
+            "max": "2.0",
+            "min": "2.0"
+        },
+        "velocity": {
+            "max": "0.2",
+            "min": "1.0"
+        }
+    }
+}

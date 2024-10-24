@@ -1,0 +1,61 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bulwark_of_the_flame",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"pivot": [-8, 9, 3]
+				},
+				{
+					"name": "shield",
+					"parent": "rightItem",
+					"pivot": [-10, 4, 23],
+					"rotation": [90, 10, 90]
+				},
+				{
+					"name": "bone",
+					"parent": "shield",
+					"pivot": [-11, 15, 20],
+					"cubes": [
+						{"origin": [-13, 24, 18.5], "size": [4, 4, 1], "uv": [34, 18]},
+						{"origin": [-14.5, 34, 19], "size": [7, 6, 2], "uv": [15, 19]},
+						{"origin": [-14, 15, 19.5], "size": [6, 22, 1], "uv": [0, 0]},
+						{"origin": [-14.5, 12, 19], "size": [7, 5, 2], "uv": [0, 28]},
+						{"origin": [-12, 22, 20.5], "size": [2, 6, 6], "uv": [28, 0]}
+					]
+				},
+				{
+					"name": "left",
+					"parent": "bone",
+					"pivot": [-8, 34.1, 20],
+					"rotation": [0, -5, 2.5],
+					"cubes": [
+						{"origin": [-8.5, 34.1, 19.5], "size": [6, 4, 2], "uv": [19, 28]},
+						{"origin": [-8, 17.1, 20], "size": [5, 17, 1], "uv": [15, 0]},
+						{"origin": [-8.5, 13.1, 19.5], "size": [6, 4, 2], "uv": [28, 11]}
+					]
+				},
+				{
+					"name": "right",
+					"parent": "bone",
+					"pivot": [-14, 34.1, 20],
+					"rotation": [0, 5, -2.5],
+					"cubes": [
+						{"origin": [-19.5, 34.1, 19.5], "size": [6, 4, 2], "uv": [19, 28], "mirror": true},
+						{"origin": [-19, 17.1, 20], "size": [5, 17, 1], "uv": [15, 0], "mirror": true},
+						{"origin": [-19.5, 13.1, 19.5], "size": [6, 4, 2], "uv": [28, 11], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animation_controllers": [
+                {
+                    "general": "controller.animation.evoker.general.v1.0"
+                },
+                {
+                    "move": "controller.animation.villager.move"
+                }
+            ],
+            "animations": {
+                "casting": "animation.evoker.casting.v1.0",
+                "general": "animation.evoker.general.v1.0",
+                "look_at_target": "animation.humanoid.look_at_target.default.v1.0",
+                "move": "animation.villager.move"
+            },
+            "geometry": {
+                "default": "geometry.nameless_sorcerer"
+            },
+            "identifier": "zaibian:nameless_sorcerer",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "particle_effects": {
+                "spell": "minecraft:evoker_spell"
+            },
+            "render_controllers": [
+                "controller.render.endermaptera"
+            ],
+            "textures": {
+                "default": "textures/entity/nameless_sorcerer"
+            }
+        }
+    }
+}

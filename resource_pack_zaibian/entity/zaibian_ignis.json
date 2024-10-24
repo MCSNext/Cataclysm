@@ -1,0 +1,149 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack15": "animation.ignis.attack15",
+                "attack15_1": "animation.ignis.attack15_1",
+
+                "attack16": "animation.ignis.attack16",
+                "attack16_1": "animation.ignis.attack16_1",
+
+                "attack17": "animation.ignis.attack17",
+                "attack17_1": "animation.ignis.attack17_1",
+
+
+                "attack": "animation.ignis.attack1",
+                "attack10": "animation.ignis.attack10",
+
+
+                "attack11": "animation.ignis.attack11",
+                "attack12": "animation.ignis.attack12",
+                "attack12_1": "animation.ignis.attack12_1",
+                "attack12e": "animation.ignis.attack12e",
+                "attack12e_1": "animation.ignis.attack12e_1",
+                "attack13": "animation.ignis.attack13",
+                "attack14": "animation.ignis.attack14",
+                "attack3_1": "animation.ignis.attack3_1",
+
+
+                "attack2": "animation.ignis.attack2",
+                "attack3": "animation.ignis.attack3",
+                "attack5": "animation.ignis.attack5",
+                "attack6": "animation.ignis.attack6",
+                "attack7": "animation.ignis.attack7",
+                "attack8": "animation.ignis.attack8",
+                "attack9": "animation.ignis.attack9",
+                "attack9_0": "animation.ignis.attack9_0",
+                "attack_0": "animation.ignis.attack1_1",
+                "controller.attack": "controller.animation.ignis",
+                "controller.attack1": "controller.animation.ignis1",
+                "controller.attack2": "controller.animation.ignis2",
+
+
+                "death": "animation.ignis.death",
+                "erjieduan": "animation.ignis.erjieduan",
+                "idle": "animation.ignis.idle",
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+                "sanjieduan": "animation.ignis.sanjieduan",
+                "threshold": "animation.ignis.anti-threshold",
+                "initial2": "animation.ignis.initial2",
+                "initial2_0": "animation.ignis.anti_fx2",
+
+
+                "threshold1": "animation.ignis.anti_fx"
+
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.ignis",
+                "default1": "geometry.ignis1"
+
+            },
+            "identifier": "zaibian:ignis",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "particle_effects": {
+                "fire11": "houyan",
+                "fire11l": "houyanl",
+                "fire12": "houyan1",
+                "fire12l": "houyan1l",
+                "fire22": "houyan22",
+                "fire22l": "houyan22l",
+                "houquifire": "houquifire",
+
+                "yanzi": "yanzi"
+            },
+            "render_controllers": [
+                {
+                    "controller.render.ignis": "query.variant==0"
+                },
+                {
+                    "controller.render.ignis1": "query.variant!=0"
+                }
+                ,
+                {
+                    "controller.render.ignis2": "query.mod.bfb<=2  && query.variant==2"
+                }
+            ],
+            "scripts": {
+      
+                "animate": [
+                    {
+                        "sanjieduan": "query.variant==2  && query.mark_variant==1000"
+                    },
+                    {
+                        "erjieduan": "query.variant==1  && query.mark_variant==1000"
+                    },
+                    {
+                        "look_at_target1": "query.mark_variant!=100"
+                    },
+                    "controller.attack",
+                    "controller.attack1",
+                    "controller.attack2",
+
+                    {
+                        "death": "query.mark_variant==100"
+                    },
+               
+                    {
+                        "idle": "query.mark_variant!=100"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "sound_effects": {
+                "ignis_shield01": "ignis_shield01",
+                "ignis_shield02": "ignis_shield02"
+
+            },
+            "textures": {
+                "default0_0": "textures/entity/ignis/ignis_idle_0",
+                "default0_1": "textures/entity/ignis/ignis_idle_1",
+                "default0_2": "textures/entity/ignis/ignis_idle_2",
+                "default0_3": "textures/entity/ignis/ignis_idle_3",
+                "default0_4": "textures/entity/ignis/ignis_idle_4",
+                "default0_5": "textures/entity/ignis/ignis_idle_5",
+                "default0_6": "textures/entity/ignis/ignis_idle_6",
+                "default0_7": "textures/entity/ignis/ignis_idle_7",
+                "default1_0": "textures/entity/ignis/ignis_soul_idle_0",
+                "default1_1": "textures/entity/ignis/ignis_soul_idle_1",
+                "default1_2": "textures/entity/ignis/ignis_soul_idle_2",
+                "default1_3": "textures/entity/ignis/ignis_soul_idle_3",
+                "default1_4": "textures/entity/ignis/ignis_soul_idle_4",
+                "default1_5": "textures/entity/ignis/ignis_soul_idle_5",
+                "default1_6": "textures/entity/ignis/ignis_soul_idle_6",
+                "default1_7": "textures/entity/ignis/ignis_soul_idle_7",
+
+                "default2_0": "textures/entity/ignis/ignis_armor_crack1",
+                "default2_1": "textures/entity/ignis/ignis_armor_crack2",
+                "default2_2": "textures/entity/ignis/ignis_armor_crack3"
+
+
+            }
+        }
+    }
+}

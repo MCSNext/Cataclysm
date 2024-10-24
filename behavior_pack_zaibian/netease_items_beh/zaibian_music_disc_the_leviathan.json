@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "魔界Symphony - Endless Storm"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:music_disc_the_leviathan",
+            "register_to_create_menu": true
+        }
+    }
+}

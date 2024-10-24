@@ -1,0 +1,15 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "netease:egg": {
+                "entity": "zaibian:modern_remnant"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:modern_remnant_d",
+            "register_to_create_menu": true
+        }
+    }
+}

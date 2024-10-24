@@ -1,0 +1,88 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "causes_fire": true,
+                    "destroy_affected_by_griefing": false,
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 1,
+                    "breaks_blocks":false
+                }
+            }
+        },
+        "components": {
+            
+            "minecraft:collision_box": {
+                "height": 0.15,
+                "width": 0.15
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:projectile": {
+                "anchor": 1,
+                "gravity": 0.05,
+                "hit_sound": "random.explode",
+              
+                "offset": [
+                    0,
+                    -0.1,
+                    0
+                ],
+                "on_hit": {
+                
+                    "definition_event": {
+                        "affect_projectile": true,
+                        "event_trigger": {
+                            "event": "minecraft:explode",
+                            "target": "self"
+                        }
+                    }
+                },
+                "power": 1,
+                "shoot_sound": "bow",
+                "shoot_target": false,
+                "uncertainty_base": 1,
+                "uncertainty_multiplier": 0
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:timer": {
+                "randomInterval": true,
+                "time": [
+                    10.5,
+                    10.5
+                ],
+                "time_down_event": {
+                    "event": "minecraft:explode"
+                }
+            },
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            }
+        },
+        "description": {
+            "identifier": "zaibian:netherite_monstrosity_zd",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            }
+        }
+    }
+}

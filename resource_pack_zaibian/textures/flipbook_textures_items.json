@@ -1,0 +1,45 @@
+[
+    {
+        "atlas_tile": "zaibian:burning_ashes",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/burning_ashes",
+        "ticks_per_frame": 1
+    },
+    {
+        "atlas_tile": "zaibian:mech_eye",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/mech_eye",
+        "ticks_per_frame": 10
+    },
+    {
+        "atlas_tile": "zaibian:monstrous_eye",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/monstrous_eye",
+        "ticks_per_frame": 10
+    },
+    {
+        "atlas_tile": "zaibian:meat_shredder",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/meat_shredder1",
+        "ticks_per_frame": 1
+    },
+    {
+        "atlas_tile": "zaibian:void_eye",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/void_eye",
+        "ticks_per_frame": 10
+    },
+    {
+        "atlas_tile": "zaibian:abyss_eye",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/abyss_eye",
+        "ticks_per_frame": 10
+    },
+    {
+        "atlas_tile": "zaibian:flame_eye",
+        "blend_frames": true,
+        "flipbook_texture": "textures/items/flame_eye",
+        "ticks_per_frame": 10
+    }
+  
+]

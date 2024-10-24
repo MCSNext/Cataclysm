@@ -1,0 +1,83 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.liviathan.siyao",
+                "attack1": "animation.liviathan.attack1",
+                "attack10": "animation.liviathan.sanduanshenyuanchongjibo",
+                "attack11": "animation.liviathan.zhuaqushishenyuanchongjibo",
+                "attack2": "animation.liviathan.idle_land",
+                "attack3": "animation.liviathan.attack3",
+                "attack4_0": "animation.liviathan.chushouchuoci1",
+                "attack4_1": "animation.liviathan.chushouchuoci2",
+                "attack4_2": "animation.liviathan.chushouchuoci3",
+                "attack4_3": "animation.liviathan.chushouchuoci4",
+                "attack5": "animation.liviathan.chushouqianyin",
+                "attack6": "animation.liviathan.shenyuanshuilei",
+                "attack7": "animation.liviathan.shenyuanzhihou",
+                "attack8": "animation.liviathan.weidusilie",
+                "attack9": "animation.liviathan.shenyuanchongjibo",
+                "bianshen": "animation.liviathan.bianshen",
+                "die": "animation.liviathan.die",
+                "idle_land": "animation.liviathan.idle_land",
+                "idle_sea": "animation.liviathan.idle_sea",
+                "skill": "controller.animation.the_leviathan"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.liviathan",
+                "default1": "geometry.liviathan_1"
+            },
+            "identifier": "zaibian:the_leviathan",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "entity_alphatest"
+            },
+            "particle_effects": {
+                "hengsdaji": "hengsdaji"
+            },
+            "render_controllers": [
+                "controller.render.the_leviathan",
+                "controller.render.the_leviathan1"
+            ],
+            "scripts": {
+                "animate": [
+                    "skill",
+                    {
+                        "idle_sea": " query.mark_variant==0 && query.is_in_water"
+                    },
+                    {
+                        "idle_land": " query.mark_variant==0 && !query.is_in_water"
+                    }
+                ],
+                "initialize": [
+                    "variable.life_time = 0.0;",
+                    "variable.life_time1 = 0.0;",
+                    "variable.end_time = 60;"
+                ],
+                "pre_animation": [
+                    "variable.life_time1 = (query.mark_variant!=0?  variable.life_time1+1:0);",
+                    "variable.end_time = (query.mark_variant!=0?  60:(variable.end_time-1!=0 ? variable.end_time-1:0) );",
+                    "variable.life_time=variable.life_time+1;",
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "sound_effects": {
+                "abyss_blast_only_charge": "abyss_blast_only_charge",
+                "abyss_blast_only_shoot": "abyss_blast_only_shoot",
+                "explode": "random.explode",
+                "leviathan_bite": "leviathan_bite",
+                "leviathan_roar": "leviathan_roar",
+                "leviathan_stun_roar": "leviathan_stun_roar",
+                "leviathan_tentacle_strike": "leviathan_tentacle_strike"
+            },
+            "textures": {
+                "default1": "textures/entity/leviathan/the_leviathan",
+                "default1_1": "textures/entity/leviathan/the_leviathan_layer",
+                "default2": "textures/entity/leviathan/the_burning_leviathan",
+                "default2_1": "textures/entity/leviathan/the_burning_leviathan_layer"
+            }
+        }
+    }
+}

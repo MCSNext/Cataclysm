@@ -1,0 +1,56 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "0.4"
+        },
+        "direction": {
+            "max": "0.0 1.0 0.0",
+            "min": "0.0 1.0 0.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "600.0",
+            "min": "600.0"
+        },
+        "emitterScaleCurve": [
+
+        ],
+        "emitterscale": [
+
+        ],
+        "emittersize": {
+            "value": "14.5 0.0 14.5"
+        },
+        "emittertype": {
+            "value": "Cylinder"
+        },
+        "faceCameraMode": {
+            "value": "Rotate Y"
+        },
+        "numparticles": {
+            "value": "10000"
+        },
+        "particlesize": {
+            "max": "0.2 0.2",
+            "min": "0.2 0.2"
+        },
+        "relative": {
+            "enable": "false"
+        },
+        "texture": {
+            "ani": {
+                "fps": "5",
+                "name": "textures/sfxs/zhengdi",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/zhengdi"
+        },
+        "thickness": {
+            "value": "0.0"
+        },
+        "timetolive": {
+            "max": "1.5",
+            "min": "1.5"
+        }
+    }
+}

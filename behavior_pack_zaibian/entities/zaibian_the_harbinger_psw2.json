@@ -1,0 +1,114 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "breaks_blocks": false,
+                    "causes_fire": false,
+                    "destroy_affected_by_griefing": false,
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.2,
+                "width": 0.2
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:projectile": {
+                "anchor": 2,
+                "gravity": 0.0,
+                "hit_sound": "random.explode",
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "offset": [
+                    0,
+                    1.5,
+                    0
+                ],
+                "on_hit": {
+                    "arrow_effect": {
+
+                    },
+                    "impact_damage": {
+                        "damage": [
+                            4,
+                            4
+                        ],
+                        "destroy_on_hit": true,
+                        "knockback": true,
+                        "semi_random_diff_damage": false
+                    },
+                    "remove_on_hit": {
+
+                    },
+                    "stick_in_ground": {
+                        "shake_time": 0.35
+                    }
+                },
+                "power": 1.2,
+                "should_bounce": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:timer": {
+                "randomInterval": true,
+                "time": [
+                    30.5,
+                    30.5
+                ],
+                "time_down_event": {
+                    "event": "minecraft:explode"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "npc"
+                ]
+            },
+            "netease:custom_entity_type": {
+                "value": "projectile_entity"
+            }
+        },
+        "description": {
+            "identifier": "zaibian:the_harbinger_psw2",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            }
+        }
+    }
+}

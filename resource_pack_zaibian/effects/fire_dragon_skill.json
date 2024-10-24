@@ -1,0 +1,57 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "1.3"
+        },
+        "direction": {
+            "max": "-1.0 -0.2 0.3",
+            "min": "-1.0 0.2 -0.3",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "200.0",
+            "min": "200.0"
+        },
+        "emitterScaleCurve": [
+
+        ],
+        "emitterscale": [
+
+        ],
+        "emittersize": {
+            "value": "0.0 0.0 0.0"
+        },
+        "emittertype": {
+            "value": "Cone"
+        },
+        "enableloop": {
+            "enable": "true"
+        },
+        "independent": true,
+        "numparticles": {
+            "value": "1000"
+        },
+        "particlesize": {
+            "max": "0.3 0.3",
+            "min": "0.3 0.3"
+        },
+        "relative": {
+            "enable": "false"
+        },
+        "texture": {
+            "ani": {
+                "fps": "10",
+                "name": "textures/sfxs/xy_starry_armor_jblgh",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/cs_carnival_weapon_fire"
+        },
+        "thickness": {
+            "value": "0.0"
+        },
+        "velocity": {
+            "max": "10.0",
+            "min": "10.0"
+        }
+    }
+}

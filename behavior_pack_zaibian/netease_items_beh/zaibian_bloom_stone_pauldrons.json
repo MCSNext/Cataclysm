@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 480,
+            "netease:armor": {
+                "armor_slot": 1,
+                "defense": 8,
+                "enchantment": 20,
+                "knockback_resistance": 0.15,
+                "toughness": 4
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:bloom_stone_pauldrons",
+            "register_to_create_menu": true
+        }
+    }
+}

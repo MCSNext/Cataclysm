@@ -1,0 +1,24 @@
+
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+      
+            "geometry": {
+                "default": "geometry.altar_of_amethyst"
+            },
+            "identifier": "zaibian:altar_of_amethyst",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.item_sprite"
+            ],
+  
+            "textures": {
+                "default": "textures/blocks/altar_of_amethyst"
+            }
+        }
+    }
+}
+          

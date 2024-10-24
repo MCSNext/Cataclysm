@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "zaibian:monstrous_helm"
+        },
+        "ingredients": [
+            {
+                "count": 1,
+                "data": 0,
+                "item": "zaibian:monstrous_horn"
+            },
+            {
+                "count": 1,
+                "data": 0,
+                "item": "minecraft:netherite_helmet"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:monstrous_helm"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

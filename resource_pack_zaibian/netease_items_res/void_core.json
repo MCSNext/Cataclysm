@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:void_core"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:void_core",
+            "register_to_create_menu": true
+        }
+    }
+}

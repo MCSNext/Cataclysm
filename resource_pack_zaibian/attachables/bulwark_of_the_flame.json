@@ -1,0 +1,57 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "first_hold": "animation.shield.first_hold",
+                "first_hold_1": "animation.shield.first_hold_1",
+
+                "first_hold1": "animation.shield.first_hold1",
+                "first_hold1_1": "animation.shield.first_hold1_1",
+
+                "first_scale": "animation.infernal_forge.first_scale"
+
+                
+            },
+            "geometry": {
+                "default": "geometry.bulwark_of_the_flame",
+                "default1": "geometry.bulwark_of_the_flame1"
+            },
+            "identifier": "zaibian:shield",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.bulwark_of_the_flame"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "first_scale": "c.is_first_person"
+                    },
+                    {
+                        "first_hold1": "c.is_first_person "
+                    },
+                    {
+                        "first_hold": "c.is_first_person"
+                    },
+                    {
+                        "first_hold_1": "c.is_first_person && query.is_sneaking "
+                    },
+                    {
+                        "first_hold1_1": "c.is_first_person && query.is_sneaking&& query.get_equipped_item_name('off_hand') != 'shield' "
+                    }
+                ],
+                "pre_animation": [
+                    "variable.is_using_bow = (query.get_equipped_item_name == 'bow') && (query.main_hand_item_use_duration > 0.0f);",
+                    "variable.geo=c.item_slot == 'main_hand' ? 0 : 1;"
+                ]
+            },
+            "textures": {
+                "default": "textures/items/bulwark_of_the_flame",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

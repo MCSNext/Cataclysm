@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:music_disc_ender_guardian"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:music_disc_ender_guardian",
+            "register_to_create_menu": true
+        }
+    }
+}

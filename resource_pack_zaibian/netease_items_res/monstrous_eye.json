@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:monstrous_eye",
+            "netease:frame_anim_in_scene": {
+                "ticks_per_frame": 10,
+                "texture_path": "textures/items/monstrous_eye"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:monstrous_eye",
+            "register_to_create_menu": true
+        }
+    }
+}

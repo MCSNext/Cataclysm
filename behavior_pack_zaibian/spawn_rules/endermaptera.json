@@ -1,0 +1,44 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:spawn_rules": {
+        "conditions": [
+            {
+                "minecraft:biome_filter": {
+                    "any_of": [
+                        {
+                            "operator": "==",
+                            "test": "has_biome_tag",
+                            "value": "the_end"
+                        }
+                    ]
+                },
+                "minecraft:herd": {
+                    "max_size": 3,
+                    "min_size": 2
+                },
+                "minecraft:spawns_on_block_filter": [
+                    "zaibian:void_stone",
+                    "zaibian:void_infused_end_stone_bricks",
+                    "zaibian:void_lantern_block",
+                    "zaibian:chorus_planks",
+                    "zaibian:end_stone_teleport_trap_bricks_off",
+                    "zaibian:obsidian_explosion_trap_bricks_off",
+                    "zaibian:purpur_void_rune_trap_block_off"
+                ],
+                "minecraft:spawns_on_surface": {
+
+                },
+                "minecraft:spawns_underground": {
+
+                },
+                "minecraft:weight": {
+                    "default": 200
+                }
+            }
+        ],
+        "description": {
+            "identifier": "zaibian:endermaptera",
+            "population_control": "monster"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+        "components": {
+            "minecraft:icon": "blessing_of_amethyst",
+            "minecraft:particle_color": [
+                111,
+                79,
+                171
+            ]
+        },
+        "description": {
+            "identifier": "blessing_of_amethyst"
+        }
+    }
+}

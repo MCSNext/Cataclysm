@@ -1,0 +1,20 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.skeleton.v1.8"
+            },
+            "identifier": "withered:withered_block",
+            "materials": {
+                "default": "skeleton"
+            },
+            "render_controllers": [
+                "controller.render.skeleton"
+            ],
+            "textures": {
+                "default": "textures/items/proj"
+            }
+        }
+    }
+}

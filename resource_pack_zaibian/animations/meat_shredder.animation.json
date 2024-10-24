@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.meat_shredder.idle": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"bone4": {
+					"position": {
+						"0.0": [0, 0, 1.5],
+						"0.125": [0, 0, 0],
+						"0.25": [0, 0, 1.5]
+					}
+				},
+				"bone3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, 1.5],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"bone": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.meat_shredder.fire": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"bone8": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.meat_shredder.start2": {
+			"loop": true,
+			"override_previous_animation": true,
+			"sound_effects": {
+				"0.0": {
+					"effect": "shredder_end"
+				}
+			}
+		},
+		"animation.meat_shredder.start": {
+			"animation_length": 3.5,
+			"override_previous_animation": true,
+			"sound_effects": {
+				"0.0": {
+					"effect": "shredder_start"
+				}
+			}
+		}
+	}
+}

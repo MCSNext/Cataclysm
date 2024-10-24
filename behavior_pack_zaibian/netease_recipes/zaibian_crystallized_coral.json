@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:crystallized_coral"
+        },
+        "key": {
+            "D": {
+                "data": 0,
+                "item": "zaibian:crystallized_coral_fragments"
+            }
+        },
+        "pattern": [
+            "DD",
+            "DD"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:crystallized_coral"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

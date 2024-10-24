@@ -1,0 +1,134 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ender_guardian1",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "ender_guardian",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "ender_guardian",
+					"pivot": [0, 22, 0],
+					"cubes": [
+						{"origin": [-11, 22, -7], "size": [22, 8, 14], "inflate": 0.3, "uv": [121, 0]}
+					]
+				},
+				{
+					"name": "torso",
+					"parent": "body",
+					"pivot": [0, 30, 0],
+					"cubes": [
+						{"origin": [-20, 30, -10], "size": [40, 32, 20], "inflate": 0.3, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "torso2",
+					"parent": "torso",
+					"pivot": [0, 44, 0],
+					"cubes": [
+						{"origin": [-8, 40.5, 2], "size": [16, 16, 16], "inflate": 0.3, "pivot": [0, 48.5, 10], "rotation": [-45, 0, 0], "uv": [0, 99]},
+						{"origin": [-17, 44, -12], "size": [34, 21, 24], "inflate": 0.3, "uv": [0, 53]},
+						{"origin": [-25, 45, -13], "size": [12, 21, 26], "inflate": 0.3, "uv": [91, 73]},
+						{"origin": [13, 45, -13], "size": [12, 21, 26], "inflate": 0.3, "uv": [91, 73], "mirror": true}
+					]
+				},
+				{
+					"name": "arm",
+					"parent": "torso2",
+					"pivot": [1, 63, 0]
+				},
+				{
+					"name": "leftarm",
+					"parent": "arm",
+					"pivot": [25, 63, 0],
+					"cubes": [
+						{"origin": [25, 45, -9], "size": [12, 18, 18], "inflate": 0.3, "uv": [103, 35], "mirror": true},
+						{"origin": [34.1, 57.1, -3], "size": [6, 12, 6], "inflate": 0.3, "pivot": [37.1, 63.1, -3], "rotation": [0, 0, 45], "uv": [0, 162], "mirror": true},
+						{"origin": [20, 42, -6], "size": [14, 20, 12], "inflate": 0.3, "uv": [94, 150]}
+					]
+				},
+				{
+					"name": "lefthand",
+					"parent": "leftarm",
+					"pivot": [29, 42, 0],
+					"cubes": [
+						{"origin": [24, 28, -6], "size": [10, 14, 12], "inflate": 0.3, "uv": [146, 23], "mirror": true},
+						{"origin": [22, 15.75, -6], "size": [12, 12, 12], "inflate": 0.3, "uv": [142, 72], "mirror": true}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "arm",
+					"pivot": [-25, 63, 0],
+					"cubes": [
+						{"origin": [-37, 45, -9], "size": [12, 18, 18], "inflate": 0.3, "uv": [103, 35]},
+						{"origin": [-40.1, 57.1, -3], "size": [6, 12, 6], "inflate": 0.3, "pivot": [-37.1, 63.1, -3], "rotation": [0, 0, -45], "uv": [0, 162]},
+						{"origin": [-34, 42, -6], "size": [14, 20, 12], "inflate": 0.3, "uv": [94, 150], "mirror": true}
+					]
+				},
+				{
+					"name": "righthand",
+					"parent": "rightarm",
+					"pivot": [-29, 42, 0],
+					"cubes": [
+						{"origin": [-34, 28, -6], "size": [10, 14, 12], "inflate": 0.3, "uv": [146, 23]},
+						{"origin": [-34, 15.75, -6], "size": [12, 12, 12], "inflate": 0.3, "uv": [142, 72]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "torso",
+					"pivot": [0, 57, -13],
+					"cubes": [
+						{"origin": [-8, 51, -23], "size": [16, 6, 16], "inflate": 0.3, "uv": [0, 139]},
+						{"origin": [-10, 50, -19], "size": [6, 10, 7], "inflate": 0.3, "uv": [58, 155]},
+						{"origin": [4, 50, -19], "size": [6, 10, 7], "inflate": 0.3, "uv": [161, 114], "mirror": true}
+					]
+				},
+				{
+					"name": "pio",
+					"parent": "head",
+					"pivot": [0, -3, -3],
+					"cubes": [
+						{"origin": [-8, 54.75, -23], "size": [16, 12, 16], "inflate": 0.3, "uv": [106, 121]},
+						{"origin": [-3, 54.5, -23.75], "size": [6, 13, 10], "inflate": 0.3, "uv": [147, 150], "mirror": true}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "head",
+					"pivot": [0, 46, -7],
+					"cubes": [
+						{"origin": [-3, 57, -18], "size": [6, 6, 6], "uv": [49, 99]}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "ender_guardian",
+					"pivot": [13, 22, 0],
+					"cubes": [
+						{"origin": [7, 0, -8], "size": [12, 22, 16], "inflate": 0.3, "uv": [49, 116], "mirror": true}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "ender_guardian",
+					"pivot": [-13, 22, 0],
+					"cubes": [
+						{"origin": [-19, 0, -8], "size": [12, 22, 16], "inflate": 0.3, "uv": [49, 116]}
+					]
+				}
+			]
+		}
+	]
+}

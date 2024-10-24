@@ -1,0 +1,53 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "5.0"
+        },
+        "colorfade": [
+            {
+                "color": "0.6667 0.0000 0.0000 1.0000",
+                "time": "0.0%"
+            },
+            {
+                "color": "0.6667 0.0000 0.0000 1.0000",
+                "time": "100.0%"
+            }
+        ],
+        "constantforce": {
+            "value": "-50.0 0.0 0.0"
+        },
+        "dampingforce": {
+            "value": "3.0"
+        },
+        "direction": {
+            "max": "-1.0 0.0 0.0",
+            "min": "-1.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "50.0",
+            "min": "50.0"
+        },
+        "numparticles": {
+            "value": "1000"
+        },
+        "particlesize": {
+            "max": "1.0 1.0",
+            "min": "1.0 1.0"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "name": "textures/sfxs/custom_sun"
+        },
+        "timetolive": {
+            "max": "2.0",
+            "min": "2.0"
+        },
+        "velocity": {
+            "max": "0.0",
+            "min": "0.0"
+        }
+    }
+}

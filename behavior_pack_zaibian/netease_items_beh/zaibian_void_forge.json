@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10.0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:cooldown": {
+                "category": "1",
+                "duration": 5
+            },
+            "netease:customtips": {
+                "value": "§2主手手持并潜行时长按屏幕，可向所朝方向召唤一片分五排出现的虚空符文。"
+            },
+            "netease:weapon": {
+                "attack_damage":13,
+                "enchantment": 20,
+                "level": 3,
+                "speed": 5,
+                "type": "pickaxe"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:void_forge",
+            "register_to_create_menu": true
+        }
+    }
+}

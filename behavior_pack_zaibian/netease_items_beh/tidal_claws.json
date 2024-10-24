@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "minecraft:use_duration": 10000,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:customtips": {
+                "value": "§9+8 攻击伤害\n§r§2手持长按右键会发射潮汐抓钩以作为抓钩使用，\n抓钩可以钩住方块或实体并将使用者迅速拉过去，松开右键后抓钩消失。\n潜行手持时发射的潮汐抓钩如果钩住实体，那么会把钩住的实体迅速拉向使用者而不是把使用者拉向实体。"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "custom_item_type": "ranged_weapon",
+            "identifier": "zaibian:tidal_claws",
+            "register_to_create_menu": true
+        }
+    }
+}

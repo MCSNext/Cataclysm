@@ -1,0 +1,272 @@
+{
+	"entity_sounds": {
+		"entities": {
+
+			"zaibian:ancient_remnant": {
+				"volume": 1.0,
+				"pitch": [ 1, 1 ],
+				"events": {
+				  "hurt": "remnant_hurt",
+				  "ambient": "remnant_idle"
+				}
+			},
+
+			"zaibian:modern_remnant": {
+				"volume": 1.0,
+				"pitch": [ 1, 1 ],
+				"events": {
+				  "hurt": "remnant_hurt",
+				  "ambient": "remnant_idle",
+				  "death": "modern_remnant_death",
+				  "attack": "modern_remnant_bite"
+				}
+			},
+
+
+			"zaibian:the_prowler": {
+				"volume": 1.0,
+				"pitch": [ 1, 1 ],
+				"events": {
+				  "hurt": "prowler_hurt",
+				  "ambient": "prowler_death"
+				}
+			},
+
+			"zaibian:koboleton": {
+				"volume": 1.0,
+				"pitch": [ 1, 1 ],
+				"events": {
+				  "hurt": "koboleton_hurt",
+				  "ambient": "koboleton_ambient",
+				  "death": "koboleton_death",
+
+				  "attack": "game.player.attack.strong",
+	
+				  "step": {
+					"sound": "mob.skeleton.step",
+					"volume": 1,
+					"pitch": 1.1
+				  }
+				}
+			},
+
+			"zaibian:lionfish": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+				  "hurt": "mob.fish.hurt",
+				  "hurt.in.water": "mob.fish.hurt",
+				  "flop": {
+					"sound": "mob.fish.flop",
+					"volume": 1.0,
+					"pitch": 1.0
+				  },
+				  "step": {
+					"sound": "mob.fish.step",
+					"volume": 0.15,
+					"pitch": 1.0
+				  }
+				}
+			},
+			"zaibian:amethyst_crab": {
+				"events": {
+					"hurt": "golemhurt"
+				},
+				"pitch": [1.5, 1.5],
+				"volume": 1
+			},
+			"zaibian:abyss_mine": {
+				"events": {
+					"death": "random.explode"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:deepling_angler": {
+				"events": {
+
+					"hurt": "deepling_hurt3",
+					"ambient": "deepling_idle2",
+					"death": "deepling_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:coralssus": {
+				"events": {
+					"death": "golemdeath",
+					"hurt": "golemhurt",
+					"attack": "ender_guardian_fist_attack"
+				
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:the_leviathan": {
+				"events": {
+
+					"hurt": "leviathan_hurt",
+					"ambient": "leviathan_idle",
+					"death": "leviathan_defeat"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:deepling_brute": {
+				"events": {
+					"attack": "strongattack_swing",
+
+					"hurt": "deepling_hurt3",
+					"ambient": "deepling_idle2",
+					"death": "deepling_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:deepling_priest": {
+				"events": {
+					"attack": "strongattack_swing",
+
+					"hurt": "deepling_hurt3",
+					"ambient": "deepling_idle2",
+					"death": "deepling_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:deepling": {
+				"events": {
+					"attack": "strongattack_swing",
+
+					"hurt": "deepling_hurt3",
+					"ambient": "deepling_idle2",
+					"death": "deepling_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:deepling_warlock": {
+				"events": {
+					"hurt": "deepling_hurt3",
+					"ambient": "deepling_idle2",
+					"death": "deepling_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+
+
+			"zaibian:nameless_sorcerer": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+				  "ambient": "mob.evocation_illager.ambient",
+				  "death": "mob.evocation_illager.death",
+				  "hurt": "mob.evocation_illager.hurt",
+				  "cast.spell": "mob.evocation_illager.cast_spell",
+				  "prepare.attack": "mob.evocation_illager.prepare_attack",
+				  "prepare.summon": "mob.evocation_illager.prepare_summon",
+				  "prepare.wololo": "mob.evocation_illager.prepare_wololo",
+				  "ambient.in.raid": {"sound": "mob.evocation_illager.ambient", "volume": 3.0, "pitch": [ 0.8, 1.2 ]},
+				  "celebrate": "mob.evocation_illager.celebrate"
+				}
+			  },
+			  "zaibian:the_baby_leviathan": {
+				"events": {
+					"hurt": "leviathan_hurt"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:ender_guardian": {
+				"events": {
+					"hurt": "golemhurt",
+					// "attack": "ender_guardian_fist_attack",
+					"death": "golemdeath"
+
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:the_watcher": {
+				"events": {
+					"hurt": "watcher_hurt",
+					"death": "watcher_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:the_harbinger": {
+				"events": {
+					"hurt": "harbinger_hurt",
+					"ambient": "harbinger_idle",
+					"death": "harbinger_deathlaser_prepare"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:the_harbinger_pswd": {
+				"events": {
+					"step": {
+						"pitch": 1,
+						"sound": "harbinger_laser",
+						"volume": 1.5
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:the_harbinger_psw": {
+				"events": {
+					"step": {
+						"pitch": 1,
+						"sound": "harbinger_laser",
+						"volume": 1.5
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:ignited_revenant": {
+				"events": {
+					"hurt": "revenant_hurt",
+					"attack": "revenant_breath",
+					"death": "revenant_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:ender_golem": {
+				"events": {
+					"hurt": "golemhurt",
+					// "attack": "golemattack",
+					"death": "golemdeath"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:ignis": {
+				"events": {
+					"hurt": "ignis_hurt",
+					"death": "ignis_death"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"zaibian:netherite_monstrosity": {
+				"events": {
+					"hurt": "monstrosityhurt",
+					"step": {
+						"pitch": 1,
+						"sound": "monstrositystep",
+						"volume": 1.5
+					},
+
+					"death": "monstrositydeath"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			}
+		}
+	}
+}

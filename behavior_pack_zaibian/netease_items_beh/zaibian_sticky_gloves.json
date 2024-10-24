@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:customtips": {
+                "value": "§6栏位：§e手套§f\n§2阻止骷髅狗头人的掠夺"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:sticky_gloves",
+            "register_to_create_menu": true
+        }
+    }
+}

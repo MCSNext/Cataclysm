@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:food": {
+                "can_always_eat": true,
+                "cooldown_time": 20,
+                "effects": [
+                    {
+                        "amplifier": 0,
+                        "chance": 1.0,
+                        "duration": 5,
+                        "name": "regeneration"
+                    }
+                ],
+                "nutrition": 6,
+                "saturation_modifier": "good"
+            },
+            "minecraft:max_stack_size": 64,
+            "minecraft:use_duration": 20.0,
+            "netease:customtips": {
+                "value": "§2可以放置于紫水晶祭坛使其变为受祝福的紫水晶蟹肉。"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:amethyst_crab_meat",
+            "register_to_create_menu": true
+        }
+    }
+}

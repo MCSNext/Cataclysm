@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:final_fractal"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:final_fractal",
+            "register_to_create_menu": true
+        }
+    }
+}

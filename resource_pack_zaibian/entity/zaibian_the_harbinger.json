@@ -1,0 +1,100 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack1": "animation.harbinger.skill1",
+                "attack2": "animation.harbinger.skill2",
+                "attack4": "animation.harbinger.skill4",
+                "attack3": "animation.harbinger.skill3",
+                "attack5": "animation.harbinger.skill5",
+
+
+                "idle2": "animation.harbinger.idle2",
+
+                "idle3": "animation.harbinger.idle3",
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+                "controller.attack": "controller.animation.the_harbinger",
+
+                "controller.attack1": "controller.animation.the_harbinger1",
+
+                
+                "death": "animation.harbinger.die",
+                "init": "animation.harbinger.idle",
+                "sji": "animation.harbinger.sleep",
+                "wake": "animation.harbinger.wake",
+
+                "walk": "animation.harbinger.walk",
+
+
+                "fie": "animation.harbinger.fie"
+                
+            },
+            "enable_attachables": false,
+            "geometry": {
+                "default": "geometry.harbinger",
+                "default1": "geometry.harbinger1"
+            },
+            "identifier": "zaibian:the_harbinger",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.the_harbinger",
+                {
+                    "controller.render.the_harbinger1": "query.variant==2"
+                },
+                {
+                    "controller.render.the_harbinger2": "query.variant!=0"
+                }
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "look_at_target1": "query.mark_variant!=100"
+                    },
+                    
+                    "controller.attack",
+                    "controller.attack1",
+                    {
+                        "wake": "query.mark_variant==10 && query.variant==0&& query.mark_variant!=100"
+                    },
+                    {
+                        "sji": "query.variant==0&& query.mark_variant!=100"
+                    },
+                    {
+                        "init": "query.variant!=0 &&  query.mark_variant!=100"
+                    },
+                    {
+                        "walk": "query.variant!=0 &&  query.mark_variant!=100"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.body_base_rotation = Math.cos(query.life_time * 114.6);",
+                    "variable.upper_body_rotation = (0.065 + 0.05 * variable.body_base_rotation) * 180 + query.target_x_rotation;",
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "sound_effects": {
+                "portal_abyss_blast": "portal_abyss_blast",
+                "harbinger_prepare": "harbinger_prepare",
+                "harbinger_deathlaser_prepare": "harbinger_deathlaser_prepare",
+                "harbinger_charge_prepare": "harbinger_charge_prepare",
+
+
+                "harbinger_mode_change": "harbinger_mode_change"
+
+            },
+            "particle_effects": {
+                "peishefouyan": "peishefouyan"
+            
+            },
+            "textures": {
+                "default": "textures/entity/harbinger/the_harbinger",
+                "default1": "textures/entity/harbinger/the_harbinger_shield_layer",
+                "default2": "textures/entity/harbinger/the_harbinger_layer"
+            }
+        }
+    }
+}

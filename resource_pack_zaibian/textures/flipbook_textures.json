@@ -1,0 +1,8 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/void_lantern_block",
+    "atlas_tile": "zaibian:void_lantern_block",
+    "ticks_per_frame": 2
+  }
+
+]

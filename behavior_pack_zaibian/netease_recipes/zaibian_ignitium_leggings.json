@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "zaibian:ignitium_leggings"
+        },
+        "ingredients": [
+            {
+                "count": 1,
+                "data": 0,
+                "item": "zaibian:ignitium_ingot"
+            },
+            {
+                "count": 1,
+                "data": 0,
+                "item": "minecraft:netherite_leggings"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:ignitium_leggings"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

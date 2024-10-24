@@ -1,0 +1,11 @@
+{
+    "finish_tip": true,
+    "finished_icon": "textures/items/ignisjian",
+    "goal_number": 1,
+    "node_ID": "zaibian",
+    "node_description": "灾变",
+    "title": "灾变",
+    "type": "parent_node",
+    "unfinished_icon": "textures/items/ignisjian",
+    "window_background": "textures/ui/background/sign_crimson"
+}

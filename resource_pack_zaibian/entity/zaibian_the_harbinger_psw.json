@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.jian.move",
+                "hou": "animation.jian.hou"
+
+            },
+            "geometry": {
+                "default": "geometry.wither_howitzer"
+            },
+            "identifier": "zaibian:the_harbinger_psw",
+            "materials": {
+                "default": "fireball"
+            },
+            "render_controllers": [
+                "controller.render.fireball"
+            ],
+            "scripts": {
+                "animate": [
+                    "move",
+                    "hou"
+                ],
+                "pre_animation": [
+                    "variable.shake = query.shake_time - query.frame_alpha;",
+                    "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+                ]
+                // "scale": "0.5"
+            },
+            "particle_effects": {
+                "houjian": "houjian"
+            
+            },
+            "textures": {
+                "default": "textures/entity/harbinger/wither_howitzer"
+            }
+        }
+    }
+}

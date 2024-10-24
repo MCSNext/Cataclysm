@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "init": "animation.void_howitzer.init"
+            },
+            "geometry": {
+                "default": "geometry.void_howitzer"
+            },
+            "identifier": "zaibian:void_assault_shoulder_psw",
+            "materials": {
+                "default": "fireball"
+            },
+            "render_controllers": [
+                "controller.render.fireball"
+            ],
+            "particle_effects": {
+                "void_assault_shoulder" :"void_assault_shoulder"
+             }
+             ,
+            "scripts": {
+                "animate": [
+                    "init"
+                ],
+                "scale": "0.5"
+            },
+            "textures": {
+                "default": "textures/entity/void_howitzer"
+            }
+        }
+    }
+}

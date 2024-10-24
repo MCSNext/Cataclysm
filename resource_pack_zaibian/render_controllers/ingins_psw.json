@@ -1,0 +1,123 @@
+{
+  "format_version": "1.8.0", 
+  "render_controllers": {
+    "controller.render.fireball_z": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default1", 
+            "Texture.default2",
+            "Texture.default3"
+          ]
+        }
+      }, 
+      "geometry": "Geometry.default", 
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ], 
+      "textures": [
+        "Array.textures[query.mark_variant]"
+      ]
+    },
+    "controller.render.ender_guardian": {
+      "part_visibility": [
+        {
+          "*": "1",
+          "pio": "!query.variant"
+        }
+      ],
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default1"
+
+          ]
+        }
+      }, 
+      "geometry": "Geometry.default1", 
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ], 
+  
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier":1.5,
+      "ignore_lighting": true,
+      "textures": [
+        "Texture.default1"
+      ]
+    },
+    "controller.render.the_prowler": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default1"
+
+          ]
+        }
+      }, 
+      "geometry": "Geometry.default1", 
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ], 
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier":"variable.ling>1?1 : variable.ling",
+      "ignore_lighting": true,
+      "textures": [
+        "Texture.default1"
+      ]
+    },
+    "controller.render.ender_golem1": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default1"
+
+          ]
+        }
+      }, 
+      "geometry": "Geometry.default1", 
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ], 
+      "part_visibility": [
+        {
+          "*": "1"
+        }
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "light_color_multiplier":1.5,
+      "ignore_lighting": true,
+      "textures": [
+        "Texture.default1"
+      ]
+    }
+  }
+}

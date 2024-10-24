@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:ignitium_helmet"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ignitium_helmet",
+            "register_to_create_menu": true
+        }
+    }
+}

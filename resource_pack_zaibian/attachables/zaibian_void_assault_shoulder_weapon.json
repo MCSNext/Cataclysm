@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "first_hold": "animation.zaibian_gauntlet_of_bulwark.first_hold",
+                "first_hold1": "animation.zaibian_gauntlet_of_bulwark.first_hold1"
+            },
+            "geometry": {
+                "default": "geometry.assualt_shoulder_weapon",
+                "default3": "geometry.assualt_shoulder_weapon1"
+            },
+            "identifier": "zaibian:void_assault_shoulder_weapon",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.zy_wq"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "first_hold1": "c.is_first_person &&query.main_hand_item_use_duration > 0.0f"
+                    },
+                    {
+                        "first_hold": "c.is_first_person &&query.main_hand_item_use_duration <= 0.0f"
+                    }
+                ],
+                "parent_setup": "variable.helmet_layer_visible = 0.0;"
+            },
+            "textures": {
+                "default": "textures/items/void_assualt_shoulder_weapon",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

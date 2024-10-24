@@ -1,0 +1,56 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.coralssus.attack",
+                "attack1": "animation.coralssus.jump",
+                "attack_1": "animation.coralssus.attack2",
+                "deepling.attack": "controller.animation.coralssus.attack",
+                "initial": "animation.coralssus.initial",
+                "look_at_target": "animation.the_baby_leviathan.look_at_target",
+                "move": "animation.coralssus.walk"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.coralssus"
+            },
+            "identifier": "zaibian:coralssus",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.drowned"
+            ],
+            "sound_effects":{
+                "monstrositystep":"monstrositystep",
+                "sword_stomp":"sword_stomp"
+
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "move": "query.modified_move_speed>0.1 &&query.mark_variant==0  &&query.mark_variant!=100"
+                    },
+                    {
+                        "attack1": "query.mark_variant==1 && query.mark_variant!=100"
+                    },
+                    {
+                        "initial": "query.modified_move_speed<0.1  &&query.mark_variant==0 &&query.mark_variant!=100"
+                    },
+
+                    "deepling.attack",
+                    {
+                        "look_at_target": "query.mark_variant!=100"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/deepling/coralssus"
+            }
+        }
+    }
+}

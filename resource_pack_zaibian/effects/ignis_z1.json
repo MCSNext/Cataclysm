@@ -1,0 +1,46 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "1.0"
+        },
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "faceCameraMode": {
+            "value": "Horizontal"
+        },
+        "numparticles": {
+            "value": "1"
+        },
+        "particlesize": {
+            "max": "3.0 3.0",
+            "min": "3.0 3.0"
+        },
+        "relative": {
+            "enable": "false"
+        },
+        "sizedelta": [
+            {
+                "scale": "1.0 1.0",
+                "time": "0.0%"
+            },
+            {
+                "scale": "1.0 1.0",
+                "time": "59.7%"
+            },
+            {
+                "scale": "0.0 0.0",
+                "time": "79.7%"
+            }
+        ],
+        "texture": {
+            "name": "textures/particle/flame_strike_sigil"
+        },
+        "timetolive": {
+            "max": "4.0",
+            "min": "4.0"
+        }
+    }
+}

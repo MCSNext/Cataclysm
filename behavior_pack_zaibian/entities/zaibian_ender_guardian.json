@@ -1,0 +1,389 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "romve_skill": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "skill_use1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "skill_use2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "skill_use3": {
+                "minecraft:mark_variant": {
+                    "value": 3
+                }
+            },
+            "skill_use4": {
+                "minecraft:mark_variant": {
+                    "value": 4
+                }
+            },
+            "skill_use5": {
+                "minecraft:mark_variant": {
+                    "value": 5
+                }
+            },
+            "skill_use6": {
+                "minecraft:mark_variant": {
+                    "value": 6
+                }
+            },
+            "skill_use7": {
+                "minecraft:mark_variant": {
+                    "value": 7
+                }
+            },
+            "skill_use8": {
+                "minecraft:mark_variant": {
+                    "value": 8
+                }
+            },
+            "star_use": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        7.0,
+                        8.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                },
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "start_death": {
+                "minecraft:boss": {
+                    "hud_range": 0
+                },
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            }
+        },
+        "components": {
+            "minecraft:equip_item": {
+
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/zb_20.json",
+                "slot_drop_chance": [
+                    {
+                      "slot": "slot.armor.chest",
+                      "drop_chance": 0.0
+                    },
+                    {
+                        "slot": "slot.armor.legs",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.feet",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.head",
+                        "drop_chance": 0.0
+                      }
+                  ]
+            },
+            "minecraft:attack": {
+                "damage": 14
+            },
+            "minecraft:balloonable": {
+
+            },
+            "minecraft:behavior.delayed_attack": {
+                "attack_duration": 0.3,
+                "hit_delay_pct": 0,
+                "priority": 0,
+                "reach_multiplier": 3,
+                "speed_multiplier": 1,
+                "track_target": true
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "entity_types": {
+                    "filters": {
+                        "operator": "!=",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "creeper"
+                    }
+                },
+                "priority": 0
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 6.0,
+                "priority": 7,
+                "probability": 0.02
+            },
+            "minecraft:behavior.move_towards_target": {
+                "priority": 2,
+                "speed_multiplier": 0.9,
+                "within_radius": 32
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 60
+                    }
+                ],
+                "must_reach": true,
+                "must_see": true,
+                "within_radius": 60,
+                "priority": 0
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 8
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 1,
+                "xz_dist": 16
+            },
+            "minecraft:behavior.target_when_pushed": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "monster"
+                                },
+                                {
+                                    "operator": "!=",
+                                    "subject": "other",
+                                    "test": "is_family",
+                                    "value": "creeper"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "percent_chance": 5.0,
+                "priority": 1
+            },
+            "minecraft:boss": {
+                "hud_range": 60,
+                "name": "末影守卫"
+            },
+            "minecraft:collision_box": {
+                "height": 3.2,
+                "width": 1.6
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "fall",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_explosion",
+                        "deals_damage": false
+                    }
+                ]
+            },
+        
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? Math.Random(299,300) : 0"
+            },
+            "minecraft:fire_immune": {
+
+            },
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:health": {
+                "max": 333,
+                "value": 333
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:is_hidden_when_invisible": {
+
+            },
+            "minecraft:jump.static": {
+
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/ender_guardian.json"
+            },
+            "minecraft:movement": {
+                "value": 0.18
+            },
+            "minecraft:movement.basic": {
+
+            },
+            "minecraft:nameable": {
+
+            },
+            "minecraft:navigation.walk": {
+                "avoid_damage_blocks": true,
+                "avoid_water": true,
+                "can_path_over_water": false
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:timer": {
+                "looping": true,
+                "randomInterval": true,
+                "time": [
+                    9.0,
+                    10.0
+                ],
+                "time_down_event": {
+                    "event": "skill_use"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "ender_guardian",
+                    "zaibian",
+                    "mob"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:ender_guardian",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "romve_skill": {
+                "add": {
+                    "component_groups": [
+                        "romve_skill"
+                    ]
+                }
+            },
+            "skill_use": {
+
+            },
+            "skill_use1": {
+                "add": {
+                    "component_groups": [
+                        "skill_use1"
+                    ]
+                }
+            },
+            "skill_use2": {
+                "add": {
+                    "component_groups": [
+                        "skill_use2"
+                    ]
+                }
+            },
+            "skill_use3": {
+                "add": {
+                    "component_groups": [
+                        "skill_use3"
+                    ]
+                }
+            },
+            "skill_use4": {
+                "add": {
+                    "component_groups": [
+                        "skill_use4"
+                    ]
+                }
+            },
+            "skill_use5": {
+                "add": {
+                    "component_groups": [
+                        "skill_use5"
+                    ]
+                }
+            },
+            "skill_use6": {
+                "add": {
+                    "component_groups": [
+                        "skill_use6"
+                    ]
+                }
+            },
+            "skill_use7": {
+                "add": {
+                    "component_groups": [
+                        "skill_use7"
+                    ]
+                }
+            },
+            "skill_use8": {
+                "add": {
+                    "component_groups": [
+                        "skill_use8"
+                    ]
+                }
+            },
+            "star_use": {
+                "add": {
+                    "component_groups": [
+                        "star_use"
+                    ]
+                }
+            },
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            }
+        }
+    }
+}

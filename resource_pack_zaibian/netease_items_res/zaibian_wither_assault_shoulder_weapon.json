@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:wither_assault_shoulder_weapon"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:wither_assault_shoulder_weapon",
+            "register_to_create_menu": true
+        }
+    }
+}

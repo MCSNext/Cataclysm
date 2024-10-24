@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:music_disc_ancient_remnant"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:music_disc_ancient_remnant",
+            "register_to_create_menu": true
+        }
+    }
+}

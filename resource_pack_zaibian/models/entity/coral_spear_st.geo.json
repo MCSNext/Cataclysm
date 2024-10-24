@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.coral_spear_st",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "coral_spear",
+					"pivot": [0, 0, 2],
+					"cubes": [
+						{"origin": [-0.5, -25, 1.5], "size": [1, 23, 1], "pivot": [0, -13.5, 2], "rotation": [0, -45, 0], "uv": [0, 0]},
+						{"origin": [0, -12, 2.5], "size": [0, 5, 3], "uv": [6, 11]},
+						{"origin": [0, -17, -2.5], "size": [0, 5, 4], "uv": [4, 15]},
+						{"origin": [0, -3, -1], "size": [0, 9, 6], "uv": [16, -6]},
+						{"origin": [-3, -3, 2], "size": [6, 9, 0], "uv": [16, 10]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "netease:customtips": {
+                "value": "§2手持该物品右击沉睡状态下的远古遗魂，可将其唤醒。破坏沙子有几率掉落"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:necklace_of_the_desert",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "frameeffect": {
+        "blend_mode": 2,
+        "cylinder_enable": true,
+        "cylinder_frac_num": 1000,
+        "cylinder_height": 5.0,
+        "cylinder_radius_down": 0.0,
+        "cylinder_radius_up": 9.0,
+        "delay": 0.0,
+        "delay_in_loop": false,
+        "depth_test": true,
+        "face_camera": false,
+        "fade_distance": 0.0,
+        "first_person_enable": false,
+        "fps": 30,
+        "frame_color": [
+
+        ],
+        "layer": 1,
+        "lerp_scale": true,
+        "loop": true,
+        "point_filtering": false,
+        "rot_speed": [
+            0.0,
+            20.0,
+            0.0
+        ],
+        "scale": [
+            0.5,
+            0.5,
+            0.5
+        ],
+        "shuffle": false,
+        "sub_layer": 0,
+        "tex_repeat_num": [
+            1,
+            1
+        ],
+        "texture": "textures/sfxs/sun1"
+    }
+}

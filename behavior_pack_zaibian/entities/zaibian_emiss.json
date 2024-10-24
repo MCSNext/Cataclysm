@@ -1,0 +1,40 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+
+        },
+        "components": {
+            "minecraft:timer": { //用于重复计时
+        "time": [
+          1.0,
+          1.0
+        ],
+        "time_down_event": {
+          "event": "disp_remove"
+        }
+      },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:persistent": {
+
+            }
+        },
+        "description": {
+            "identifier": "zaibian:emiss",
+            "is_experimental": false
+        },
+        "events": {
+"disp_remove":{}
+        }
+    }
+}

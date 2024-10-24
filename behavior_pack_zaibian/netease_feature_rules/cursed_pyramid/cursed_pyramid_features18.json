@@ -1,0 +1,45 @@
+
+                {
+                "format_version": "1.14.0",
+                "minecraft:feature_rules": {
+                    "conditions": {
+                        "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "==",
+                        "value": "overworld"
+                    }
+                    ]
+                }
+                ],
+                        "placement_pass": "after_sky_pass"
+                    },
+                    "description": {
+                        "identifier": "cursed_pyramid_features18",
+                        "places_feature": "cursed_pyramid_rules18"
+                    },
+                    "distribution": {
+                        "coordinate_eval_order": "xzy",
+                        "iterations": " (query.noise(variable.originx +-32, variable.originz +-48) <0 && variable.originx+-32!=0 && variable.originz+-48!=0) &&math.mod(variable.originx+-32,320)==0&&math.mod(variable.originz+-48,320)==0&&query.is_biome(variable.originx+-32 , variable.originz+-48 , 2)?1:0",
+                        "scatter_chance": 100,
+                        "x": {
+                            "distribution": "uniform",
+                            "extent": [
+                                0,
+                                0
+                            ]
+                        },
+                        "y": 40,
+                        "z": {
+                            "distribution": "uniform",
+                            "extent": [
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                }
+            }
+            

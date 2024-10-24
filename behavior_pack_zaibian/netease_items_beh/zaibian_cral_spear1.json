@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 110,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:weapon": {
+                "attack_damage": 6,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:cral_spear1",
+            "register_to_create_menu": false
+        }
+    }
+}

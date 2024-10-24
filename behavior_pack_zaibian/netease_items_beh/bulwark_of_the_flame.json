@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "netease:customtips": {
+                "value": "§2副手持有此盾牌时，\n按住 潜行+点击屏幕松开可以向前冲刺一段距离并伤害路径上的实体。"
+            },
+            "minecraft:max_damage": 0,
+            "netease:shield": {
+                "defence_damage_source_list": [
+
+                ],
+                "is_consume_damage": false,
+                "undefence_damage_source_list": [
+
+                ]
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "custom_item_type": "shield",
+            "identifier": "zaibian:shield",
+            "register_to_create_menu": true
+        }
+    }
+}

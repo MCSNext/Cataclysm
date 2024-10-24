@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:customtips": {
+                "value": "§2长按使用物品可以伤害前方的生物"
+            },
+            "netease:weapon": {
+                "attack_damage": 9,
+                "enchantment": 10,
+                "level": 3,
+                "speed": 10,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:meat_shredder",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "category":[
+        {
+            "name":"zaibian", //分页名称，自定义物品的json中category的值
+            "labelText":"灾变", //分页描述，可在zh_CN.lang中设置中文名称
+            "icon": "textures/items/ignisjian" //分页图标路径
+        }
+
+    ]
+} 

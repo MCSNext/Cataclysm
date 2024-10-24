@@ -1,0 +1,9 @@
+{
+    "ui_defs": [
+        "ui/pinga.json",
+        "ui/ywing_ui0.json",
+        "ui/zaibian_chest.json",
+        "ui/netease_editor_template_namespace.json",
+        "ui/ui_common.json"
+    ]
+}

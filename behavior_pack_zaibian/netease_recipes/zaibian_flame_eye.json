@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:flame_eye"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:blaze_powder"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:netherite_scrap"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:ender_eye"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:soul_sand"
+            }
+        },
+        "pattern": [
+            "AAA",
+            "BCB",
+            "DDD"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:flame_eye"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

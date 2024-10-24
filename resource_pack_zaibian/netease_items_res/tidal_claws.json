@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:tidal_claws"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:tidal_claws",
+            "register_to_create_menu": true
+        }
+    }
+}

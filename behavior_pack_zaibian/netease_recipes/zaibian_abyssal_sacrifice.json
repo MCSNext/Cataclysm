@@ -1,0 +1,59 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:abyssal_sacrifice"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:nautilus_shell"
+            },
+            "B": {
+                "data": 0,
+                "item": "zaibian:athame"
+            },
+            "C": {
+                "data": 0,
+                "item": "zaibian:crystallized_coral"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:diamond_block"
+            },
+            "E": {
+                "data": 0,
+                "item": "minecraft:heart_of_the_sea"
+            },
+            "F": {
+                "data": 0,
+                "item": "minecraft:emerald_block"
+            },
+            "G": {
+                "data": 0,
+                "item": "minecraft:iron_block"
+            },
+            "H": {
+                "data": 0,
+                "item": "minecraft:amethyst_block"
+            },
+            "I": {
+                "data": 0,
+                "item": "minecraft:gold_block"
+            }
+        },
+        "pattern": [
+            "ABC",
+            "DEF",
+            "GHI"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:abyssal_sacrifice"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+{"format_version": "1.10","minecraft:item": {"components": {"minecraft:icon": "zaibian:desert_eye"},"description": {"category": "zaibian","identifier": "zaibian:desert_eye","register_to_create_menu": true}}}

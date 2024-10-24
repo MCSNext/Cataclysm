@@ -1,0 +1,54 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:desert_eye"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:gold_ingot"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:emerald"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:deadbush"
+            },
+            "E": {
+                "data": 0,
+                "item": "minecraft:ender_eye"
+            },
+            "F": {
+                "item": "minecraft:cactus"
+            },
+            "G": {
+                "data": 0,
+                "item": "minecraft:rotten_flesh"
+            },
+            "H": {
+                "data": 1,
+                "item": "minecraft:sandstone"
+            },
+            "I": {
+                "data": 0,
+                "item": "minecraft:bone"
+            }
+        },
+        "pattern": [
+            "AHC",
+            "DEF",
+            "GHI"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:desert_eye"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:meat_shredder",
+            "netease:frame_anim_in_scene": {
+                "ticks_per_frame": 1,
+                "texture_path": "textures/items/meat_shredder1"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:meat_shredder",
+            "register_to_create_menu": true
+        }
+    }
+}

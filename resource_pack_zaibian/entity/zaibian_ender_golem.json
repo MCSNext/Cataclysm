@@ -1,0 +1,56 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.ender_golem.attack",
+                "attack1": "animation.ender_golem.attack1",
+                "attack2": "animation.ender_golem.attack2",
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+
+                "controller.attack": "controller.animation.ender_golem",
+                "death": "animation.ender_golem.death",
+                "init": "animation.ender_golem.init",
+                "move": "animation.ender_golem.move",
+                "injure0": "animation.ender_golem.injure2",
+                "injure1": "animation.ender_golem.injure",
+                "wake": "animation.ender_golem.wake"
+
+            },
+            "geometry": {
+                "default": "geometry.ender_golem",
+                "default1": "geometry.ender_golem1"
+            },
+            "identifier": "zaibian:ender_golem",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.the_harbinger",
+                {
+                    "controller.render.ender_golem1": "query.variant!=0"
+                }
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "look_at_target1": "query.mark_variant!=100"
+                    },
+                    {
+                        "move": "query.modified_move_speed>0.1 && query.variant==1&& query.mark_variant!=100&& query.mark_variant!=10"
+                    },
+                    {
+                        "init": " query.variant==0&& query.mark_variant!=100&& query.mark_variant!=10"
+                    },
+                    "controller.attack"
+                   
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/ender_golem",
+                "default1": "textures/entity/ender_golem_layer"
+            }
+        }
+    }
+}

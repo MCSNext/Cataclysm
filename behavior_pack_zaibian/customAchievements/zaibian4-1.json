@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/items/tidal_claws1",
+    "goal_details": {
+        "entity_identifier": "zaibian:the_leviathan",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z5-1",
+    "node_description": "击败利维坦",
+    "parent_node": "z5",
+    "title": "多维掠食者",
+    "type": "sub_node",
+    "unfinished_icon": "textures/items/tidal_claws1",
+    "window_background": ""
+}

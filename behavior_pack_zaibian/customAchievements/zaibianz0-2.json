@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/items/void_core",
+    "goal_details": {
+        "entity_identifier": "zaibian:ender_golem",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z1-2",
+    "node_description": "击杀末影傀儡",
+    "parent_node": "z1",
+    "title": "色调变更",
+    "type": "sub_node",
+    "unfinished_icon": "textures/items/void_core",
+    "window_background": ""
+}

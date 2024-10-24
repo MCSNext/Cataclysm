@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:effect": {
+      "description": {
+        "identifier": "bone_fracture"
+      },
+      "components": {
+        "minecraft:particle_color": [255, 0, 0],
+        "minecraft:icon": "bone_fracture"
+      }
+    }
+}

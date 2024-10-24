@@ -1,0 +1,30 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:destroy_time": 3.0,
+            "minecraft:explosion_resistance": {
+                "value": 6.0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/stone_pillar.json"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:solid": {
+                "value": true
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:stone_pillar1",
+            "register_to_creative_menu": false
+        }
+    }
+}

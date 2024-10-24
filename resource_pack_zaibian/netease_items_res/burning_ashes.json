@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:burning_ashes",
+            "netease:frame_anim_in_scene": {
+                "ticks_per_frame": 3,
+                "texture_path": "textures/items/burning_ashes"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:burning_ashes",
+            "register_to_create_menu": true
+        }
+    }
+}

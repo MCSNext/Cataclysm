@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": 99999,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:block_entity": {
+                "client_tick": false,
+                "movable": false,
+                "tick": true
+            }
+        },
+        "description": {
+            "identifier": "zaibian:ancient_desert_stele1",
+            "register_to_creative_menu": false
+        }
+    }
+}

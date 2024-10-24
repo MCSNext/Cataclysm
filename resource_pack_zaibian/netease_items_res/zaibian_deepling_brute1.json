@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:deepling_brute1"
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:deepling_brute1",
+            "register_to_create_menu": true
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "minecraft:use_duration": 10.0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:cooldown": {
+                "category": "zaibian:the_incinerator",
+                "duration": 10
+            },
+            "netease:customtips": {
+                "value": "§2长按鼠标右键3秒以充能，然后松开右键"
+            },
+            "netease:weapon": {
+                "attack_damage": 14,
+                "enchantment": 20,
+                "level": 3,
+                "speed": 2,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:the_incinerator",
+            "register_to_create_menu": true
+        }
+    }
+}

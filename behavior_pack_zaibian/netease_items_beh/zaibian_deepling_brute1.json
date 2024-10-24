@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 160,
+            "netease:weapon": {
+                "attack_damage": 10,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "zaibian:deepling_brute1",
+            "register_to_create_menu": false
+        }
+    }
+}

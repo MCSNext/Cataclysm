@@ -1,0 +1,77 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "look_at_target1": "animation.the_baby_leviathan.look_at_target",
+
+                "attack": "animation.ender_guardian.attack1",
+                "attack_1": "animation.ender_guardian.attack1_1",
+
+
+                "attack1": "animation.ender_guardian.attack1",
+                "attack2": "animation.ender_guardian.attack2",
+                "attack3": "animation.ender_guardian.attack3",
+                "attack4": "animation.ender_guardian.attack4",
+                "attack5": "animation.ender_guardian.attack5",
+                "attack6": "animation.ender_guardian.attack6",
+                "attack7": "animation.ender_guardian.attack7",
+                "attack8": "animation.ender_guardian.attack8",
+                "attack9": "animation.ender_guardian.attack9",
+
+
+                "attack10": "animation.ender_guardian.attack10",
+
+
+
+                "controller.attack": "controller.animation.ender_guardian",
+                "death": "animation.ender_guardian.death",
+                "feet": "animation.ender_guardian.feet",
+                "injure": "animation.ender_guardian.injure",
+                "move": "animation.ender_guardian.move"
+            },
+            "geometry": {
+                "default": "geometry.ender_guardian",
+                "default1": "geometry.ender_guardian1"
+            },
+            "sound_effects": {
+                "ender_guardian_fist_attack": "ender_guardian_fist_attack",
+                "flame_burst": "flame_burst"
+
+            },
+            "particle_effects": {
+                "close_di1": "zaibian:close_di1"
+         
+            },
+            "identifier": "zaibian:ender_guardian",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.ender_guardian1",
+                "controller.render.ender_guardian"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "look_at_target1": " query.mark_variant!=100"
+                    },
+                    {
+                        "move": "query.modified_move_speed>0.1 && query.mark_variant!=100"
+                    },
+                    "controller.attack"
+                  
+             
+                ],
+                "pre_animation": [
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/ender_guardian",
+                "default1": "textures/entity/ender_guardian_layer"
+            }
+        }
+    }
+}

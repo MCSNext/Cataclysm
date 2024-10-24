@@ -1,0 +1,15 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "netease:egg": {
+                "entity": "zaibian:ender_guardian"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ender_guardian",
+            "register_to_create_menu": true
+        }
+    }
+}

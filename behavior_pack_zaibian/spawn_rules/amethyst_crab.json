@@ -1,0 +1,31 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:spawn_rules": {
+        "conditions": [
+            {
+                "minecraft:biome_filter": {
+                    "all_of": [
+                        {
+                            "operator": "==",
+                            "test": "has_biome_tag",
+                            "value": "lush_caves"
+                        }
+                    ]
+                },
+                "minecraft:spawns_on_surface": {
+
+                },
+                "minecraft:spawns_underground": {
+
+                },
+                "minecraft:weight": {
+                    "default": 50
+                }
+            }
+        ],
+        "description": {
+            "identifier": "zaibian:amethyst_crab",
+            "population_control": "animal"
+        }
+    }
+}

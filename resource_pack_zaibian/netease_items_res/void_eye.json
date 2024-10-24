@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:void_eye",
+            "netease:frame_anim_in_scene": {
+                "ticks_per_frame": 10,
+                "texture_path": "textures/items/void_eye"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:void_eye",
+            "register_to_create_menu": true
+        }
+    }
+}

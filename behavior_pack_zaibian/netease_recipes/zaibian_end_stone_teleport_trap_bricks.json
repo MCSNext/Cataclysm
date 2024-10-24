@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:end_stone_teleport_trap_bricks"
+        },
+        "key": {
+            "B": {
+                "data": 0,
+                "item": "minecraft:end_bricks"
+            },
+            "C": {
+                "data": 0,
+                "item": "zaibian:void_stone"
+            }
+        },
+        "pattern": [
+            "BBB",
+            "BCB",
+            "BBB"
+        ],
+        "result": {
+            "count": 8,
+            "data": 0,
+            "item": "zaibian:end_stone_teleport_trap_bricks_off"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

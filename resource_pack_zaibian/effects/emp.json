@@ -1,0 +1,52 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "3.0"
+        },
+        "blend": {
+            "name": "add"
+        },
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "1.0",
+            "min": "1.0"
+        },
+        "enablecolor": {
+            "enable": "false"
+        },
+        "faceCameraMode": {
+            "value": "Horizontal"
+        },
+        "numparticles": {
+            "value": "1"
+        },
+        "particlesize": {
+            "max": "1.0 1.0",
+            "min": "1.0 1.0"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "sizedelta": [
+            {
+                "scale": "0.0 0.0",
+                "time": "0.00"
+            },
+            {
+                "scale": "2.88 2.88",
+                "time": "1.94"
+            }
+        ],
+        "texture": {
+            "name": "textures/particle/em_pulse"
+        },
+        "timetolive": {
+            "max": "2.0",
+            "min": "2.0"
+        }
+    }
+}

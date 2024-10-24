@@ -1,0 +1,72 @@
+﻿{
+    "parent": "pages",
+    "icon":  "textures/items/recycle_book",
+    "title": "自然生成介绍",
+    "pages":[
+        {
+            "type": "imagePage",
+            "subtitle": "诅咒金字塔",
+            "content": "",
+            "image": "textures/ui/sm/ygyj",
+            "info": "诅咒金字塔主世界生成"
+        },
+        {
+            "type": "textPage",
+            "content": "诅咒金字塔\n诅咒金字塔矗立于广阔的大沙漠中，这是古文明的遗迹，远古遗魂在此沉睡。可用沙漠之眼寻找。"
+        },
+        {
+            "type": "imagePage",
+            "subtitle": "远古文明",
+            "content": "",
+            "image": "textures/ui/sm/yggc",
+            "info": "远古文明主世界生成"
+        },
+        {
+            "type": "textPage",
+            "content": "远古文明\n远古文明深埋于地下深处，这里已多年无人造访。在远古文明的核心区域，古文明的造物先驱者正在那儿沉睡着。可用机械之眼寻找。"
+        },
+        {
+            "type": "imagePage",
+            "subtitle": "沉没之城",
+            "content": "",
+            "image": "textures/ui/sm/cmzh",
+            "info": "沉没之城主世界生成"
+        },
+        {
+            "type": "textPage",
+            "content": "沉没之城\n深海类群系的海面上会出现的昔日辉煌的建筑技巧极其高超的古代遗址，但在未知因素的影响下，如今它已是一座沉没的满是深渊灵的恐怖之城，在其间用古老的仪式便能够召唤渊薮之种——利维坦。可用深渊之眼寻找。"
+        },
+        {
+            "type": "imagePage",
+            "subtitle": "灵魂锻造厂",
+            "content": "",
+            "image": "textures/ui/sm/lhdzc",
+            "info": "灵魂锻造厂下界生成"
+        },
+        {
+            "type": "textPage",
+            "content": "灵魂锻造厂\n灵魂锻造厂是一座矗立于熔岩海上的黑石锻造厂，这里浓烟滚滚，其间沉睡着一只可怕的巨兽。可用恶兽之眼寻找。"
+        },{
+            "type": "imagePage",
+            "subtitle": "烈焰竞技场",
+            "content": "",
+            "image": "textures/ui/sm/lyjjc",
+            "info": "烈焰竞技场下界生成"
+        },
+        {
+            "type": "textPage",
+            "content": "烈焰竞技场\n烈焰竞技场，焰魔的栖居之所，虽然已经废弃多年，但其间的烈焰从未熄灭。可用火焰之眼寻找。"
+        },{
+            "type": "imagePage",
+            "subtitle": "废弃堡垒",
+            "content": "",
+            "image": "textures/ui/sm/fqbl",
+            "info": "废弃堡垒末地生成"
+        },
+        {
+            "type": "textPage",
+            "content": "废弃堡垒\n废弃堡垒是一个生成于末地外岛的建筑，一共分为4层，这里是末影守卫的迷宫堡垒。进入建筑后，迎面而来的是一个有着些许虚空石堆和虚空灌注末地石砖的庭院，可以从中间的大门进入建筑内部的迷宫。可用虚空之眼寻找。"
+        }
+      
+    ]    
+}

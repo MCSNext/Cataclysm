@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.modern_remnant.attack",
+                "deepling.attack": "controller.animation.deepling.attack",
+                "init": "animation.modern_remnant.idle",
+                "look_at_target": "animation.the_baby_leviathan.look_at_target",
+                "sit2": "animation.modern_remnant.sit2",
+                "sit_controller": "controller.animation.sit_controller",
+                "walk": "animation.modern_remnant.walk"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.modern_remnant"
+            },
+            "identifier": "zaibian:modern_remnant",
+            "materials": {
+                "charged": "charged_creeper",
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ],
+            "scripts": {
+                "animate": [
+                    "deepling.attack",
+                    "sit_controller",
+                    {
+                        "look_at_target": "query.mark_variant!=100"
+                    },
+                    {
+                        "walk": "query.modified_move_speed>0.1 &&query.mark_variant==0 && query.mark_variant!=100  "
+                    },
+                    {
+                        "init": "query.modified_move_speed<0.1 && query.mark_variant==0 && query.mark_variant!=100"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "sound_effects": {
+                "deepling_light": "deepling_light"
+            },
+            "textures": {
+                "default": "textures/entity/ancient_remnant/modern_remnant"
+            }
+        }
+    }
+}

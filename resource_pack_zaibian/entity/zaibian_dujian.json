@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.arrow.move"
+            },
+            "geometry": {
+                "default": "geometry.arrow"
+            },
+            "identifier": "zaibian:dujian",
+            "materials": {
+                "default": "arrow"
+            },
+            "render_controllers": [
+                "controller.render.arrow"
+            ],
+            "scripts": {
+                "animate": [
+                    "move"
+                ],
+                "pre_animation": [
+                    "variable.shake = query.shake_time - query.frame_alpha;",
+                    "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/poison_dart"
+            }
+        }
+    }
+}

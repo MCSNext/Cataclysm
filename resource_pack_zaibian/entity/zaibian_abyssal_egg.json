@@ -1,0 +1,42 @@
+
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "idle": "animation.abyssal_egg.idle"
+            },
+            "geometry": {
+                "default": "geometry.abyssal_egg",
+                "default1": "geometry.abyssal_egg1"
+
+
+            },
+            "identifier": "zaibian:abyssal_egg",
+            "materials": {
+                "default1": "entity_alphablend",
+
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.abyssal_egg1",
+                "controller.render.abyssal_egg"
+
+            ],
+            "scripts": {
+                "animate": [
+                    "idle"
+                ]
+            },
+            "textures": {
+                "default": "textures/blocks/abyssal_egg_h",
+
+                "default2": "textures/blocks/abyssal_egg",
+
+                "default1": "textures/blocks/abyssal_egg_layer"
+
+            }
+        }
+    }
+}
+          

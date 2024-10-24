@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:customtips": {
+                "value": "§2主手手持时长按右键可以把周围的生物强制拉过来，会降低移动速度。\n可以与火焰壁垒在机械融合砧上融合成壁垒护手"
+            },
+            "netease:weapon": {
+                "attack_damage": 11,
+                "enchantment": 20,
+                "level": 2,
+                "speed": 2,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:gauntlet_of_guard",
+            "register_to_create_menu": true
+        }
+    }
+}

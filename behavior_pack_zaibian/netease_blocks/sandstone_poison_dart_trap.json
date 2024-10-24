@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:destroy_time": 1,
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:redstone": {
+                "strength": 15,
+                "type": "consumer"
+            },
+            "netease:redstone_property": {
+                "value": "break_on_push"
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:sandstone_poison_dart_trap",
+            "register_to_creative_menu": true
+        }
+    }
+}

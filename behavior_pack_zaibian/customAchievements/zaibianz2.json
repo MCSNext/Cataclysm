@@ -1,0 +1,11 @@
+{
+    "finished_icon": "textures/blocks/emp1",
+    "goal_number": 1,
+    "node_ID": "z3",
+    "node_description": "找到远古文明",
+    "parent_node": "zaibian",
+    "title": "远古文明",
+    "type": "sub_node",
+    "unfinished_icon": "textures/blocks/emp1",
+    "window_background": ""
+}

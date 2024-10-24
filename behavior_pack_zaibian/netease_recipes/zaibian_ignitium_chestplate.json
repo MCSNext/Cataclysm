@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "zaibian:ignitium_chestplate"
+        },
+        "ingredients": [
+            {
+                "count": 1,
+                "data": 0,
+                "item": "minecraft:netherite_chestplate"
+            },
+            {
+                "count": 1,
+                "data": 0,
+                "item": "zaibian:ignitium_ingot"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:ignitium_chestplate"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

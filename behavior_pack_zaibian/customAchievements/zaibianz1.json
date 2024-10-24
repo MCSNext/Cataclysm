@@ -1,0 +1,11 @@
+{
+    "finished_icon": "textures/ui/zaibian/537469",
+    "goal_number": 1,
+    "node_ID": "z2",
+    "node_description": "找到灵魂锻造厂",
+    "parent_node": "zaibian",
+    "title": "灵魂锻造厂",
+    "type": "sub_node",
+    "unfinished_icon": "textures/ui/zaibian/537469",
+    "window_background": ""
+}

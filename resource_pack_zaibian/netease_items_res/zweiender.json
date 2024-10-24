@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:zweiender"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:zweiender",
+            "register_to_create_menu": true
+        }
+    }
+}

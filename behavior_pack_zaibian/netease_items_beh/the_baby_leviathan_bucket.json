@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "netease:bucket": {
+                "fill_liquid": "minecraft:flowing_water"
+            },
+            "netease:customtips": {
+                "value": "§2用水桶右击幼年利维坦获得，可用于运输。"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "custom_item_type": "bucket",
+            "identifier": "zaibian:the_baby_leviathan_bucket",
+            "register_to_create_menu": true
+        }
+    }
+}

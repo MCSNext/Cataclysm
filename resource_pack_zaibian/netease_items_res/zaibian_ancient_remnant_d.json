@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:ancient_remnant_d"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ancient_remnant_d",
+            "register_to_create_menu": true
+        }
+    }
+}

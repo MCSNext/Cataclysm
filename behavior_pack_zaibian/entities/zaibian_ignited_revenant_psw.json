@@ -1,0 +1,84 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "causes_fire": false,
+                    "destroy_affected_by_griefing": false,
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 1,
+                    "breaks_blocks":false
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0.31,
+                "width": 0.31
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:projectile": {
+                "anchor": 2,
+                "gravity": 0.0,
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "offset": [
+                    0,
+                    0.5,
+                    0
+                ],
+                "on_hit": {
+                    "impact_damage": {
+                        "catch_fire": true,
+                        "damage": 5,
+                        "knockback": false,
+                        "semi_random_diff_damage": false
+                    },
+                    "remove_on_hit": {
+
+                    }
+                },
+                "power": 0.8,
+                "reflect_on_hurt": true,
+                "semi_random_diff_damage": true,
+                "uncertainty_base": 10.0
+            },
+            "minecraft:timer": {
+                "randomInterval": true,
+                "time": [
+                    10.5,
+                    10.5
+                ],
+                "time_down_event": {
+                    "event": "minecraft:explode"
+                }
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            }
+        },
+        "description": {
+            "identifier": "zaibian:ignited_revenant_psw",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            }
+        }
+    }
+}

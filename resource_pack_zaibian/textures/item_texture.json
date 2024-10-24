@@ -1,0 +1,289 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "zaibian:abyss_eye": {
+            "textures": "textures/items/abyss_eye"
+        },
+        "zaibian:abyssal_sacrifice": {
+            "textures": "textures/items/abyssal_sacrifice"
+        },
+        "zaibian:amethyst_crab_d": {
+            "textures": "textures/items/amethyst_crab"
+        },
+        "zaibian:amethyst_crab_meat": {
+            "textures": "textures/items/amethyst_crab_meat"
+        },
+        "zaibian:amethyst_crab_meat1": {
+            "textures": "textures/items/amethyst_crab_meat"
+        },
+        "zaibian:amethyst_crab_shell": {
+            "textures": "textures/items/amethyst_crab_shell"
+        },
+        "zaibian:ancient_remnant_d": {
+            "textures": "textures/items/ancient_remnant"
+        },
+        "zaibian:athame": {
+            "textures": "textures/items/athame"
+        },
+        "zaibian:bloom_stone_pauldrons": {
+            "textures": "textures/items/bloom_stone_pauldrons"
+        },
+        "zaibian:book": {
+            "textures": "textures/items/recycle_book"
+        },
+        "zaibian:bow": {
+            "textures": "textures/items/bow_void"
+        },
+        "zaibian:bow_b": {
+            "textures": [
+                "textures/items/bow_void_0",
+                "textures/items/bow_void_1",
+                "textures/items/bow_void_2"
+            ]
+        },
+        "zaibian:bulwark_of_the_flame_boss": {
+            "textures": "textures/items/apple"
+        },
+        "zaibian:burning_ashes": {
+            "textures": "textures/items/burning_ashes"
+        },
+        "zaibian:chain_of_soul_binding": {
+            "textures": "textures/items/chain_of_soul_binding"
+        },
+        "zaibian:coral_bardiche": {
+            "textures": "textures/items/coral_bardiche1"
+        },
+        "zaibian:coral_spear": {
+            "textures": "textures/items/coral_spear"
+        },
+        "zaibian:coralssus_d": {
+            "textures": "textures/items/coralssus"
+        },
+        "zaibian:cral_spear1": {
+            "textures": "textures/items/coral_spear"
+        },
+        "zaibian:crystallized_coral": {
+            "textures": "textures/items/crystallized_coral"
+        },
+        "zaibian:crystallized_coral_fragments": {
+            "textures": "textures/items/crystallized_coral_fragments"
+        },
+        "zaibian:deepling_angler_d": {
+            "textures": "textures/items/deepling_angler"
+        },
+        "zaibian:deepling_brute1": {
+            "textures": "textures/items/coral_bardiche1"
+        },
+        "zaibian:deepling_brute_d": {
+            "textures": "textures/items/deepling_brute"
+        },
+        "zaibian:deepling_d": {
+            "textures": "textures/items/deepling"
+        },
+        "zaibian:deepling_priest_d": {
+            "textures": "textures/items/deepling_priest"
+        },
+        "zaibian:deepling_warlock_d": {
+            "textures": "textures/items/deepling_warlock"
+        },
+        "zaibian:desert_eye": {
+            "textures": "textures/items/desert_eye"
+        },
+        "zaibian:ender_golem": {
+            "textures": "textures/items/ender_golem"
+        },
+        "zaibian:ender_guardian": {
+            "textures": "textures/items/ender_guardian"
+        },
+        "zaibian:enderite_ingot": {
+            "textures": "textures/items/enderite_ingot"
+        },
+        "zaibian:endermaptera": {
+            "textures": "textures/items/endermaptera"
+        },
+        "zaibian:entity_zb1": {
+            "textures": "None"
+        },
+        "zaibian:entity_zb1_1": {
+            "textures": "None"
+        },
+        "zaibian:entity_zb2": {
+            "textures": "None"
+        },
+        "zaibian:entity_zb3": {
+            "textures": "None"
+        },
+        "zaibian:entity_zb4": {
+            "textures": "None"
+        },
+        "zaibian:final_fractal": {
+            "textures": "textures/items/final_fractal"
+        },
+        "zaibian:flame_eye": {
+            "textures": "textures/items/flame_eye"
+        },
+        "zaibian:gauntlet_of_bulwark": {
+            "textures": "textures/items/gauntlet_of_bulwark1"
+        },
+        "zaibian:gauntlet_of_guard": {
+            "textures": "textures/items/gauntlet_of_guard1"
+        },
+        "zaibian:ignis": {
+            "textures": "textures/items/Ignis"
+        },
+        "zaibian:ignited_revenant": {
+            "textures": "textures/items/ignited_revenant"
+        },
+        "zaibian:ignitium_boots": {
+            "textures": "textures/items/ignitium_boots"
+        },
+        "zaibian:ignitium_chestplate": {
+            "textures": "textures/items/ignitium_chestplate"
+        },
+        "zaibian:ignitium_elytra_chestplate": {
+            "textures": "textures/items/ignitium_elytra_chestplate"
+        },
+        "zaibian:ignitium_helmet": {
+            "textures": "textures/items/ignitium_helmet"
+        },
+        "zaibian:ignitium_ingot": {
+            "textures": "textures/items/ignitium_ingot"
+        },
+        "zaibian:ignitium_leggings": {
+            "textures": "textures/items/ignitium_leggings"
+        },
+        "zaibian:infernal_forge": {
+            "textures": "textures/items/infernal_forge"
+        },
+        "zaibian:khopesh": {
+            "textures": "textures/items/khopesh"
+        },
+        "zaibian:koboleton_bone": {
+            "textures": "textures/items/koboleton_bone"
+        },
+        "zaibian:koboleton_d": {
+            "textures": "textures/items/koboleton"
+        },
+        "zaibian:laser_gatling": {
+            "textures": "textures/items/laser_gatling1"
+        },
+        "zaibian:lionfish": {
+            "textures": "textures/items/lionfish"
+        },
+        "zaibian:lionfish_d": {
+            "textures": "textures/items/lionfish_d"
+        },
+        "zaibian:meat_shredder": {
+            "textures": "textures/items/meat_shredder1"
+        },
+        "zaibian:mech_eye": {
+            "textures": "textures/items/mech_eye"
+        },
+        "zaibian:modern_remnant_d": {
+            "textures": "textures/items/modern_remnant"
+        },
+        "zaibian:monstrous_eye": {
+            "textures": "textures/items/monstrous_eye"
+        },
+        "zaibian:monstrous_helm": {
+            "textures": "textures/items/monstrous_helm"
+        },
+        "zaibian:monstrous_horn": {
+            "textures": "textures/items/monstrous_horn"
+        },
+        "zaibian:music_disc_ancient_remnant": {
+            "textures": "textures/items/music_disc_ancient_remnant"
+        },
+        "zaibian:music_disc_ender_guardian": {
+            "textures": "textures/items/music_disc_ender_guardian"
+        },
+        "zaibian:music_disc_ignis": {
+            "textures": "textures/items/music_disc_ignis"
+        },
+        "zaibian:music_disc_netherite_monstrosi": {
+            "textures": "textures/items/music_disc_netherite_monstrosity"
+        },
+        "zaibian:music_disc_the_harbinger": {
+            "textures": "textures/items/music_disc_the_harbinger"
+        },
+        "zaibian:music_disc_the_leviathan": {
+            "textures": "textures/items/music_disc_the_leviathan"
+        },
+        "zaibian:nameless_sorcerer": {
+            "textures": "textures/items/nameless_sorcerer"
+        },
+        "zaibian:necklace_of_the_desert": {
+            "textures": "textures/items/necklace_of_the_desert"
+        },
+        "zaibian:netherite_monstrosity": {
+            "textures": "textures/items/netherite_monstrosity"
+        },
+        "zaibian:remnant_skull": {
+            "textures": "textures/items/remnant_skull"
+        },
+        "zaibian:sandstorm_in_a_bottle": {
+            "textures": "textures/items/sandstorm_in_a_bottle"
+        },
+        "zaibian:shield": {
+            "textures": "textures/items/bulwark_of_the_flame1"
+        },
+        "zaibian:sticky_gloves": {
+            "textures": "textures/items/sticky_gloves"
+        },
+        "zaibian:the_baby_leviathan": {
+            "textures": "textures/items/the_baby_leviathan"
+        },
+        "zaibian:the_baby_leviathan_bucket": {
+            "textures": "textures/items/the_baby_leviathan_bucket"
+        },
+        "zaibian:the_harbinger": {
+            "textures": "textures/items/the_harbinger"
+        },
+        "zaibian:the_incinerator": {
+            "textures": "textures/items/ignisjian"
+        },
+        "zaibian:the_leviathan_d": {
+            "textures": "textures/items/the_leviathan"
+        },
+        "zaibian:the_prowler_d": {
+            "textures": "textures/items/the_prowler"
+        },
+        "zaibian:the_watcher_d": {
+            "textures": "textures/items/the_watcher"
+        },
+        "zaibian:tidal_claws": {
+            "textures": "textures/items/tidal_claws1"
+        },
+        "zaibian:void_assault_shoulder_weapon": {
+            "textures": "textures/items/wither_assault_shoulder_weapon1"
+        },
+        "zaibian:void_core": {
+            "textures": "textures/items/void_core"
+        },
+        "zaibian:void_eye": {
+            "textures": "textures/items/void_eye"
+        },
+        "zaibian:void_forge": {
+            "textures": "textures/items/void_forge1"
+        },
+        "zaibian:void_jaw": {
+            "textures": "textures/items/void_jaw"
+        },
+        "zaibian:void_scatter_arrow": {
+            "textures": "textures/items/void_scatter_arrow"
+        },
+        "zaibian:wither_assault_shoulder_weapon": {
+            "textures": "textures/items/void_assault_shoulder_weapon1"
+        },
+        "zaibian:witherite_ingot": {
+            "textures": "textures/items/witherite_ingot"
+        },
+        "zaibian:zb1_2": {
+            "textures": "None"
+        },
+        "zaibian:zweiender": {
+            "textures": "textures/items/zweiender"
+        }
+    },
+    "texture_name": "atlas.items"
+}

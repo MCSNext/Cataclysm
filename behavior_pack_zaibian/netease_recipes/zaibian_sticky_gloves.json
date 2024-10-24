@@ -1,0 +1,38 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:sticky_gloves"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:string"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:leather"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:slime_ball"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:rabbit_hide"
+            }
+        },
+        "pattern": [
+            "AB",
+            "CD"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:sticky_gloves"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

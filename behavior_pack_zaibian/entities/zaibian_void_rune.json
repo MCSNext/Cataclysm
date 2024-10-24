@@ -1,0 +1,124 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "init":{
+                "minecraft:timer": {
+                    "looping": false,
+                    "randomInterval": true,
+                    "time": [
+                        0.5,
+                        0.5
+                    ],
+                    "time_down_event": {
+                        "event": "ack"
+                    }
+                }
+            },
+            "ack": {
+                "minecraft:area_attack":{
+                    "damage_range": 1,
+                    "damage_per_tick": 7,
+                    "cause": "magic"
+                },
+                "minecraft:timer": {
+                    "looping": false,
+                    "randomInterval": true,
+                    "time": [
+                        0.1,
+                        0.1
+                    ],
+                    "time_down_event": {
+                        "event": "rack"
+                    }
+                }
+            },
+            "die_time": {
+                "minecraft:explode": {
+                    "causes_fire": false,
+                    "fuse_length": 0.7,
+                    "fuse_lit": true,
+                    "power": 0
+                }
+            }
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:collision_box": {
+                "height": 0.0,
+                "width": 0.0
+            },
+            "minecraft:is_stackable": {
+
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:fire_immune": {
+
+            },
+            "minecraft:physics": {
+
+            },
+          
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:rail_movement": {
+
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "npc"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:void_rune",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+            // "runtime_identifier": "minecraft:evocation_fang"
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "init"
+                    ]
+                }
+            },
+            "ack": {
+                "add": {
+                    "component_groups": [
+                        "ack"
+                    ]
+                } ,"remove": {
+                    "component_groups": [
+                        "init"
+                    ]
+                }
+            },
+            "rack": {
+                "remove": {
+                    "component_groups": [
+                        "ack"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "die_time"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:wither_assault_shoulder_weapon"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "zaibian:witherite_ingot"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:gunpowder"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:redstone_block"
+            }
+        },
+        "pattern": [
+            "AB ",
+            "BCB",
+            " BA"
+
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:wither_assault_shoulder_weapon"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

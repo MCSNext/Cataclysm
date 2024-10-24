@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+	"controller.animation.monster.ack":
+	{
+		"initial_state" : "default",
+		"states": {
+			"default": {
+			  "transitions": [
+				  { "use": "query.is_delayed_attacking  && query.mark_variant==0" }
+				]
+			},
+			"use": {
+				"on_entry": [
+					"@s start_ack"
+					// "/say 开始攻击"
+				],
+			  "transitions": [
+				{ "default": "!query.is_delayed_attacking" }
+			  ]
+			}
+		  }
+
+	},
+	"controller.animation.monster.random_interval": {
+		"initial_state" : "default",
+		"states": {
+		  "start": {
+			"on_entry": [
+				"variable.random_interval = math.random(3, 4);"
+			],
+			"on_exit": [
+				// 触发自定事件
+				"@s skill_use"
+			],
+			"animations": [
+				"random_interval"
+			],
+			"transitions": [
+			  { "default": " query.has_target && query.mark_variant==0 && !query.is_delayed_attacking && query.anim_time >= variable.random_interval" }
+			]
+		  },
+		  "default": {
+			"transitions": [
+				{ "start": " query.has_target && query.mark_variant==0 && !query.is_delayed_attacking" }
+			  ]
+		  }
+		}
+	  }
+  }
+}

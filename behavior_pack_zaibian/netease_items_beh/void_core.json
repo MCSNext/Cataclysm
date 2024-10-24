@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10.0,
+            "netease:cooldown": {
+                "category": "0",
+                "duration": 4
+            },
+            "netease:customtips": {
+                "value": "§2由末影傀儡掉落，使用物品朝脚下的方块会在周围生成一圈虚空符文，\n使用物品会朝着对应的方向直线生成多个虚空符文。"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:void_core",
+            "register_to_create_menu": true
+        }
+    }
+}

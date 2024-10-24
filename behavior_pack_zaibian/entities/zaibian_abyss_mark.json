@@ -1,0 +1,75 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "breaks_blocks": false,
+                    "causes_fire": false,
+                    "destroy_affected_by_griefing": false,
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 0
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:is_stackable": {
+
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:rail_movement": {
+
+            },
+            "minecraft:timer": {
+                "randomInterval": true,
+                "time": [
+                    6,
+                    6
+                ],
+                "time_down_event": {
+                    "event": "sc_abyss_mark"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "abyss_mark",
+                    "zaibian"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "zaibian:abyss_mark",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "sc_abyss_mark": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            }
+        }
+    }
+}

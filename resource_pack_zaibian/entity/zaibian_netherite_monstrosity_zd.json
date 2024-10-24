@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "move": "animation.wither_skull.move"
+            },
+            "geometry": {
+                "default": "geometry.zhadan"
+            },
+            "identifier": "zaibian:netherite_monstrosity_zd",
+            "materials": {
+                "default": "wither_skull"
+            },
+            "render_controllers": [
+                "controller.render.wither_skull"
+            ],
+            "scripts": {
+                "animate": [
+                    "move"
+                ],
+                "scale": "0.8"
+            },
+            "textures": {
+                "default": "textures/entity/netherite_monstrosity"
+            }
+        }
+    }
+}

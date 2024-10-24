@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.superior_slime.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "query.is_delayed_attacking && query.mark_variant==0" }
+          ]
+        },
+        "attack": {
+          "animations": [ "attack" ],
+          "transitions": [
+            { "default": "!query.is_delayed_attacking" }
+          ]
+        }
+      }
+    },
+    "controller.animation.superior_slime.range_attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+					
+						{
+							"range_attack" : "query.is_charged && query.mark_variant==0"
+						}
+					
+					]
+				},
+				"range_attack" : {
+					"animations" : [
+						"attack"
+					],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+  }
+}

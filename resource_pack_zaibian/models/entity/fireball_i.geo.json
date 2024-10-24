@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.fireball_i",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [-8, 8, 8],
+					"cubes": [
+						{"origin": [-13, 3, 3], "size": [10, 10, 10], "uv": [0, 0]},
+						{"origin": [-12, 10, 4], "size": [8, 2, 8], "uv": [0, 21]},
+						{"origin": [-12, 4, 4], "size": [8, 2, 8], "uv": [0, 21]},
+						{"origin": [-12, 4, 4], "size": [2, 8, 8], "inflate": -0.001, "uv": [0, 31]},
+						{"origin": [-6, 4, 4], "size": [2, 8, 8], "inflate": -0.001, "uv": [0, 31]},
+						{"origin": [-12, 4, 4], "size": [8, 8, 2], "inflate": -0.002, "uv": [20, 37]},
+						{"origin": [-12, 4, 10], "size": [8, 8, 2], "inflate": -0.002, "uv": [20, 37]}
+					]
+				}
+			]
+		}
+	]
+}

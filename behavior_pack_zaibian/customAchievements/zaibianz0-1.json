@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/items/void_core",
+    "goal_details": {
+        "entity_identifier": "zaibian:ender_guardian",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z1-1",
+    "node_description": "击败末影守卫",
+    "parent_node": "z1-2",
+    "title": "这是潜影贝吗？",
+    "type": "sub_node",
+    "unfinished_icon": "textures/items/void_core",
+    "window_background": ""
+}

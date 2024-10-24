@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:lionfish",
+            "minecraft:use_animation": "eat"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:lionfish",
+            "register_to_create_menu": true
+        }
+    }
+}

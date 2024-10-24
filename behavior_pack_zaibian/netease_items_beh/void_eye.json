@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:void_eye",
+            "register_to_create_menu": true
+        }
+    }
+}

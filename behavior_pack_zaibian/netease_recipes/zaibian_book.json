@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:book"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:stick"
+            }
+        },
+        "pattern": [
+            "A"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:book"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

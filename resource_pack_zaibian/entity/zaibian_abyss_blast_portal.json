@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "idle": "animation.abyss_blast_portal.idle"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.abyss_blast_portal"
+            },
+            "identifier": "zaibian:abyss_blast_portal",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.drowned"
+            ],
+            "scripts": {
+                "animate": [
+                   "idle"
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/leviathan/portal/abyss_blast_portal"
+            }
+        }
+    }
+}

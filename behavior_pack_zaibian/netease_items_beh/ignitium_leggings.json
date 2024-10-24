@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 0,
+            "netease:armor": {
+                "armor_slot": 2,
+                "defense": 8,
+                "enchantment": 10,
+                "knockback_resistance": 0.15,
+                "toughness": 4
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ignitium_leggings",
+            "register_to_create_menu": true
+        }
+    }
+}

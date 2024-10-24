@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "first_hold": "animation.infernal_forge.first_hold",
+                "wield": "controller.animation.trident.wield",
+                "wield_first_person": "animation.trident.wield_first_person",
+                "wield_firs": "animation.coral_spear.wield_firs",
+
+                "wield_first_person_raise": "animation.trident.wield_first_person_raise",
+                "wield_first_person_raise_shake": "animation.trident.wield_first_person_raise_shake",
+                "wield_first_person_riptide": "animation.trident.wield_first_person_riptide",
+                "wield_third_person": "animation.trident.wield_third_person",
+                "wield_third_person_raise": "animation.trident.wield_third_person_raise"
+            },
+            "geometry": {
+                "default": "geometry.coral_spear",
+                "default3": "geometry.coral_spear2"
+
+            },
+            "identifier": "zaibian:coral_spear",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.zy_wq"
+            ],
+            "scripts": {
+                "animate": [
+
+                    {
+                        "wield_firs": "c.is_first_person"
+                    },
+                    {
+
+                    "wield":" c.item_slot == 'main_hand'"
+                    }
+                   
+                ],
+                "initialize": [
+                    "variable.mode = 0.0;"
+                ],
+                "pre_animation": [
+                    "variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/coral_spear",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

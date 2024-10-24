@@ -1,0 +1,55 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "2.0"
+        },
+        "blend": {
+            "name": "add"
+        },
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "20.0",
+            "min": "20.0"
+        },
+        "enabletexture": {
+            "enable": true
+        },
+        "particlesize": {
+            "max": "1.5 4.5",
+            "min": "1.5 4.5"
+        },
+        "pointFiltering": true,
+        "relative": {
+            "enable": "true"
+        },
+        "rotationRange": {
+            "max": "360.0 360.0 360.0",
+            "min": "0.0 0.0 0.0"
+        },
+        "rotationSpeedRange": {
+            "max": "30.0 30.0 30.0",
+            "min": "30.0 30.0 30.0"
+        },
+        "sizedelta": [
+            {
+                "scale": "0.0 0.0",
+                "time": "0.0%"
+            },
+            {
+                "scale": "1.26 1.26",
+                "time": "100.0%"
+            }
+        ],
+        "texture": {
+            "name": "textures/particle/test"
+        },
+        "timetolive": {
+            "max": "5.5",
+            "min": "5.5"
+        }
+    }
+}

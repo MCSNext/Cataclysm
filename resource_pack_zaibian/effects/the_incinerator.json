@@ -1,0 +1,42 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "1000.0"
+        },
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "emissionrate": {
+            "max": "1.0",
+            "min": "1.0"
+        },
+        "faceCameraMode": {
+            "value": "Horizontal"
+        },
+        "numparticles": {
+            "value": "1"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "sizedelta": [
+            {
+                "scale": "0.0 0.0",
+                "time": "0.00"
+            },
+            {
+                "scale": "22.0 22.0",
+                "time": "3.00"
+            }
+        ],
+        "texture": {
+            "name": "textures/particle/soul_flame_strike_sigil"
+        },
+        "timetolive": {
+            "max": "1000.0",
+            "min": "1000.0"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:ignitium_ingot"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "zaibian:ignitium_block"
+            }
+        },
+        "pattern": [
+            "A"
+        ],
+        "result": {
+            "count": 9,
+            "data": 0,
+            "item": "zaibian:ignitium_ingot"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "panel0" : {
+               "controls" : [
+                  {
+                     "button0@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/netease/common/button/default",
+                        "$hover_texture" : "textures/netease/common/button/hover",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "normal",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "开始\n飞行",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/netease/common/button/pressed",
+                        "$texture_layer" : 2,
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {
+                                 "keep_ratio" : false
+                              }
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {
+                                 "max_size" : [ "default", "default" ]
+                              }
+                           }
+                        ],
+                        "default_control" : "default",
+                        "draggable" : "both",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "offset" : [ "33.0%+0.0px", "-32.0%+0.0px" ],
+                        "pressed_control" : "pressed",
+                        "size" : [ 24.0, "100.0%x+0.0px" ],
+                        "type" : "button"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "ywing_ui0"
+}

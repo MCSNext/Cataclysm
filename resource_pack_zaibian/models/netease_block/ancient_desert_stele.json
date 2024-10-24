@@ -1,0 +1,211 @@
+{
+    "format_version": "1.13.0",
+    "netease:block_geometry": {
+        "bones": [
+            {
+                "cubes": [
+                    {
+                        "origin": [
+                            -14,
+                            0,
+                            -1
+                        ],
+                        "pivot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            14,
+                            20,
+                            14
+                        ],
+                        "uv": {
+                            "down": {
+                                "texture": 0,
+                                "uv": [
+                                    42,
+                                    0
+                                ],
+                                "uv_size": [
+                                    -14,
+                                    14
+                                ]
+                            },
+                            "east": {
+                                "texture": 0,
+                                "uv": [
+                                    0,
+                                    14
+                                ],
+                                "uv_size": [
+                                    14,
+                                    20
+                                ]
+                            },
+                            "north": {
+                                "texture": 0,
+                                "uv": [
+                                    14,
+                                    14
+                                ],
+                                "uv_size": [
+                                    14,
+                                    20
+                                ]
+                            },
+                            "south": {
+                                "texture": 0,
+                                "uv": [
+                                    42,
+                                    14
+                                ],
+                                "uv_size": [
+                                    14,
+                                    20
+                                ]
+                            },
+                            "up": {
+                                "texture": 0,
+                                "uv": [
+                                    14,
+                                    0
+                                ],
+                                "uv_size": [
+                                    14,
+                                    14
+                                ]
+                            },
+                            "west": {
+                                "texture": 0,
+                                "uv": [
+                                    28,
+                                    14
+                                ],
+                                "uv_size": [
+                                    14,
+                                    20
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "origin": [
+                            -15,
+                            -2,
+                            -2
+                        ],
+                        "pivot": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ],
+                        "uv": {
+                            "down": {
+                                "texture": 0,
+                                "uv": [
+                                    48,
+                                    34
+                                ],
+                                "uv_size": [
+                                    -16,
+                                    16
+                                ]
+                            },
+                            "east": {
+                                "texture": 0,
+                                "uv": [
+                                    0,
+                                    50
+                                ],
+                                "uv_size": [
+                                    16,
+                                    2
+                                ]
+                            },
+                            "north": {
+                                "texture": 0,
+                                "uv": [
+                                    16,
+                                    50
+                                ],
+                                "uv_size": [
+                                    16,
+                                    2
+                                ]
+                            },
+                            "south": {
+                                "texture": 0,
+                                "uv": [
+                                    48,
+                                    50
+                                ],
+                                "uv_size": [
+                                    16,
+                                    2
+                                ]
+                            },
+                            "up": {
+                                "texture": 0,
+                                "uv": [
+                                    16,
+                                    34
+                                ],
+                                "uv_size": [
+                                    16,
+                                    16
+                                ]
+                            },
+                            "west": {
+                                "texture": 0,
+                                "uv": [
+                                    32,
+                                    50
+                                ],
+                                "uv_size": [
+                                    16,
+                                    2
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "name": "unknown_bone",
+                "pivot": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ],
+        "description": {
+            "identifier": "zaibian:ancient_desert_stele",
+            "item_texture": "zaibian:ancient_desert_stele",
+            "textures": [
+                "zaibian:ancient_desert_stele"
+            ],
+            "textures_descriptions": [
+                {
+                    "length": 64,
+                    "width": 64
+                }
+            ],
+            "use_ao": false
+        }
+    }
+}

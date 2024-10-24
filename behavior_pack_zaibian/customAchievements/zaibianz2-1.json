@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/items/witherite_ingot",
+    "goal_details": {
+        "entity_identifier": "zaibian:the_harbinger",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z3-1",
+    "node_description": "击败先驱者",
+    "parent_node": "z3",
+    "title": "远古文明之遗",
+    "type": "sub_node",
+    "unfinished_icon": "textures/items/witherite_ingot",
+    "window_background": ""
+}

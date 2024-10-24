@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:ignitium_leggings"
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:ignitium_leggings",
+            "register_to_create_menu": true
+        }
+    }
+}

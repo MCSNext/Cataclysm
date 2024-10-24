@@ -1,0 +1,15 @@
+{
+    "finished_icon": "textures/items/infernal_forge",
+    "goal_details": {
+        "entity_identifier": "zaibian:netherite_monstrosity",
+        "goal_type": "default_kill"
+    },
+    "goal_number": 1,
+    "node_ID": "z2-1",
+    "node_description": "击败下界合金巨兽",
+    "parent_node": "z2",
+    "title": "损坏的下界战争机器",
+    "type": "sub_node",
+    "unfinished_icon": "textures/items/infernal_forge",
+    "window_background": ""
+}

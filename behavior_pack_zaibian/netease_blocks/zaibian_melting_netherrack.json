@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_emission": {
+                "emission": 1.0
+            },
+            "minecraft:destroy_time": 99.0,
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:block_entity": {
+                "movable": true,
+                "tick": true
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:melting_netherrack",
+            "register_to_creative_menu": false
+        }
+    }
+}

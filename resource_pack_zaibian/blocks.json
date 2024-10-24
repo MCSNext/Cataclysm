@@ -1,0 +1,295 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "zaibian:abyssal_egg": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:abyssal_egg"
+        },
+        "sound": "stone",
+        "textures": "zaibian:abyssal_egg"
+    },
+    "zaibian:altar_of_abyss": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:altar_of_abyss"
+        },
+        "sound": "stone",
+        "textures": "zaibian:altar_of_abyss"
+    },
+    "zaibian:altar_of_amethyst": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:altar_of_amethyst"
+        },
+        "sound": "stone",
+        "textures": "zaibian:altar_of_amethyst"
+    },
+    "zaibian:altar_of_fire": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:altar_of_fire"
+        },
+        "sound": "stone",
+        "textures": "zaibian:altar_of_fire"
+    },
+    "zaibian:altar_of_void": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:altar_of_void"
+        },
+        "sound": "stone",
+        "textures": "zaibian:altar_of_void"
+    },
+    "zaibian:ancient_desert_stele": {
+        "netease_model": "zaibian:ancient_desert_stele",
+        "sound": "stone",
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:ancient_desert_stele1": {
+        "netease_model": "zaibian:ancient_desert_stele",
+        "sound": "stone",
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:ancient_factory_bx": {
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:baoxian": {
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:chiseled_stone_brick_pillar": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:chiseled_stone_brick_pillar_top",
+            "side": "zaibian:chiseled_stone_brick_pillar",
+            "up": "zaibian:chiseled_stone_brick_pillar_top"
+        }
+    },
+    "zaibian:chorus_fence": {
+        "blockshape": "fence",
+        "sound": "wood",
+        "textures": "zaibian:chorus_planks"
+    },
+    "zaibian:chorus_planks": {
+        "sound": "wood",
+        "textures": "zaibian:chorus_planks"
+    },
+    "zaibian:chorus_slab_0": {
+        "netease_model": "zaibian:chorus_slab_0_model",
+        "sound": "wood"
+    },
+    "zaibian:chorus_slab_1": {
+        "netease_model": "zaibian:chorus_slab_1_model",
+        "sound": "wood"
+    },
+    "zaibian:chorus_stairs_0": {
+        "netease_model": "zaibian:chorus_stairs_0_model",
+        "sound": "wood"
+    },
+    "zaibian:chorus_stairs_1": {
+        "netease_model": "zaibian:chorus_stairs_1_model",
+        "sound": "wood"
+    },
+    "zaibian:chorus_stairs_2": {
+        "netease_model": "zaibian:chorus_stairs_2_model",
+        "sound": "wood"
+    },
+    "zaibian:chorus_stem": {
+        "sound": "wood",
+        "textures": "zaibian:chorus_stem"
+    },
+    "zaibian:desert": {
+        "textures": "zaibian:polished_end_stone"
+    },
+    "zaibian:dungeon_block": {
+        "sound": "stone",
+        "textures": "zaibian:dungeon_block"
+    },
+    "zaibian:emp": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:emp"
+        },
+        "sound": "stone",
+        "textures": "zaibian:emp"
+    },
+    "zaibian:end_stone_teleport_trap_bricks_off": {
+        "sound": "stone",
+        "textures": "zaibian:end_stone_teleport_trap_bricks_off"
+    },
+    "zaibian:ender_guardian_tick": {
+        "textures": "zaibian:polished_end_stone"
+    },
+    "zaibian:enderite_block": {
+        "sound": "stone",
+        "textures": "zaibian:enderite_block"
+    },
+    "zaibian:ignis_tick": {
+        "textures": "zaibian:ignis_tick"
+    },
+    "zaibian:ignitium_block": {
+        "sound": "stone",
+        "textures": "zaibian:ignitium_block"
+    },
+    "zaibian:mechanical_fusion_anvil": {
+        "client_entity": {
+            "hand_model_use_client_entity": true,
+            "identifier": "zaibian:mechanical_fusion_anvil"
+        },
+        "sound": "anvil",
+        "textures": "zaibian:mechanical_fusion_anvil"
+    },
+    "zaibian:melting_netherrack": {
+        "sound": "stone",
+        "textures": "zaibian:melting_netherrack_0"
+    },
+    "zaibian:melting_netherrack1": {
+        "sound": "stone",
+        "textures": "zaibian:melting_netherrack_1"
+    },
+    "zaibian:melting_netherrack2": {
+        "sound": "stone",
+        "textures": "zaibian:melting_netherrack_2"
+    },
+    "zaibian:melting_netherrack3": {
+        "sound": "stone",
+        "textures": "zaibian:melting_netherrack_3"
+    },
+    "zaibian:miss": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:chiseled_purpur_block",
+            "side": "zaibian:chiseled_purpur_block",
+            "up": "zaibian:miss"
+        }
+    },
+    "zaibian:netherite_monstrosity_tick": {
+        "textures": "zaibian:netherite_monstrosity_tick"
+    },
+    "zaibian:obsidian_explosion_trap_bricks_off": {
+        "sound": "stone",
+        "textures": "zaibian:obsidian_explosion_trap_bricks_off"
+    },
+    "zaibian:polished_sandstone": {
+        "sound": "stone",
+        "textures": "zaibian:polished_sandstone"
+    },
+    "zaibian:purpur_void_rune_trap_block_off": {
+        "sound": "stone",
+        "textures": "zaibian:purpur_void_rune_trap_block_off"
+    },
+    "zaibian:sandstone_falling_trap": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:polished_sandstone",
+            "side": "zaibian:polished_sandstone",
+            "up": "zaibian:sandstone_falling_trap"
+        }
+    },
+    "zaibian:sandstone_falling_trap1": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:polished_sandstone",
+            "side": "zaibian:polished_sandstone",
+            "up": "zaibian:sandstone_falling_trap"
+        }
+    },
+    "zaibian:sandstone_ignite_trap": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:polished_sandstone",
+            "side": "zaibian:polished_sandstone",
+            "up": "zaibian:sandstone_ignite_trap_top_off"
+        }
+    },
+    "zaibian:sandstone_ignite_trap1": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:polished_sandstone",
+            "side": "zaibian:polished_sandstone",
+            "up": "zaibian:sandstone_ignite_trap_top_on"
+        }
+    },
+    "zaibian:sandstone_poison_dart_trap": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:polished_sandstone",
+            "east": "zaibian:sandstone_poison_dart_trap_off_left",
+            "north": "zaibian:sandstone_poison_dart_trap_front_off",
+            "south": "zaibian:polished_sandstone",
+            "up": "zaibian:polished_sandstone",
+            "west": "zaibian:sandstone_poison_dart_trap_off_right"
+        }
+    },
+    "zaibian:sandstone_poison_dart_trap1": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:polished_sandstone",
+            "east": "zaibian:sandstone_poison_dart_trap_on_left",
+            "north": "zaibian:sandstone_poison_dart_trap_front_on",
+            "south": "zaibian:polished_sandstone",
+            "up": "zaibian:polished_sandstone",
+            "west": "zaibian:sandstone_poison_dart_trap_on_right"
+        }
+    },
+    "zaibian:stone_pillar": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:stone_pillar_top",
+            "east": "zaibian:stone_pillar",
+            "north": "zaibian:stone_pillar",
+            "south": "zaibian:stone_pillar",
+            "up": "zaibian:stone_pillar_top",
+            "west": "zaibian:stone_pillar"
+        }
+    },
+    "zaibian:stone_pillar1": {
+        "sound": "stone",
+        "textures": {
+            "down": "zaibian:stone_pillar",
+            "east": "zaibian:stone_pillar_1",
+            "north": "zaibian:stone_pillar_top",
+            "south": "zaibian:stone_pillar_top",
+            "up": "zaibian:stone_pillar",
+            "west": "zaibian:stone_pillar_1"
+        }
+    },
+    "zaibian:stone_tiles": {
+        "sound": "stone",
+        "textures": "zaibian:stone_tiles"
+    },
+    "zaibian:sunkenbaoxian": {
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:temple_baoxian": {
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:temple_xianjing": {
+        "textures": "zaibian:custom_dirt"
+    },
+    "zaibian:the_harbinger": {
+        "textures": "zaibian:stone_tiles"
+    },
+    "zaibian:the_leviathan_tick": {
+        "textures": "zaibian:stone_tiles"
+    },
+    "zaibian:void_infused_end_stone_bricks": {
+        "sound": "stone",
+        "textures": "zaibian:void_infused_end_stone_bricks"
+    },
+    "zaibian:void_lantern_block": {
+        "sound": "stone",
+        "textures": "zaibian:void_lantern_block"
+    },
+    "zaibian:void_stone": {
+        "sound": "stone",
+        "textures": "zaibian:void_stone"
+    },
+    "zaibian:witherite_block": {
+        "sound": "stone",
+        "textures": "zaibian:witherite_block"
+    }
+}

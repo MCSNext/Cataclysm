@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:attachable": {
+        "description": {
+            "geometry": {
+                "default": "geometry.ignis_dun",
+                "default1": "geometry.kong"
+            },
+            "identifier": "zaibian:bulwark_of_the_flame_boss",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "render_controllers": [
+                "controller.render.ignis_dun"
+            ],
+            "scripts": {
+
+            },
+            "textures": {
+                "default": "textures/entity/ignis/ignis_shield",
+                "default1": "textures/entity/ignis/ignis_soul_shield",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            }
+        }
+    }
+}

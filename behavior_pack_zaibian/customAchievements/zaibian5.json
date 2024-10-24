@@ -1,0 +1,11 @@
+{
+    "finished_icon": "textures/ui/zaibian/776505",
+    "goal_number": 1,
+    "node_ID": "z6",
+    "node_description": "找到诅咒金字塔",
+    "parent_node": "zaibian",
+    "title": "诅咒金字塔",
+    "type": "sub_node",
+    "unfinished_icon": "textures/ui/zaibian/776505",
+    "window_background": ""
+}

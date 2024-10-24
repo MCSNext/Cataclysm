@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": ""
+            },
+            "identifier": "zaibian:emiss",
+            "textures": {
+                "default": ""
+            }
+        }
+    }
+}

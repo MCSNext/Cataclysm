@@ -1,0 +1,384 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 7,
+                                "min": 2
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "minecraft:diamond",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 8,
+                                "min": 4
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot",
+                    "type": "item",
+                    "weight": 10
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 7,
+                                "min": 2
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "minecraft:gold_ingot",
+                    "type": "item",
+                    "weight": 15
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 6,
+                                "min": 2
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "minecraft:emerald",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 10,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "minecraft:beetroot_seeds",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:saddle",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:horsearmoriron",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "minecraft:horsearmorgold",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "minecraft:horsearmordiamond",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_sword",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_boots",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_chestplate",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_leggings",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_helmet",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_pickaxe",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:diamond_shovel",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_sword",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_boots",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_chestplate",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_leggings",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_helmet",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_pickaxe",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "max": 39,
+                                "min": 20
+                            },
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:iron_shovel",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "zaibian:void_jaw",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 3,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:ender_pearl",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "zaibian:bow",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 10,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "zaibian:void_scatter_arrow",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": {
+                "max": 6,
+                "min": 2
+            }
+        }
+    ]
+}

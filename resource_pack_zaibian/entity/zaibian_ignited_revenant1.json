@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.revenant.idle2",
+                "attack1": "animation.revenant.skill1",
+                "attack2": "animation.revenant.skill3",
+                "attack3": "animation.revenant.skill2",
+                "controller.attack": "controller.animation.superior_slime.attack",
+                "move": "animation.revenant.idle"
+            },
+            "geometry": {
+                "default": "geometry.none"
+            },
+            "identifier": "zaibian:ignited_revenant1",
+            "materials": {
+                "default": "iron_golem"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "move": "query.modified_move_speed>0.1"
+                    },
+                    "controller.attack",
+                    {
+                        "attack1": "query.mark_variant==1"
+                    },
+                    {
+                        "attack3": "query.mark_variant==3 "
+                    },
+                    {
+                        "attack2": "query.mark_variant==2"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/ignited_revenant",
+                "default1": "textures/entity/ender_guardian"
+            }
+        }
+    }
+}

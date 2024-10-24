@@ -1,0 +1,572 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "component_groups": {
+       
+            "romve_skill": {
+                "minecraft:follow_range": {
+                    "value": 64
+                },
+                
+                "minecraft:behavior.delayed_attack": {
+                    "attack_duration": 1,
+                    "hit_delay_pct": 0,
+                    "priority": 0,
+                    "reach_multiplier": 3,
+                    "speed_multiplier": 1.3,
+                    "track_target": true
+                },
+             
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "skill_use1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "skill_use10": {
+                "minecraft:mark_variant": {
+                    "value": 10
+                }
+            },
+            "skill_use11": {
+                "minecraft:mark_variant": {
+                    "value": 11
+                }
+            },
+            "skill_use12": {
+                "minecraft:follow_range": {
+                    "value": 16
+                },
+                "minecraft:behavior.delayed_attack": {
+                    "attack_duration": 1,
+                    "hit_delay_pct": 0,
+                    "priority": 1000,
+                    "reach_multiplier": 3,
+                    "speed_multiplier": 1.3,
+                    "track_target": true
+                },
+                "minecraft:behavior.avoid_mob_type": {
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "operator": "!=",
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "the_leviathan"
+                                    }
+                                ]
+                            },
+                            "sprint_speed_multiplier": 2.5,
+                             "walk_speed_multiplier": 2.5
+                        }
+                    ],
+                    "ignore_visibility": true,
+                    "max_dist": 25.0,
+                    "max_flee": 25.0,
+                    "probability_per_strength":1, 
+                    "priority": 0
+                },
+                "minecraft:mark_variant": {
+                    "value": 12
+                }
+            },
+            "skill_use13": {
+                "minecraft:mark_variant": {
+                    "value": 13
+                }
+            },
+            "skill_use2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "skill_use3": {
+                "minecraft:mark_variant": {
+                    "value": 3
+                }
+            },
+            "skill_use4": {
+                "minecraft:mark_variant": {
+                    "value": 4
+                }
+            },
+            "skill_use5": {
+                "minecraft:mark_variant": {
+                    "value": 5
+                }
+            },
+            "skill_use6": {
+                "minecraft:mark_variant": {
+                    "value": 6
+                }
+            },
+            "skill_use7": {
+                "minecraft:mark_variant": {
+                    "value": 7
+                }
+            },
+            "skill_use8": {
+                "minecraft:mark_variant": {
+                    "value": 8
+                }
+            },
+            "skill_use9": {
+                "minecraft:mark_variant": {
+                    "value": 9
+                }
+            },
+            "star": {
+                "minecraft:boss": {
+                    "hud_range": 0,
+                    "name": " 利维坦 "
+                },
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "star_use": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        8.0,
+                        12.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            },
+            "start_death": {
+                "minecraft:boss": {
+                    "hud_range": 0
+                },
+                "minecraft:mark_variant": {
+                    "value": 100
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "randomInterval": true,
+                    "time": [
+                        1000.0,
+                        1000.0
+                    ],
+                    "time_down_event": {
+                        "event": "skill_use"
+                    }
+                }
+            },
+            "strr": {
+                "minecraft:boss": {
+                    "hud_range": 60,
+                    "name": "利维坦"
+                }
+            },
+            "strr1": {
+                "minecraft:boss": {
+                    "hud_range": 60,
+                    "name": " 利维坦 "
+                }
+            }
+        },
+        "components": {
+
+            
+      
+    
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+                "push_towards_closest_space": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            
+            "minecraft:attack": {
+                "damage": 0
+            },
+            "minecraft:behavior.delayed_attack": {
+                "attack_duration": 1,
+                "hit_delay_pct": 0,
+                "priority": 0,
+                "reach_multiplier": 3,
+                "speed_multiplier": 1.3,
+                "track_target": true
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "squid"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "max_dist": 60
+                        }
+                    ],
+                    "must_reach": true,
+                    "must_see": false,
+                    "priority": 0,
+                    "within_radius": 60
+                },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 0
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 6,
+                "priority": 7,
+                "probability": 0.02
+            },
+            "minecraft:behavior.move_to_water": {
+                "priority": 3,
+                "search_height": 5,
+                "search_range": 15
+            },
+           
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:behavior.random_swim": {
+                "interval": 0,
+                "priority": 3,
+                "speed_multiplier": 1.0,
+                "xz_dist": 16,
+                "y_dist": 4
+            },
+            "minecraft:behavior.swim_idle": {
+                "priority": 5
+            },
+            "minecraft:behavior.swim_wander": {
+                "interval": 10,
+                "look_ahead": 2.0,
+                "priority": 4,
+                "speed_multiplier": 1.0
+            },
+            "minecraft:breathable": {
+                "breathes_air": true,
+                "breathes_water": true,
+                "suffocate_time": 0,
+                "total_supply": 15
+            },
+            "minecraft:collision_box": {
+                "height": 1,
+                "width": 1.6
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "fall",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_explosion",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "fire",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "lava",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "magma",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:equip_item": {
+
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/zb_10.json",
+                "slot_drop_chance": [
+                    {
+                      "slot": "slot.armor.chest",
+                      "drop_chance": 0.0
+                    },
+                    {
+                        "slot": "slot.armor.legs",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.feet",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.head",
+                        "drop_chance": 0.0
+                      }
+                  ]
+            },
+            "minecraft:experience_reward": {
+                "on_death": 500
+            },
+         
+            "minecraft:health": {
+                "max": 200,
+                "value": 200
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {
+                "jump_power": 0.6
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/the_leviathan.json"
+            },
+            "minecraft:movement": {
+                "value": 0.24
+            },
+            "minecraft:movement.sway": {
+                "sway_amplitude": 0.0
+            },
+            "minecraft:nameable": {
+
+            },
+            "minecraft:navigation.generic": {
+                "can_breach": false,
+                "can_path_over_water": false,
+                "can_sink": false,
+                "can_swim": true,
+                "can_walk": false,
+                "is_amphibious": false
+            },
+            "minecraft:scale": {
+                "value":1.5
+            },
+            "minecraft:timer": {
+                "looping": true,
+                "randomInterval": true,
+                "time": [
+                    3.0,
+                    4.0
+                ],
+                "time_down_event": {
+                    "event": "skill_use"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "zaibian",
+                    "the_leviathan",
+                    "mob"
+                ]
+            },
+            "minecraft:underwater_movement": {
+                "value": 0.2
+            }
+        },
+        "description": {
+            "identifier": "zaibian:the_leviathan",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "minecraft:become_angry": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:dolphin_angry"
+                    ]
+                }
+            },
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "strr"
+                    ]
+                }
+            },
+            "minecraft:on_calm": {
+                "remove": {
+                    "component_groups": [
+                        "minecraft:dolphin_angry"
+                    ]
+                }
+            },
+            "romve_skill": {
+                "add": {
+                    "component_groups": [
+                        "romve_skill"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "skill_use12"
+                    ]
+                }
+            },
+            "skill_use": {
+
+            },
+            "skill_use1": {
+                "add": {
+                    "component_groups": [
+                        "skill_use1"
+                    ]
+                }
+            },
+            "skill_use10": {
+                "add": {
+                    "component_groups": [
+                        "skill_use10"
+                    ]
+                }
+            },
+            "skill_use11": {
+                "add": {
+                    "component_groups": [
+                        "skill_use11"
+                    ]
+                }
+            },
+            "skill_use12": {
+                "add": {
+                    "component_groups": [
+                        "skill_use12"
+                    ]
+                }
+            },
+            "skill_use13": {
+                "add": {
+                    "component_groups": [
+                        "skill_use13"
+                    ]
+                }
+            },
+            "skill_use2": {
+                "add": {
+                    "component_groups": [
+                        "skill_use2"
+                    ]
+                }
+            },
+            "skill_use3": {
+                "add": {
+                    "component_groups": [
+                        "skill_use3"
+                    ]
+                }
+            },
+            "skill_use4": {
+                "add": {
+                    "component_groups": [
+                        "skill_use4"
+                    ]
+                }
+            },
+            "skill_use5": {
+                "add": {
+                    "component_groups": [
+                        "skill_use5"
+                    ]
+                }
+            },
+            "skill_use6": {
+                "add": {
+                    "component_groups": [
+                        "skill_use6"
+                    ]
+                }
+            },
+            "skill_use7": {
+                "add": {
+                    "component_groups": [
+                        "skill_use7"
+                    ]
+                }
+            },
+            "skill_use8": {
+                "add": {
+                    "component_groups": [
+                        "skill_use8"
+                    ]
+                }
+            },
+            "skill_use9": {
+                "add": {
+                    "component_groups": [
+                        "skill_use9"
+                    ]
+                }
+            },
+            "star": {
+                "add": {
+                    "component_groups": [
+                        "star"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "strr"
+                    ]
+                }
+            },
+            "star1": {
+                "add": {
+                    "component_groups": [
+                        "star1"
+                    ]
+                }
+            },
+            "star_use": {
+                "add": {
+                    "component_groups": [
+                        "star_use"
+                    ]
+                }
+            },
+            "start_death": {
+                "add": {
+                    "component_groups": [
+                        "start_death"
+                    ]
+                }
+            },
+            "strr1": {
+                "add": {
+                    "component_groups": [
+                        "strr1"
+                    ]
+                }
+            }
+        }
+    }
+}

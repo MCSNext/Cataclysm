@@ -1,0 +1,12 @@
+
+        {
+            "format_version": "1.14.0",
+            "netease:structure_feature": {
+                "description": {
+                    "identifier": "diaoling_rules16"
+                },
+                "places_structure": "zaibian:diaoling_16",
+                "rotation": 0
+            }
+        }
+        

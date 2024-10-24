@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "zaibian:netherite_monstrosity"
+        },
+        "description": {
+            "category": "Nature",
+            "identifier": "zaibian:netherite_monstrosity",
+            "register_to_create_menu": true
+        }
+    }
+}

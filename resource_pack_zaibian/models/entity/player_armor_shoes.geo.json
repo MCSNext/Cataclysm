@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.player_armor_shoes",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [0, 11.8, 1.75]
+				},
+				{
+					"name": "leftleg",
+					"parent": "waist",
+					"pivot": [2.2, 12.4, 1.5],
+					"cubes": [
+						{
+							"origin": [-0.1, 0, -1.25],
+							"size": [5, 12.4, 5.5],
+							"uv": {
+								"north": {"uv": [4.2, 21], "uv_size": [3.8, 11]},
+								"east": {"uv": [0, 20], "uv_size": [4, 12]},
+								"south": {"uv": [13, 20], "uv_size": [3, 12]},
+								"west": {"uv": [8, 20], "uv_size": [5, 12]},
+								"up": {"uv": [4, 16], "uv_size": [4, 4]},
+								"down": {"uv": [8, 20], "uv_size": [4, -4]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "waist",
+					"pivot": [-2.2, 12.4, 1.5],
+					"cubes": [
+						{
+							"origin": [-4.9, 0, -1.25],
+							"size": [5, 12.4, 5.5],
+							"uv": {
+								"north": {"uv": [4, 21], "uv_size": [3.8, 11]},
+								"east": {"uv": [0, 20], "uv_size": [4, 12]},
+								"south": {"uv": [13, 20], "uv_size": [3, 12]},
+								"west": {"uv": [8, 20], "uv_size": [5, 12]},
+								"up": {"uv": [4, 16], "uv_size": [4, 4]},
+								"down": {"uv": [8, 20], "uv_size": [4, -4]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

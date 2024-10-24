@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "netease:customtips": {
+                "value": "§2由骷髅狗头人掉落的骨头，可用于喂食现世遗魂给它恢复5点（）生命值，或者用于分解为4个骨粉。也可以驯服现世遗魂."
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:koboleton_bone",
+            "register_to_create_menu": true
+        }
+    }
+}

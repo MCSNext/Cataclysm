@@ -1,0 +1,28 @@
+{
+            "format_version": "1.10",
+            "minecraft:item": {
+                "components": {
+                    "minecraft:max_damage": 10000,
+                    "minecraft:use_duration": 10000,
+                    "netease:render_offsets": {
+                        "controller_position_adjust": [
+                            0.2,
+                            -0.2,
+                            0.0
+                        ],
+                        "controller_rotation_adjust": [
+                            -13.0,
+                            -45.0,
+                            -0.0
+                        ],
+                        "controller_scale": 1
+                    }
+                },
+                "description": {
+                    "category": "zaibian",
+                    "identifier":"zaibian:bow",
+                "custom_item_type": "ranged_weapon",
+                    "register_to_create_menu": true
+                }
+            }
+        }

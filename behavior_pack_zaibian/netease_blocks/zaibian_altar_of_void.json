@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": 99999,
+            "minecraft:explosion_resistance": {
+                "value": 99999.0
+            },
+            "minecraft:loot": {
+                "table": ""
+            },
+            "netease:block_entity": {
+                "movable": false,
+                "tick": true
+            },
+            "netease:tier": {
+                "destroy_special": false,
+                "digger": "pickaxe",
+                "level": 0
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "identifier": "zaibian:altar_of_void",
+            "register_to_creative_menu": true
+        }
+    }
+}

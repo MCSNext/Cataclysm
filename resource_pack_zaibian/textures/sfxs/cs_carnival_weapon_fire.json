@@ -1,0 +1,224 @@
+{
+    "frames": [
+        {
+            "filename": "合成 1_00000.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00001.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 128,
+                "y": 0
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00002.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 128
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00003.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 128,
+                "y": 128
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00004.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 256
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00005.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 128,
+                "y": 256
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00006.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 384
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        },
+        {
+            "filename": "合成 1_00007.png",
+            "frame": {
+                "h": 128,
+                "w": 128,
+                "x": 128,
+                "y": 384
+            },
+            "rotated": false,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "sourceSize": {
+                "h": 128,
+                "w": 128
+            },
+            "spriteSourceSize": {
+                "h": 128,
+                "w": 128,
+                "x": 0,
+                "y": 0
+            },
+            "trimmed": false
+        }
+    ],
+    "meta": {
+        "app": "http://www.texturepacker.com",
+        "format": "RGBA8888",
+        "image": "cs_carnival_weapon_fire.png",
+        "scale": "1",
+        "size": {
+            "h": 512,
+            "w": 256
+        },
+        "smartupdate": "$TexturePacker:SmartUpdate:9f712a6542ca0981991e59fd0c6c3f5e$",
+        "version": "1.0"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:void_eye"
+        },
+        "key": {
+            "A": {
+                "data": 2,
+                "item": "minecraft:purpur_block"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:end_bricks"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:ender_eye"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:shulker_shell"
+            }
+        },
+        "pattern": [
+            "ADA",
+            "BCB",
+            "ADA"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:void_eye"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

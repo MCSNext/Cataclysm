@@ -1,0 +1,116 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.coralssus",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "coralssus",
+					"pivot": [0, 1, 0]
+				},
+				{
+					"name": "body",
+					"parent": "coralssus",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [-6, 6, -2], "size": [12, 8, 8], "uv": [0, 21]}
+					]
+				},
+				{
+					"name": "body2",
+					"parent": "body",
+					"pivot": [0, 10, 2],
+					"cubes": [
+						{"origin": [6, 15.5, 5], "size": [4, 2, 4], "uv": [46, 24]},
+						{"origin": [7, 13.5, 6], "size": [3, 1, 3], "uv": [59, 23]},
+						{"origin": [-9, 10, -2], "size": [18, 10, 10], "uv": [0, 0]},
+						{"origin": [3, 14, 6], "size": [0, 10, 7], "uv": [47, 79]},
+						{"origin": [5, 14, 8], "size": [0, 8, 8], "uv": [78, 82]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body2",
+					"pivot": [0, 19, 3],
+					"cubes": [
+						{"origin": [-4, 18, -4], "size": [8, 8, 8], "uv": [54, 59]},
+						{"origin": [5, 15, -4], "size": [2, 5, 8], "uv": [21, 78]},
+						{"origin": [-7, 15, -4], "size": [2, 5, 8], "uv": [65, 76]},
+						{"origin": [-7, 12, -3], "size": [14, 7, 6], "uv": [35, 32]},
+						{"origin": [0, 24, 0], "size": [7, 7, 0], "uv": [86, 2]},
+						{"origin": [-2, 26, -2], "size": [4, 1, 4], "uv": [47, 0]},
+						{"origin": [-5, 19, -3], "size": [1, 6, 6], "uv": [87, 66]},
+						{"origin": [4, 19, -3], "size": [1, 6, 6], "uv": [89, 31]}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "body2",
+					"pivot": [12, 19, 3],
+					"cubes": [
+						{"origin": [12, 19, 1], "size": [8, 7, 0], "uv": [79, 58]},
+						{"origin": [12, 17, -3], "size": [4, 2, 4], "uv": [33, 21]},
+						{"origin": [14, 15, -3], "size": [3, 1, 3], "uv": [21, 38]},
+						{"origin": [9, 8, -2], "size": [6, 14, 8], "uv": [0, 38]}
+					]
+				},
+				{
+					"name": "lefthand",
+					"parent": "leftarm",
+					"pivot": [12, 11, 0],
+					"cubes": [
+						{"origin": [8, 2, -4], "size": [8, 9, 8], "uv": [21, 59]},
+						{"origin": [16, 2, 1], "size": [7, 9, 0], "uv": [1, 88], "mirror": true}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "body2",
+					"pivot": [-12, 19, 3],
+					"cubes": [
+						{"origin": [-16, 14, -3], "size": [9, 2, 10], "inflate": 0.01, "uv": [29, 46]},
+						{"origin": [-9, 16, -3], "size": [2, 7, 10], "inflate": 0.01, "uv": [76, 13]},
+						{"origin": [-15, 8, -2], "size": [6, 14, 8], "uv": [57, 0]}
+					]
+				},
+				{
+					"name": "righthand",
+					"parent": "rightarm",
+					"pivot": [-12, 11, 1],
+					"cubes": [
+						{"origin": [-23, 2, 1], "size": [7, 9, 0], "uv": [1, 88]},
+						{"origin": [-16, 2, -4], "size": [8, 9, 8], "uv": [21, 59]}
+					]
+				},
+				{
+					"name": "leg",
+					"parent": "coralssus",
+					"pivot": [0, 8, 4]
+				},
+				{
+					"name": "leftleg",
+					"parent": "leg",
+					"pivot": [6, 8, 4],
+					"cubes": [
+						{"origin": [3, 0, 0], "size": [6, 8, 8], "uv": [68, 38]}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "leg",
+					"pivot": [-6, 8, 4],
+					"cubes": [
+						{"origin": [-9, 0, 0], "size": [6, 8, 8], "uv": [0, 69]}
+					]
+				}
+			]
+		}
+	]
+}

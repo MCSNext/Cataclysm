@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "zaibian:chorus_stem"
+        },
+        "ingredients": [
+            {
+                "count": 4,
+                "data": 0,
+                "item": "minecraft:chorus_fruit"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:chorus_stem"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

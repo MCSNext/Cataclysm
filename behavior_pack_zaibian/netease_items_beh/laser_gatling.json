@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 50,
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10000.0,
+            "netease:allow_offhand": {
+                "value": true
+            },
+            "netease:cooldown": {
+                "category": "zaibian:laser_gatling",
+                "duration": 5
+            },
+            "netease:customtips": {
+                "value": "§2物品没有弹药时，可以将红石粉放置在背包中并使用即可补偿弹药"
+            }
+        },
+        "description": {
+            "category": "zaibian",
+            "custom_item_type": "ranged_weapon",
+            "identifier": "zaibian:laser_gatling",
+            "register_to_create_menu": true
+        }
+    }
+}

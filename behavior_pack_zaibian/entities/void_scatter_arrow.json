@@ -1,0 +1,77 @@
+{
+            "format_version": "1.12.0",
+            "minecraft:entity": {
+                "component_groups": {
+                    "minecraft:exploding": {
+                        "minecraft:explode": {
+                            "breaks_blocks": false,
+                            "causes_fire": true,
+                            "destroy_affected_by_griefing": true,
+                            "fuse_length": 0,
+                            "fuse_lit": true,
+                            "power": 0
+                        }
+                    }
+                },
+                "components": {
+                    
+                    "minecraft:collision_box": {
+                        "height": 0.2,
+                        "width": 0.2
+                    },
+                    "minecraft:physics": {
+
+                    },
+                    "minecraft:projectile": {
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "on_hit": {
+                            
+                            "impact_damage": {
+                                "damage": 10,
+                                "knockback": true,
+                                "semi_random_diff_damage": true,
+                                "destroy_on_hit": true,
+                                "max_critical_damage": 10,
+                                "min_critical_damage": 9,
+                                "power_multiplier": 0.97
+                            },
+                            "stick_in_ground": {
+                                "shake_time" : 0.35
+                              },
+                            "arrow_effect": {
+                            },
+                            "remove_on_hit": {
+
+                            }
+                        },
+                        "hit_sound": "bow.hit",
+                        "power": 3,
+                        "gravity": 0.05,
+                        "uncertainty_base": 1,
+                        "uncertainty_multiplier": 0,
+                        "anchor": 1,
+                        "should_bounce": true
+                    },
+                    "minecraft:pushable": {
+                        "is_pushable": true,
+                        "is_pushable_by_piston": true
+                    },
+                    "netease:custom_entity_type": {
+                        "value": "projectile_entity"
+                    }
+                },
+                "description": {
+                    "identifier": "zaibian:void_scatter_arrow",
+                    "is_experimental": false,
+                    "is_spawnable": false,
+                    "is_summonable": true
+                },
+                "events": {
+
+                }
+            }
+        }

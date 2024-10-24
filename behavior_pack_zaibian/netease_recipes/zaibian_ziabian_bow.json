@@ -1,0 +1,35 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "zaibian:ziabian_bow"
+        },
+        "key": {
+            "E": {
+                "data": 0,
+                "item": "minecraft:bow"
+            },
+            "H": {
+                "data": 0,
+                "item": "zaibian:void_jaw"
+            },
+            "I": {
+                "data": 0,
+                "item": "minecraft:string"
+            }
+        },
+        "pattern": [
+            "IHI",
+            "HEH",
+            "IHI"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "zaibian:bow"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

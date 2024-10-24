@@ -1,0 +1,44 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.assualt_shoulder_weapon1",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "leftItem",
+					"pivot": [-6, 13, 4]
+				},
+				{
+					"name": "bone",
+					"parent": "leftItem",
+					"pivot": [2, 9, -10],
+					"rotation": [-90, 180, 0],
+					"cubes": [
+						{"origin": [6, -8, 5.5], "size": [8, 8, 2], "pivot": [10, -4, 6.5], "rotation": [0, 180, 0], "uv": [18, 20]},
+						{"origin": [9, 9, -35.5], "size": [2, 0, 4], "pivot": [10, 9, -33.5], "rotation": [-30, 0, 0], "uv": [16, 0]},
+						{"origin": [9, 8, -33.5], "size": [2, 1, 2], "uv": [29, 17]},
+						{"origin": [9, 9, 3.5], "size": [2, 0, 4], "pivot": [10, 9, 5.5], "rotation": [30, 0, 0], "uv": [16, 0]},
+						{"origin": [9, 8, 3.5], "size": [2, 1, 2], "uv": [28, 9]},
+						{"origin": [6, 0, -27.5], "size": [8, 8, 2], "inflate": 0.1, "uv": [0, 12]},
+						{"origin": [6, 0, -24.5], "size": [8, 8, 1], "inflate": 0.1, "uv": [0, 22]},
+						{"origin": [6, 0, -33.5], "size": [8, 8, 39], "uv": [0, 0]},
+						{"origin": [6, -8, -33.5], "size": [8, 8, 4], "uv": [0, 0]},
+						{"origin": [9.5, -8, -29.5], "size": [1, 0, 2], "uv": [-1, 0]},
+						{"origin": [9, -1, -27.5], "size": [2, 1, 2], "uv": [30, 30]},
+						{"origin": [9, -8, -27.5], "size": [2, 7, 3], "uv": [21, 9]},
+						{"origin": [9.5, -2, -20], "size": [1, 2, 1], "pivot": [10, -1, -19.5], "rotation": [-30, 0, 0], "uv": [31, 0]},
+						{"origin": [9, -2, -19.5], "size": [2, 2, 3], "inflate": 0.25, "uv": [27, 33]},
+						{"origin": [9, -8, -19.5], "size": [2, 6, 3], "uv": [24, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "bite": "animation.void_rune.init"
+            },
+            "geometry": {
+                "default": "geometry.void_rune"
+            },
+            "identifier": "zaibian:void_rune",
+            "materials": {
+                "default": "cow"
+            },
+            "render_controllers": [
+                "controller.render.cow"
+            ],
+            "sound_effects":{
+                "void_rune_rising":"void_rune_rising"
+
+            },
+            "particle_effects": {
+               "xkong_wp" :"xkong_wp"
+            }
+            ,
+            "scripts": {
+                "animate": [
+                    "bite"
+                ],
+             
+                "scale": "1.8"
+            },
+            "textures": {
+                "default": "textures/entity/void_rune"
+            }
+        }
+    }
+}

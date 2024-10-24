@@ -1,0 +1,29 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "3.5"
+        },
+        "direction": {
+            "max": "0.0 0.0 0.0",
+            "min": "0.0 0.0 0.0",
+            "value": "Direction"
+        },
+        "faceCameraMode": {
+            "value": "Horizontal"
+        },
+        "particlesize": {
+            "max": "0.8 0.8",
+            "min": "0.8 0.8"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "name": "textures/particle/flame_strike_sigil"
+        },
+        "timetolive": {
+            "max": "0.1",
+            "min": "0.1"
+        }
+    }
+}

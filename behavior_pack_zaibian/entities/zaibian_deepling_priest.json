@@ -1,0 +1,308 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "romve_skill": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "skill_use1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "minecraft:hunter_mode": {
+                "minecraft:navigation.generic": {
+                    "avoid_sun": true,
+                    "can_break_doors": true,
+                    "can_path_over_water": false,
+                    "can_swim": true,
+                    "can_walk": true,
+                    "is_amphibious": true
+                }
+            },
+            "minecraft:wander_mode": {
+                "minecraft:navigation.generic": {
+                    "avoid_sun": true,
+                    "can_break_doors": true,
+                    "can_path_over_water": false,
+                    "can_swim": false,
+                    "can_walk": true,
+                    "is_amphibious": true
+                }
+            }
+        },
+        "components": {
+            "minecraft:behavior.find_mount": {
+                "priority": 1,
+                "within_radius": 12.0
+            },
+            "minecraft:annotation.break_door": {
+
+            },
+            "minecraft:attack": {
+                "damage": 4
+            },
+            "minecraft:behavior.delayed_attack": {
+                "attack_duration": 1,
+                "hit_delay_pct": 0.5,
+                "priority": 0,
+                "reach_multiplier": 2.5,
+                "speed_multiplier": 1.2,
+                "track_target": true
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 0
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 6,
+                "priority": 7,
+                "probability": 0.02
+            },
+            "minecraft:behavior.move_towards_restriction": {
+                "priority": 5,
+                "speed_multiplier": 1
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "any_of": [
+                                        {
+                                            "subject": "other",
+                                            "test": "is_family",
+                                            "value": "player"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "max_dist": 20
+                    }
+                ],
+                "must_see": true,
+                "must_see_forget_duration": 17.0,
+                "priority": 0,
+                "reselect_targets": true,
+                "within_radius": 20
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:timer": {
+                "looping": true,
+                "randomInterval": true,
+                "time": [
+                    8.0,
+                    10.0
+                ],
+                "time_down_event": {
+                    "event": "skill_use"
+                }
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 1
+            },
+            "minecraft:breathable": {
+                "breathes_air": true,
+                "breathes_water": true,
+                "suffocate_time": 0,
+                "total_supply": 15
+            },
+            "minecraft:can_climb": {
+
+            },
+            "minecraft:collision_box": {
+                "height": 1.9,
+                "width": 0.6
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/deepling_priest_wq.json",
+                "slot_drop_chance": [
+                    {
+                      "slot": "slot.armor.chest",
+                      "drop_chance": 0.0
+                    },
+                    {
+                        "slot": "slot.armor.legs",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.feet",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.head",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.mainhand",
+                        "drop_chance": 0.0
+                      },
+                      {
+                        "slot": "slot.armor.offhand",
+                        "drop_chance": 0.0
+                      }
+                  ]
+            },
+            "minecraft:equippable": {
+
+            },
+            "minecraft:experience_reward": {
+                "on_death": 10
+            },
+            "minecraft:health": {
+                "max": 45,
+                "value": 45
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {
+
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/deepling_priest.json"
+            },
+            "minecraft:movement": {
+                "value": 0.23
+            },
+            "minecraft:movement.generic": {
+
+            },
+            "minecraft:nameable": {
+
+            },
+            "minecraft:navigation.generic": {
+                "avoid_sun": true,
+                "can_break_doors": true,
+                "can_path_over_water": false,
+                "can_swim": false,
+                "can_walk": true,
+                "is_amphibious": true
+            },
+            "minecraft:on_target_acquired": {
+                "event": "minecraft:has_target",
+                "target": "self"
+            },
+            "minecraft:on_target_escape": {
+                "event": "minecraft:lost_target",
+                "target": "self"
+            },
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:addrider": {
+                "entity_type": "coralssus"
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "deepling",
+                    "zaibian"
+                ]
+            },
+            "minecraft:underwater_movement": {
+                "value": 0.12
+            }
+        },
+        "description": {
+            "identifier": "zaibian:deepling_priest",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "romve_skill": {
+                "add": {
+                    "component_groups": [
+                        "romve_skill"
+                    ]
+                }
+            },
+            "skill_use": {
+                "remove": {
+                    "component_groups": [
+
+                    ]
+                }
+            },
+            "skill_use1": {
+                "add": {
+                    "component_groups": [
+                        "skill_use1"
+                    ]
+                }
+            },
+            "minecraft:has_target": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:hunter_mode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minecraft:wander_mode"
+                    ]
+                }
+            },
+            "minecraft:lost_target": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:wander_mode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minecraft:hunter_mode"
+                    ]
+                }
+            },
+            "minecraft:switch_to_melee": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:melee_mode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minecraft:ranged_mode"
+                    ]
+                }
+            },
+            "minecraft:switch_to_ranged": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:ranged_mode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "minecraft:melee_mode"
+                    ]
+                }
+            }
+        }
+    }
+}

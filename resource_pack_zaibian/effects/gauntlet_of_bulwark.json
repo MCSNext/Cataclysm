@@ -1,0 +1,48 @@
+{
+    "particleeffect": {
+        "activetime": {
+            "value": "0.5"
+        },
+        "direction": {
+            "max": "1.0 0.0 1.0",
+            "min": "-1.0 0.0 -1.0",
+            "value": "Outwards"
+        },
+        "emissionrate": {
+            "max": "30.0",
+            "min": "30.0"
+        },
+        "emitterScaleCurve": [
+
+        ],
+        "emitterscale": [
+
+        ],
+        "emittersize": {
+            "value": "1.0 0 1.0"
+        },
+        "emittertype": {
+            "value": "Cylinder"
+        },
+        "enablecolor": {
+            "enable": "false"
+        },
+        "numparticles": {
+            "value": "1000"
+        },
+        "relative": {
+            "enable": "true"
+        },
+        "texture": {
+            "ani": {
+                "fps": "20",
+                "name": "textures/sfxs/cs_carnival_weapon_fire",
+                "shuffle": false
+            },
+            "name": "textures/sfxs/cs_carnival_weapon_fire"
+        },
+        "thickness": {
+            "value": "0.0"
+        }
+    }
+}
